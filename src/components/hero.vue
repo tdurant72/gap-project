@@ -9,33 +9,41 @@
                   <div v-if="leftActive"  class="leftCont content-body">
                       <h2 class="heroText">A world-class, 2,500 -  acre industrial & business park.
                         </h2>
-                        <h3 class="heroText3">providing multi modal capabilities for global commerce.</h3>
+                        <h3 class="heroText3">providing multimodal capabilities for global commerce.</h3>
+                        <div>
+                            <a class="btn btn-primary btn-lg btn-hero btn-md" href="#" role="button">Grow With Us</a>
+                        </div>
+                        <div>
+                            <a class="btn btn-primary btn-lg btn-md btn-hero" href="#" role="button">Contact</a>
+                        </div>
                   </div>
+                  
               
               </transition>
            </div>
-            <img class="split" src="../assets/img/hero-bkgd.jpg" alt="GTP">
+            <!-- <img class="split" src="../assets/img/hero-bkgd.jpg" alt="GTP"> -->
+            <video class="split" src="../assets/vids/left.mp4" poster="../assets/img/hero-bkgd.jpg" autoplay loop muted></video>
         </div>
     </div>
     <div v-if="leftActive" class="controller" :class="[leftActive ? 'controlLeft':'controlRight']">
                 <div class="calloutContainer">
-            <div class="callouts">
+            <div class="callouts"  id="callout1">
                 <span id="callout1text" class="calloutText ctLeft">Acres ready for development</span>
-                <button id="callout1" class="buttonCallouts btnLeft">900</button>
+                <button class="buttonCallouts btnLeft">900</button>
                 
             </div>
-            <div class="callouts">
+            <div class="callouts"  id="callout2">
                 <span id="callout2text" class="calloutText ctLeft">unknown</span>
-                <button id="callout2" class="buttonCallouts btnLeft">5,775</button>
+                <button class="buttonCallouts btnLeft">5,775</button>
                 
             </div>
-            <div class="callouts">
+            <div class="callouts"  id="callout3">
                 <span id="callout3text" class="calloutText  ctLeft">unknown</span>
-                <button id="callout3" class="buttonCallouts btnLeft">9</button>
+                <button class="buttonCallouts btnLeft">9</button>
             </div>
-            <div class="callouts">
+            <div class="callouts"  id="callout4">
                 <span id="callout4text" class="calloutText ctLeft">Workforce size</span>
-                <button id="callout4" class="buttonCallouts  btnLeft">500K</button>
+                <button class="buttonCallouts  btnLeft">500K</button>
                 
             </div>
             <button id="sliderBckBtn"  class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-right"></i></button>
@@ -43,21 +51,21 @@
     </div>
     <div v-if="rightActive" class="controller" :class="[rightActive ? 'controlRight':'controlLeft']">
         <div class="calloutContainer">
-            <div class="callouts">
+            <div class="callouts" id="callout5">
                 <span id="callout5text" class="calloutText">Colleges & Universities</span>
-                <button id="callout5" class="buttonCallouts btnRight">77</button>
+                <button  class="buttonCallouts btnRight">77</button>
             </div>
-            <div class="callouts">
+            <div class="callouts"  id="callout6">
                 <span id="callout6text" class="calloutText">Lower housing costs<br>to National average</span>
-                <button id="callout6" class="buttonCallouts btnRight">87%</button>
+                <button class="buttonCallouts btnRight">87%</button>
                 
             </div>
-            <div class="callouts">
+            <div class="callouts" id="callout7">
                 <span id="callout7text" class="calloutText ">Average high <br>temperature (24 C)</span>
-                <button id="callout7" class="buttonCallouts btnRight">75F</button>
+                <button  class="buttonCallouts btnRight">75F</button>
             </div>
-            <div class="callouts">
-                <span id="callout8text" class="calloutText">Coastal state <br>parks</span>
+            <div class="callouts"  id="callout8text">
+                <span class="calloutText">Coastal state <br>parks</span>
                 <button id="callout8" class="buttonCallouts  btnRight">8</button>
                 
             </div>
@@ -67,18 +75,22 @@
     </div>
     <div class="right" :class="[rightActive ? 'rightNotshowing':'rightShowing']">
         <div class="inner">
-            <img class="split" src="../assets/img/NC-img.jpg" alt="NC Life">
+            <!-- <img class="split" src="../assets/img/NC-img.jpg" alt="NC Life"> -->
+            <video class="split" src="../assets/vids/right.mp4" poster="../assets/img/NC-img.jpg" autoplay loop muted></video>
             <div  class="content-wrap">
                   <transition name="fade-right-content" >
                   <div v-if="rightActive" class="rightCont content-body">
-                      <h2 class="heroText">Living in North Carolina
+                      <h2 class="heroText">North Carolina
                         </h2>
-                        <h3 class="heroText3">providing multi-modal capabilities for global commerce.</h3>
+                        <h3 class="heroText3">where the living is easy.</h3>
                   </div>
                   </transition>
               </div>
             
         </div>
+    </div>
+    <div  id="arrowContainer">
+        <a class="btn btn-primary buttonArrow" href="#why" role="button"><i class="glyphicon glyphicon-chevron-down"></i></a>
     </div>
     </div>
 
@@ -285,7 +297,7 @@ button{
 }
 .callouts:hover .ctLeft{
     width: 400px;
-    left: -410px;
+    left: -380px;
     opacity: 1;
     transition: all 0.3s ease-out;
 }
@@ -363,6 +375,30 @@ button{
     -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
+#arrowContainer{
+    left:50%;
+    top:75%;
+    position: absolute;
+    z-index: 1000;
+}
+.buttonArrow {
+    background-color: #FFC107;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    width:80px;
+    height: 80px;
+    /* float: left; */
+    font-family: Montserrat-LightItalic;
+    font-size: 45px;
+}
+.buttonArrow:hover {
+    background-color: #008EFF;
+}
+
 .btnRight{
     float: left;
 }
@@ -410,13 +446,13 @@ color: #FFFFFF;
 text-shadow: 0 2px 0 #1976D2;
 padding-top: 15%;
 padding-bottom: 10px;
-text-align: center;
+
 } 
 h3.heroText3{
 font-family: Montserrat-LightItalic;
 font-size: 30px;
 color: #FFFFFF;
-text-align: center;
+margin-left: 40px;
 padding-bottom: 20px;
 }
 .layer .content-body{
@@ -435,11 +471,16 @@ padding-bottom: 20px;
    width: 50%;
 }
 .leftCont {
-    left: 10%;
+    left: 15%;
     position: absolute;
     width: 50%;
     
 } 
+.btn-hero{
+    width: 150px;
+    float: right;
+    margin-right: 40px;
+}
 
 .fade-right-content-enter,
 .fade-right-content-leave-to {
