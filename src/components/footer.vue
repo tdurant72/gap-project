@@ -49,7 +49,7 @@
             <div class="col-lg-4" id="workLinks">
                     <ul >
                         <li class="">
-                            <a class="primary" href="#" id="work">Work</a>
+                            <a class="primary" href="#" id="work" >Work</a>
                         </li class>
                         <li>
                             <a href="#" class="secondary">
