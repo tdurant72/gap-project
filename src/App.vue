@@ -94,7 +94,7 @@ text-align: center;
 line-height: 100px;
 }
 
-.jumbotron{margin-bottom: 0;}
+.jumbotron{margin-bottom: 0 !important;}
 
 .btn-cta{
 /* background: #FFC107;

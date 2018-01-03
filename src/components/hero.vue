@@ -7,9 +7,9 @@
             <transition name="fade-left-content">
               
                   <div v-if="leftActive"  class="leftCont content-body">
-                      <h2 class="heroText">A world-class, 2,500 -  acre industrial & business park.
+                      <h2 class="heroText">A world-class, 2,500  acre industrial & business park.
                         </h2>
-                        <h3 class="heroText3">providing multimodal capabilities for global commerce.</h3>
+                        <h3 class="heroText3">With multi-modal capabilities for global commerce.</h3>
                         <div>
                             <a class="btn btn-primary btn-lg btn-hero btn-md" href="#" role="button">Grow With Us</a>
                         </div>
@@ -28,17 +28,17 @@
     <div v-if="leftActive" class="controller" :class="[leftActive ? 'controlLeft':'controlRight']">
                 <div class="calloutContainer">
             <div class="callouts"  id="callout1">
-                <span id="callout1text" class="calloutText ctLeft">Acres ready for development</span>
+                <span id="callout1text" class="calloutText ctLeft">Acres Shovel Ready</span>
                 <button class="buttonCallouts btnLeft">900</button>
                 
             </div>
             <div class="callouts"  id="callout2">
-                <span id="callout2text" class="calloutText ctLeft">unknown</span>
+                <span id="callout2text" class="calloutText ctLeft">Acres Environmentally Permitted for Development</span>
                 <button class="buttonCallouts btnLeft">5,775</button>
                 
             </div>
             <div class="callouts"  id="callout3">
-                <span id="callout3text" class="calloutText  ctLeft">unknown</span>
+                <span id="callout3text" class="calloutText  ctLeft">Global & Natinal Companies at the Park</span>
                 <button class="buttonCallouts btnLeft">9</button>
             </div>
             <div class="callouts"  id="callout4">
@@ -61,8 +61,8 @@
                 
             </div>
             <div class="callouts" id="callout7">
-                <span id="callout7text" class="calloutText ">Average high <br>temperature (24 C)</span>
-                <button  class="buttonCallouts btnRight">75F</button>
+                <span id="callout7text" class="calloutText ">Average high <br>temperature (24&#176; C)</span>
+                <button  class="buttonCallouts btnRight">75&#176;F</button>
             </div>
             <div class="callouts"  id="callout8text">
                 <span class="calloutText">Coastal state <br>parks</span>
