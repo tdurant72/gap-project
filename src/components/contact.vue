@@ -27,10 +27,10 @@
                       <div id="formContainer" >
                           <div class="primary media-wrap">
                               <div class="col-lg-12">
-                                  <label for="name">Name</label>
+                                  <label for="name">Name *</label>
                               </div>
                               <div class="col-lg-12 last">
-                                  <input type="text" name="name" id="name" class="validateBlank formFields"/>
+                                  <input type="text" name="name" id="name" class="validateBlank formFields" required/>
                                   <!-- <em class="ms-metadata required-warning">Required</em> -->
                               </div>
                           </div>
@@ -45,10 +45,10 @@
                           </div>
                           <div class="primary media-wrap">
                               <div class="col-lg-12">
-                                  <label for="email">Email</label>
+                                  <label for="email">Email *</label>
                               </div>
                               <div class="col-lg-12">
-                                  <input type="text" name="email" id="email" class="validateBlank formFields"/>
+                                  <input type="text" name="email" id="email" class="validateBlank formFields" required/>
                                   <!-- <em class="ms-metadata required-warning">Required</em> -->
                               </div>
                           </div>
@@ -67,7 +67,7 @@
                               </div>
                               <div class="col-lg-6">
                                   <input type="checkbox" name="industrial" class="contact-learn-checkbox"/>
-                                  <label for="industrial" class="contact-learn-label">Industrial Real Estate</label>
+                                  <label for="industrial" class="contact-learn-label">Building/Sites</label>
                                   <br>            
                                   <input type="checkbox" name="composite" class="contact-learn-checkbox"/>
                                   <label for="composite" class="contact-learn-label">Composite Center</label>
@@ -108,7 +108,7 @@
                           </div> -->
                       </div>
                       <div class="col-lg-12">
-                      <input type="button" id="submitFormButton" value="Submit" class="important">
+                      <input type="button" id="submitFormButton" value="Submit" class="important btn btn-cta btn-lg btn-md ">
                         </div>
                       </div><!--/formContainer-->
                 </div>
@@ -185,5 +185,13 @@ font-weight:normal;
 }
 .contactArea{
   margin-top: 50px;
+}
+.btn-cta{
+  color: #ffffff;
+  margin-top: 15px;
+  height: 45px;
+}
+.btn-cta:hover{
+  color: #eeeeee;
 }
 </style>

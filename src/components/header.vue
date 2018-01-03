@@ -222,7 +222,7 @@ export default {
 </script>
 <style scoped>
  a.navbar-brand{
-padding-top: 5px;
+padding-top: 15px;
 }
  nav > a > img{
     mix-blend-mode: darken;
@@ -305,23 +305,25 @@ button#toggler{
  li.nav-item >a{
      margin-right: 0;
  }
-.navbar {
+
 	.navbar-inner {
 		padding: 0;
-	}
+    }
 	.nav {
 		margin: 0;
 		display: table;
-		width: 100%;
-		>li {
+        width: 100%;
+    }
+		.nav >li {
 			display: table-cell;
 			width: 1%;
 			float: none;
-			text-align: center;
+            text-align: center;
+        }
 			a {
 				line-height: 2.5;
 			}
-			&:nth-child(1) {
+			/* &:nth-child(1) {
 				background: #212121;
 			}
 			&:nth-child(2) {
@@ -339,7 +341,7 @@ button#toggler{
 			&:last-child {
 				background: #00688D;
 			}
-		}
+	
 		li {
 			&:first-child {
 				a {
@@ -355,38 +357,38 @@ button#toggler{
 			}
 		}
 	}
-}
-.navbar-nav {
+} */
+
 	.nav-link {
 		color: #fff;
 	}
-}
+
 .menu-large {
 	position: static !important;
 }
 .megamenu {
 	padding: 20px 0px;
-	width: 100%;
-	li {
-    color: #fff;
-		ul {
-			padding: 0;
-			margin: 0;
-			li {
-				list-style: none;
-				a {
-					display: block;
-					margin-top: 30px;
-					clear: both;
-					font-weight: normal;
-					line-height: 1.428571429;
-					color: #fff;
-					white-space: normal;
-				}
-			}
-		}
-	}
+    width: 100%;
 }
+	.megamenu > li {
+    color: #fff;
+    }
+ul {
+    padding: 0;
+    margin: 0;
+}
+    li {
+        list-style: none;
+    }
+   .megamenu > li > a {
+        display: block;
+        margin-top: 30px;
+        clear: both;
+        font-weight: normal;
+        line-height: 1.428571429;
+        color: #fff;
+        white-space: normal;
+    }
 .dropdown-menu {
 	background: #f6f6f6;
 }

@@ -12,7 +12,7 @@
                 <img id="map" src="../assets/img/map.jpg" alt="map-icon">
               </div>
                 <div class=" col-lg-6">
-                    <p class="siteText">Our sites and buildings are fully equipped and ready to got to work. From utility planning to advanced telecommunications connectivity, everything you need is in place so you’ll be up and doing business - with preapproved environmental, we are prepared to break ground on a new facility. </p>
+                    <p class="siteText">Our sites and buildings are fully equipped and ready to go to work. From utility planning to advanced telecommunications connectivity, everything you need is in place so you’ll be up and doing business - with preapproved environmental, we are prepared to break ground on a new facility. </p>
                 </div>
               </div>
           </div>

@@ -7,6 +7,8 @@
       <app-industries></app-industries>
       <app-site></app-site>
       <app-contact></app-contact>
+      <app-move></app-move>
+      <app-footer></app-footer>
     <!-- <router-view></router-view> -->
   </div>
 </template>
@@ -19,6 +21,8 @@ import site from './components/site.vue';
 import why from './components/why.vue';
 import about from './components/about.vue';
 import contact from './components/contact.vue';
+import move from './components/move.vue';
+import footer from './components/footer.vue';
 
 export default {
 
@@ -30,6 +34,8 @@ export default {
     'app-why':why,
     'app-about':about,
     'app-contact':contact,
+    'app-move':move,
+    'app-footer':footer
   },
   data(){
     return{
@@ -52,6 +58,12 @@ min-height: 700px;
 background-attachment: fixed;
 background-size: cover;
 background-position: 50% 50%;
+}
+.paral-banner {
+height: 148px;
+/* background-attachment: fixed; */
+/* background-position: 50% 50%; */
+/* background-repeat: no-repeat; */
 }
 .paral-sm {
 min-height: 600px;
@@ -82,7 +94,7 @@ text-align: center;
 line-height: 100px;
 }
 
-.jumbotron{margin-bottom: 0;}
+.jumbotron{margin-bottom: 0 !important;}
 
 .btn-cta{
 /* background: #FFC107;

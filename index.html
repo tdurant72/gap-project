@@ -9,7 +9,8 @@
     
     <!-- <link href="./src/assets/css/scrollanim.css" rel="stylesheet"> -->
 
-    <link href="./src/assets/css/aos.css" rel="stylesheet">
+    <link href="./static/css/aos.css" rel="stylesheet">
+  
     <!-- <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> -->
     <title>gtp-project</title>
 
@@ -17,10 +18,10 @@
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="./src/assets/js/aos.js"></script>
-    <script src="./src/assets/js/waypoints.js"></script>
+    <script src="./static/js/aos.js"></script>
+    <!-- <script src="./src/assets/js/waypoints.js"></script>
     <script src="./src/assets/js/jquery.waypoints.min.js"></script>
-    <script src="./src/assets/js/jquery.counterup.min.js"></script>
+    <script src="./src/assets/js/jquery.counterup.min.js"></script> -->
   </head>
   <body>
     <div id="app"></div>
@@ -29,78 +30,7 @@
  
     <!-- <script src="./src/assets/js/waypoint.js"></script> -->
 
-<script>
-  AOS.init({
-    offset: 200,
-      duration: 700,
-      easing: 'ease-in',
-      delay: 300,
-  }, {offset:'50%'});
-
-  jQuery(document).ready(function($) {
-            $('.counter').counterUp({
-                delay: 10,
-                time: 1000
-            });
-            //fix toggle collapse issue
-            $('.navbar-toggle').click(function(event) {
-            $('.navbar-collapse').toggle('in');
-          });
-        });
-
-
-        
-// $stats.waypoint(function(){
-
-//     $('.count').each(function () {
-//       $(this).prop('Counter',0).animate({
-//           Counter: $(this).text()
-//       }, {
-//           duration: 4000,
-//           easing: 'swing',
-//           step: function (now) {
-//               $(this).text(Math.ceil(now));
-//           }
-//       });
-//   });
-// });
-
-// var countAnimation = (function () {
-// $(this).prop('Counter', 0).animate({
-//   Counter:$(this).text()
-// }, {
-//   duration:4000,
-//   easing:'swing',
-//   step:function(now){
-//     $(this).text(Math.ceil(now));
-//   }
-// })
-// })();
-
-// // http://imakewebthings.com/waypoints/
-// // https://github.com/imakewebthings/waypoints
-
-
-  // $(window).scroll(startCounter);
-  // function startCounter() {
-  //     if ($('#stats').css("opacity") == 1){
-  //         $(window).off("scroll", startCounter);
-  //         $('.calc').each(function () {
-  //             var $this = $(this);
-  //             jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
-  //                 duration: 1000,
-  //                 easing: 'swing',
-  //                 step: function () {
-  //                     $this.text(Math.ceil(this.Counter));
-  //                 }
-  //             });
-  //         });
-  //     }
-  // }
-
-
-
-</script>
+<script src="./static/js/init.js"></script>
 
 
   </body>
