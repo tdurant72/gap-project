@@ -2,7 +2,7 @@
     <div class="container" >
     <div class="row " data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
         <!-- <div class="col col-md-2 col-lg-1 col-sm-0"></div> -->
-        <div v-for="item in items" class="col-md-4 col-lg-4 col-sm-12 ">
+        <div v-for="item in items" class="col-md-4 col-lg-4 col-sm-12 " :key="item.name">
             <div class="text-center res-card">
                 <img :src="item.img" class="card-img-top">
                 

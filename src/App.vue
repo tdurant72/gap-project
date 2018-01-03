@@ -60,7 +60,7 @@ background-size: cover;
 background-position: 50% 50%;
 }
 .paral-banner {
-min-height: 150px;
+height: 148px;
 /* background-attachment: fixed; */
 /* background-position: 50% 50%; */
 /* background-repeat: no-repeat; */

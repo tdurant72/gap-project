@@ -49,8 +49,8 @@
             <div class="col-lg-4" id="workLinks">
                     <ul >
                         <li class="">
-                            <a class="primary" href="#" id="work" >Work</a>
-                        </li class>
+                            <a href="#" class="primary"  id="work">Work</a>
+                        </li >
                         <li>
                             <a href="#" class="secondary">
                                 <i class="secondary" aria-hidden="false">
@@ -201,7 +201,7 @@
         </div>
 
 
-      <div class="row container" id="socialContainer">
+      <div class="row container" id="socialContainer" >
           <div class="col-lg-1">
               <a class="buttonSocial" href="#">
                     <img src="../assets/img/facebook.png" alt="facebook">
@@ -231,7 +231,7 @@ export default {
    background-color: #2196F3;
 }
 #footer{
-    padding-top: 10%;
+    padding-top: 5%;
 }
 #footerContainer{
     padding-left: 10%;

@@ -108,7 +108,7 @@
                           </div> -->
                       </div>
                       <div class="col-lg-12">
-                      <input type="button" id="submitFormButton" value="Submit" class="important">
+                      <input type="button" id="submitFormButton" value="Submit" class="important btn btn-cta btn-lg btn-md ">
                         </div>
                       </div><!--/formContainer-->
                 </div>
@@ -185,5 +185,13 @@ font-weight:normal;
 }
 .contactArea{
   margin-top: 50px;
+}
+.btn-cta{
+  color: #ffffff;
+  margin-top: 15px;
+  height: 45px;
+}
+.btn-cta:hover{
+  color: #eeeeee;
 }
 </style>
