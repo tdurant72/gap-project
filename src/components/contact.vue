@@ -31,7 +31,7 @@
                               </div>
                               <div class="col-lg-12 last">
                                   <input type="text" name="name" id="name" class="validateBlank formFields" required/>
-                                  <!-- <em class="ms-metadata required-warning">Required</em> -->
+                                  <em class="ms-metadata required-warning">Required</em>
                               </div>
                           </div>
                           <div class="primary media-wrap">
@@ -39,8 +39,8 @@
                                   <label for="organization">Organization</label>
                               </div>
                               <div class="col-lg-12">
-                                  <input type="text" name="organization" id="organization" class="validateBlank formFields"/>
-                                  <!-- <em class="ms-metadata required-warning">Required</em> -->
+                                  <input type="text" name="organization" id="organization" class="formFields"/>
+                                  <!--<em class="ms-metadata required-warning">Required</em> -->
                               </div>
                           </div>
                           <div class="primary media-wrap">
@@ -49,7 +49,7 @@
                               </div>
                               <div class="col-lg-12">
                                   <input type="text" name="email" id="email" class="validateBlank formFields" required/>
-                                  <!-- <em class="ms-metadata required-warning">Required</em> -->
+                                  <em class="ms-metadata required-warning">Required</em> 
                               </div>
                           </div>
                           <div class="primary media-wrap">
@@ -57,8 +57,8 @@
                                   <label for="phone">Phone</label>
                               </div>
                               <div class="col-lg-12">
-                                  <input type="text" name="phone" id="phone" class="validateBlank formFields"/>
-                                  <!-- <em class="ms-metadata required-warning">Required</em> -->
+                                  <input type="text" name="phone" id="phone" class="formFields"/>
+                                  <!--<em class="ms-metadata required-warning">Required</em>-->
                               </div>
                           </div>
                             
@@ -90,22 +90,22 @@
                               </div>
                           </div>
                           <div id="validationLoading">
-                          <!-- <div id="validateFields">
+                          <div id="validateFields">
                               <div class="panel validationIcons">
-                                  <img id='fieldsValidating' src='/_layouts/images/gears_anv4.gif' class="loadingIcon"/>
-                                  <img id='fieldsValid' src='/_layouts/images/check.gif' class="checkMarkIcon"/>
-                                  <img id='fieldsInvalid' src='/_layouts/images/WPPINVAL.gif' class="invalidIcon"/>
+                                  <img id='fieldsValidating' src='../assets/img/gears_anv4.gif' class="loadingIcon"/>
+                                  <img id='fieldsValid' src='../assets/img/check.gif' class="checkMarkIcon"/>
+                                  <img id='fieldsInvalid' src='../assets/img/WPPINVAL.gif' class="invalidIcon"/>
                               </div>
                               <span id="validFieldsText" class="validation">Validating Fields</span>
-                          </div>  -->
-                          <!-- <div id="submitForm">
+                          </div>  
+                          <div id="submitForm">
                               <div class="panel validationIcons">
-                                  <img id='submittingSpinner' src='/_layouts/images/gears_anv4.gif' class="loadingIcon"/>
-                                  <img id='submitSuccess' src='/_layouts/images/check.gif' class="checkMarkIcon"/>
-                                  <img id='submitFail' src='/_layouts/images/WPPINVAL.gif' class="invalidIcon"/>
+                                  <img id='submittingSpinner' src='../assets/img/gears_anv4.gif' class="loadingIcon"/>
+                                  <img id='submitSuccess' src='../assets/img/check.gif' class="checkMarkIcon"/>
+                                  <img id='submitFail' src='../assets/img/WPPINVAL.gif' class="invalidIcon"/>
                               </div> 
                               <span id="submitFormText" class="validation">Submitting Form</span>    
-                          </div> -->
+                          </div> 
                       </div>
                       <div class="col-lg-12">
                       <input type="button" id="submitFormButton" value="Submit" class="important btn btn-cta btn-lg btn-md ">

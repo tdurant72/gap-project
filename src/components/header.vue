@@ -1,31 +1,5 @@
 <template>
-    <!-- <nav class="navbar navbar-light bg-faded navbar-fixed-top">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar1">
-        ☰
-    </button>
-     <a class="navbar-brand" href="#">
-            <img src="../assets/img/logo.jpg" height="41" alt="">
-        </a>
-    <div class="collapse" id="collapsingNavbar1">
-        <ul class="nav navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Bootstrap 4</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-        </ul>
-        <ul class="nav navbar-nav pull-xs-right">
-            <li class="nav-item">
-                <a class="nav-link" href="#" title="I collapse on `md` screens">About</a>
-            </li>
-        </ul>
-    </div>
-</nav> -->
-
+<!--
     <nav class="navbar  fixed-top bg-faded" role="navigation" style="padding: 0px;">
   <button id="toggler" class="navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsing-navbar">
     &#9776;
@@ -201,7 +175,42 @@
     </ul>
   </div>
 </nav>    
-        
+ -->
+
+    <header class="site-header ncgtp-navbar">
+        <div class="site-header__inner-wrapper">
+
+            <a href="/" class="logo logo--header " title="">NCGTP
+            </a>
+
+            <i class="icon-hamburger gtpBurger menu-btn" id="menu-btn"></i>    
+                    
+                
+        </div>
+        <div class="navContainer">
+            <div class="main-nav-column col-lg-offset-1 col-lg-2">
+                <ul class="main-nav-header-content main-nav-grow">
+                    <!--<a href="#">Link 1</a> -->
+                </ul>
+            </div>
+            <div class="main-nav-column col-lg-2">
+                <ul class="main-nav-header-content main-nav-live">
+                </ul>
+            </div>
+            <div class="main-nav-column col-lg-2">
+                <ul class="main-nav-header-content main-nav-work">
+                </ul>
+            </div>
+            <div class="main-nav-column col-lg-2">
+                <ul class="main-nav-header-content main-nav-resources">
+                </ul>
+            </div>
+            <div class="main-nav-column col-lg-2">
+                <ul class="main-nav-header-content main-nav-contact">
+                </ul>
+            </div>
+        </div>
+    </header>
 
 </template>
 <script>
@@ -220,183 +229,117 @@ export default {
   }
 }
 </script>
-<style scoped>
- a.navbar-brand{
-padding-top: 15px;
-}
+
  nav > a > img{
     mix-blend-mode: darken;
 }
-/* body {
+body {
     padding-top:70px;
 }
 
+.ncgtp-navbar {
+    background-color: #fff;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 100px; /* Position the navbar at the top of the page, should be top: 0 if we didn't have other SharePoint stuff in the way; */
+    width: 100%; /* Full width */
+}
 
-.navbar .navbar-brand {
-    float:none;
+/* Links inside the navbar */
+.ncgtp-navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+body.sp-authenticated.ms-backgroundImage {1
+    padding-top: 250px;
+    background-color: #fff;
+}
+
+.ncgtp-navbar .logo {
+    background-image: url(../assets/img/logo.jpg);
+}
+
+.gtpBurger {
+    transform: scale(3);
+    cursor: pointer;
+}
+
+.navContainer {
+    display: none;
+}
+
+.expand {
     display: block;
 }
-.navbar .navbar-nav>.nav-item {
-    float: none;
-    margin-left: .1rem;
-}
-.navbar .navbar-nav {
-    float:none !important;
-}
-button.navbar-toggler{
-    position: absolute;
-    right: 20px;
-    width:40px;
-    height: 40px;
-    margin-top: 5px;
-} */
 
-
-button#toggler{
-    width:30px;
-    height: 30px;
-    margin-top: 15px;
-    margin-right: 10px;
+.main-nav-column {
+    float: left;
+    width: 20%;
 }
 
-.fa-check {
-	color: #fff;
-	margin-left: .8em;
-}
-.fa-circle {
-	color: #fff;
-	font-size: .5em;
-	padding-right: 1em;
+.main-nav-header {
+    size: 2rem;
+    color: white;
 }
 
- a.primary{
-     color: #757575;
-    font-family: Lato-Bold;
-    font-size: 18px;
-    text-decoration: underline;
- }
- a.active{
-     text-decoration: none;
-     color:#212121;
- }
- a.secondary{
-     color:#757575;
-    font-family: Lato-Light;
-    font-size: 16px;
- }
-  li.nav-item.dropdown.menu-large{
-      padding-right: 20px;
-  }
-  li.home{
-      padding-right: 20px;
-  }
- li.nav-item.dropdown.menu-large.show.open > ul > li > ul > li{
-     list-style: none;
- }
-
- li.nav-item.dropdown.menu-large.show.open > ul > li > ul{
-     margin-left: 5px;
-     padding-left: 5px;
- }
- .navbar{
-     background-color: #fff;
- }
-
- li.nav-item >a{
-     margin-right: 0;
- }
-
-	.navbar-inner {
-		padding: 0;
-    }
-	.nav {
-		margin: 0;
-		display: table;
-        width: 100%;
-    }
-		.nav >li {
-			display: table-cell;
-			width: 1%;
-			float: none;
-            text-align: center;
-        }
-			a {
-				line-height: 2.5;
-			}
-			/* &:nth-child(1) {
-				background: #212121;
-			}
-			&:nth-child(2) {
-				background: #009EDB;
-			}
-			&:nth-child(3) {
-				background: #0086B9;
-			}
-			&:nth-child(4) {
-				background: #0079A6;
-			}
-			&:nth-child(5) {
-				background: #01729C;
-			}
-			&:last-child {
-				background: #00688D;
-			}
-	
-		li {
-			&:first-child {
-				a {
-					border-left: 0;
-					border-radius: 3px 0 0 3px;
-				}
-			}
-			&:last-child {
-				a {
-					border-right: 0;
-					border-radius: 0 3px 3px 0;
-				}
-			}
-		}
-	}
-} */
-
-	.nav-link {
-		color: #fff;
-	}
-
-.menu-large {
-	position: static !important;
+.main-nav-header-content, .main-nav-footer-content {
+    list-style: none;
+    color: white;
+    display: inline-block;
 }
-.megamenu {
-	padding: 20px 0px;
+
+.main-nav-header-content li{
+    display: inline-block;
     width: 100%;
 }
-	.megamenu > li {
-    color: #fff;
-    }
-ul {
-    padding: 0;
-    margin: 0;
+
+.main-nav-header-content li:first-child a{
+    color: #0081C3;
+    font-size: 2rem;
+    border-bottom: .2rem solid;
+    /* border-bottom-color: #0c6c2c; */
 }
-    li {
-        list-style: none;
-    }
-   .megamenu > li > a {
-        display: block;
-        margin-top: 30px;
-        clear: both;
-        font-weight: normal;
-        line-height: 1.428571429;
-        color: #fff;
-        white-space: normal;
-    }
-.dropdown-menu {
-	background: #f6f6f6;
+.main-nav-header-content li a {
+    text-align: left;
 }
 
 
 
+.main-nav-footer-content a {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+}
 
+.main-nav-footer-content li:first-child a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
 
+.social-list__list {
+    display: inline;
+    text-align: center;
+}
+
+li.social-list__item {
+    transform: scale(3);
+    padding: 0 2rem;
+}
+
+.site-footer {
+    margin-top: 2rem;
+}
+
+.site-footer, .site-footer__bottom, .social-list  {
+    background: #0c98e2;
+}
+
+.main-nav-footer-location-info a {
+    text-decoration: none;
+    cursor: text;
+}
 
 
 
