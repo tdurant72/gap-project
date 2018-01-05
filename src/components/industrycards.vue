@@ -10,7 +10,7 @@
                 <img :src="item.img" class="card-img-top img-responsive">
                 
                     <p class="lead">
-                        <a class="btn btn-primary btn-lg btn-md" href="themes.html" role="button">Learn More</a>
+                        <a class="btn btn-primary btn-lg btn-md" href="{{item.link}}" role="button">Learn More</a>
                         </p>
                 </div>
             </div>
@@ -23,11 +23,11 @@ export default {
     data:  function(items) {
         return{
             items: [
-            {name: 'AEROSPACE & AVIATION', img: require('../assets/img/airplane-icon.png')},
-            {name: 'ADVANCED MANUFACTURING', img: require('../assets/img/advanced-icon.png')},
-            {name: 'LOGISTICS & EXPORTING', img: require ('../assets/img/ship-icon.png')},
-            {name: 'DEFENSE & SECURITY', img: require ('../assets/img/defense-icon.png')},
-            {name: 'EMERGENCY RESPONSE', img: require ('../assets/img/truck-icon.png')}
+            {name: 'AEROSPACE & AVIATION', img: require('../assets/img/airplane-icon.png'),link:'#aerospace'},
+            {name: 'ADVANCED MANUFACTURING', img: require('../assets/img/advanced-icon.png'), link:'#manufacturing'},
+            {name: 'LOGISTICS & EXPORTING', img: require ('../assets/img/ship-icon.png'), link:'#logistics'},
+            {name: 'DEFENSE & SECURITY', img: require ('../assets/img/defense-icon.png'), link:'#defense'},
+            {name: 'EMERGENCY RESPONSE', img: require ('../assets/img/truck-icon.png'), link:'#emergency'}
             ]
         }
   }

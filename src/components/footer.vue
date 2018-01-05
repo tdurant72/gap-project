@@ -275,14 +275,14 @@
                             <a class="social-list__link" target="_blank" href="https://www.facebook.com/GlobalTransPark">
                                 <span class="social-list__link-text">Facebook
                                 </span>
-                                <i class="icon-facebook"></i>
+                                <i class="icon-facebook icon"></i>
                             </a>
                         </li>
                         <li class="social-list__item">
                             <a class="social-list__link" target="_blank" href="https://twitter.com/GlobalTransPark">
                                 <span class="social-list__link-text">Twitter
                                 </span>
-                                <i class="icon-twitter"></i>
+                                <i class="icon-twitter icon"></i>
                             </a>
                         </li>
                         <li class="social-list__item">
@@ -290,7 +290,7 @@
                                 <span class="social-list__link-text">Linkedin
                                 </span>
                                 <!--TO DO: GET LINKEDIN ICON -->
-                                <i class="icon-linkedin"></i>
+                                <i class="icon-linkedin icon"></i>
                             </a>
                         </li>
                                         <!--
@@ -312,7 +312,7 @@
                                             <a class="social-list__link" target="_blank" href="https://www.instagram.com/ncdotcom/">
                                                 <span class="social-list__link-text">Instagram
                                                 </span>
-                                                <i class="icon-instagram"></i>
+                                                <i class="icon-instagram icon"></i>
                                             </a>
                                         </li>
                                     -->

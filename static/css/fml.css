@@ -1,7 +1,5 @@
 
 #formContainer {
-	max-width: 50%;
-    padding-top: 2rem;
     margin: 0 auto;
 }
 h3.panel {
@@ -789,7 +787,8 @@ a.panel {
 
 #footer ul li {
     color: #fff;
-    font-size: 12px;
+    font-size: 16px;
+    font-family:'Lato', sans-serif;
 }
 
 #footer .icon,

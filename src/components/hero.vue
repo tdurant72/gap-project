@@ -33,17 +33,17 @@
                 
             </div>
             <div class="callouts"  id="callout2">
-                <span id="callout2text" class="calloutText ctLeft">Acres Environmentally Permitted for Development</span>
+                <span id="callout2text" class="calloutText ctLeft">Acres Environmentally Permitted</span>
                 <button class="buttonCallouts btnLeft">5,775</button>
                 
             </div>
             <div class="callouts"  id="callout3">
-                <span id="callout3text" class="calloutText  ctLeft">Global & Natinal Companies at the Park</span>
+                <span id="callout3text" class="calloutText  ctLeft">Global & National <br>Companies On-Site</span>
                 <button class="buttonCallouts btnLeft">9</button>
             </div>
             <div class="callouts"  id="callout4">
-                <span id="callout4text" class="calloutText ctLeft">Workforce size</span>
-                <button class="buttonCallouts  btnLeft">500K</button>
+                <span id="callout4text" class="calloutText ctLeft">Exiting Military Personnel <br>Entering Workforce</span>
+                <button class="buttonCallouts  btnLeft">18K</button>
                 
             </div>
             <button id="sliderBckBtn"  class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-right"></i></button>
@@ -52,8 +52,8 @@
     <div v-if="rightActive" class="controller" :class="[rightActive ? 'controlRight':'controlLeft']">
         <div class="calloutContainer">
             <div class="callouts" id="callout5">
-                <span id="callout5text" class="calloutText">Colleges & Universities</span>
-                <button  class="buttonCallouts btnRight">77</button>
+                <span id="callout5text" class="calloutText">State for Business<br><i>(Forbes, 2017)</i></span>
+                <button  class="buttonCallouts btnRight">#1</button>
             </div>
             <div class="callouts"  id="callout6">
                 <span id="callout6text" class="calloutText">Lower housing costs<br>to National average</span>
@@ -61,12 +61,12 @@
                 
             </div>
             <div class="callouts" id="callout7">
-                <span id="callout7text" class="calloutText ">Average high <br>temperature (24&#176; C)</span>
-                <button  class="buttonCallouts btnRight">75&#176;F</button>
+                <span id="callout7text" class="calloutText ">Colleges & Universities</span>
+                <button  class="buttonCallouts btnRight">111</button>
             </div>
             <div class="callouts"  id="callout8text">
-                <span class="calloutText">Coastal state <br>parks</span>
-                <button id="callout8" class="buttonCallouts  btnRight">8</button>
+                <span class="calloutText">Aerospace Manufacturing Attractiveness<br><i>(PricewaterhouseCoopers, 2016)</i></span>
+                <button id="callout8" class="buttonCallouts  btnRight">#4</button>
                 
             </div>
             <button id="sliderBckBtn" class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-left"></i></button>

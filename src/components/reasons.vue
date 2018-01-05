@@ -10,7 +10,7 @@
                         <h5 class="reasonText">{{ item.desc}}</h5>
                     </div>
                     <div>
-                        <a class="btn btn-primary btn-lg btn-md" href="#" role="button">Learn More</a>
+                        <a class="btn btn-primary btn-lg btn-md why-btn" href="{{item.link}}" role="button">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -24,9 +24,9 @@ export default {
     data:  function(items) {
         return{
             items: [
-            {name: 'Grow', img: require('../assets/img/grow-oval.png'), desc: 'How & why to grow your company at NC Global TransPark.', num:900},
-            {name: 'Live', img: require('../assets/img/live-oval.png'), desc: 'Experience the quality of life we have to offer.', num:500000},
-            {name: 'Work', img: require ('../assets/img/work-oval.png'), desc: 'A customizable workforce with state of the art training.', num:81}
+            {name: 'Grow', img: require('../assets/img/grow-oval.png'), desc: 'How & why to grow your company at NC Global TransPark.', link:'#grow'},
+            {name: 'Live', img: require('../assets/img/live-oval.png'), desc: 'Experience the quality of life we have to offer.', link:'#live'},
+            {name: 'Work', img: require ('../assets/img/work-oval.png'), desc: 'A customizable workforce with state of the art training.', link:'#work'}
             ]
         }
   }
@@ -83,7 +83,9 @@ padding-bottom: 20px;
     position: relative;
     border: none;
 }
-
+.why-btn{
+    bottom:0; left:30px; position:absolute;
+}
 .btn-primary{
     /* primary*/
 background: #2196F3;

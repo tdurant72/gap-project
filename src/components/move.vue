@@ -1,5 +1,5 @@
 <template>
-  <div class="jumbotron paral-banner paralsec7" id="move">
+  <div class="jumbotron paral paral-banner paralsec7" id="move">
       <div class="container">
           <div class="row">
               <div class="col-lg-offset-2 col-lg-6">

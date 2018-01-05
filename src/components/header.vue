@@ -178,16 +178,16 @@
  -->
 
     <header class="site-header ncgtp-navbar">
-        <div class="site-header__inner-wrapper">
+        <div class="site-header__inner-wrapper row">
 
             <a href="/" class="logo logo--header " title="">NCGTP
             </a>
 
-            <i class="icon-hamburger gtpBurger menu-btn" id="menu-btn"></i>    
+            <i class="glyphicon glyphicon-menu-hamburger gtpBurger menu-btn" id="menu-btn"></i>    
                     
                 
         </div>
-        <div class="navContainer">
+        <div class="navContainer row">
             <div class="main-nav-column col-lg-offset-1 col-lg-2">
                 <ul class="main-nav-header-content main-nav-grow">
                     <!--<a href="#">Link 1</a> -->
