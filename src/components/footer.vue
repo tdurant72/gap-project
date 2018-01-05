@@ -374,7 +374,7 @@ li{
     transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 .footerText{
-    font-family: Lato-Light;
+    font-family: 'Lato-Ligh',sans-serif;
     font-size: 16px;
     color: #FFFFFF;
     line-height: 110%;
@@ -391,9 +391,9 @@ li{
 }
  a.primary{
      color: #ffffff;
-    font-family: Lato-Bold;
+    font-family: 'Lato-Bold', sans-serif;
     font-size: 18px;
- 
+    font-weight:bold;
  }
  a.active{
      text-decoration: none;
@@ -401,8 +401,9 @@ li{
  }
  a.secondary{
      color:#ffffff;
-    font-family: Lato-Light;
+    font-family: 'Lato-Light', sans-serif;
     font-size: 16px;
+    font-weight:bold;
     margin-left: 20px;
  }
  .secondRow{
@@ -417,8 +418,9 @@ li{
 
 .footer-inner {
     color: #fff;
-    font-family: Lato-Light;
+    font-family: 'Lato-Light', sans-serif;
     font-size: 16px;
+    font-weight:Light;
     padding: 1rem;    
     margin: 0 auto;
     display: block;
@@ -444,7 +446,8 @@ li{
 }
 
 .main-nav-footer-content li:first-child a {
-    font-family: Lato-Bold, sans-serif;
+    font-family: 'Lato-Bold,, sans-serif;
+    font-weight:bold;
     font-size: 18px;
 }
 </style>

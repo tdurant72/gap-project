@@ -178,7 +178,7 @@
  -->
 
     <header class="site-header ncgtp-navbar">
-        <div class="site-header__inner-wrapper row">
+        <div class="site-header__inner-wrapper">
 
             <a href="/" class="logo logo--header " title="">NCGTP
             </a>

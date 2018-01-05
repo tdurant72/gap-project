@@ -34,7 +34,7 @@ padding-left: 10%;
 }
 
 p.aboutText{
-font-family: Lato-Light;
+font-family: 'Lato-Light', sans-serif;
 font-size: 20px;
 color: #212121;
 line-height: 125%;

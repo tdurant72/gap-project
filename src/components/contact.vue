@@ -132,7 +132,7 @@ background-color: #f6f6f6;
   margin-top: 50px;
 }
 p.contactText{
-font-family: Lato-Light;
+font-family: 'Lato-Light', sans-serif;
 font-size: 16px;
 color: #212121;
 letter-spacing: 0;
@@ -167,7 +167,7 @@ text-align: center;
   padding-bottom: 15px;
 }
  label{
-font-family: Lato-Regular;
+font-family: 'Lato-Regular', sans-serif;
 font-size: 14px;
 color: #757575;
 font-weight:normal;

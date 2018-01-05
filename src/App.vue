@@ -102,7 +102,7 @@ background: #0081C3;
 }
 
 a.btn-cta{
-font-family: Lato-Light;
+font-family: 'Lato-Light', sans-serif;
 font-size: 16px;
 color: #FFFFFF;
 text-shadow: 0 1px 0 #BDBDBD;
@@ -116,7 +116,7 @@ border-radius: 10px;
 }
 
 a.btn-primary{
-font-family: Lato-Light;
+font-family: 'Lato-Light',sans-serif;
 font-size: 16px;
 color: #FFFFFF;
 text-shadow: 0 1px 0 #BDBDBD;
@@ -130,7 +130,7 @@ text-transform: uppercase;
 .ncgtp-navbar .logo {mix-blend-mode: darken;}
 .gtpBurger {transform: scale(1.5);cursor: pointer; position:absolute; right:0px; margin:20px;}
 .navContainer {display: none;}
-.expand { display: block;padding-top:25px;}
+.expand { display: block;padding-top:75px;}
 .main-nav-column {float: left;width: 20%;}
 .main-nav-header { size: 2rem;color: white;}
 .main-nav-header-content, .main-nav-footer-content {list-style: none;color: white;display: inline-block;}

@@ -96,8 +96,9 @@
 text-align: center;
 }
 h4.reasonCardTitles{
-font-family: Lato-Bold;
+font-family: 'Lato-Bold', sans-serif;
 font-size: 18px;
+font-weight:Bold;
 color: #FFFFFF;
 }
 

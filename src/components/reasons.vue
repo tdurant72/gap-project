@@ -73,8 +73,9 @@ img{
     vertical-align: middle;
 }
 h5.reasonText{
-font-family: Lato-Light;
+font-family: 'Lato-Light', sans-serif;
 font-size: 14px;
+font-weight:Light;
 color: #202020;
 padding-bottom: 20px;
 }

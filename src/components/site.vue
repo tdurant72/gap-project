@@ -50,8 +50,9 @@ text-transform: uppercase;
   background-color: #fff;
 }
 p.siteText{
-font-family: Lato-Light;
+font-family: 'Lato-Light', sans-serif;
 font-size: 16px;
+font-weight:light;
 color: #212121;
 padding-top: 30px;
 padding-bottom: 50px;
@@ -68,8 +69,9 @@ margin-top: -20px;
 }
 
 p.siteText{
-font-family: Lato-Light;
+font-family: 'Lato-Light', sans-serif;
 font-size: 16px;
+font-weight:light;
 padding: 0.8em;
 line-height: 125%;
 color: #212121;

@@ -51,8 +51,9 @@ text-align: center;
 }
 
 p.industriesText{
-font-family: Lato-Light;
+font-family: 'Lato-Light', sans-serif;
 font-size: 16px;
+font-weight:Light;
 color: #212121;
 letter-spacing: 0;
 line-height: 125%;

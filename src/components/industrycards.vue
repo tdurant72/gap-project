@@ -36,8 +36,9 @@ export default {
 <style scoped>
 
 h4.industryCardTitles{
-font-family: Lato-Bold;
+font-family: 'Lato-Bold', sans-serif;
 font-size: 16px;
+font-weight:Bold;
 color: #212121;
 letter-spacing: -0.28px;
 }
@@ -101,8 +102,9 @@ box-shadow: 0 2px 0 0 #1976D2, inset 0 2px 0 0 #BBDEFB; */
 border-radius: 10px;
 }
 a.btn-primary{
-font-family: Lato-Light;
+font-family: 'Lato-Light', sans-serif;
 font-size: 14px;
+font-weight:Light;
 color: #FFFFFF;
 margin-left: 20px;
 }
