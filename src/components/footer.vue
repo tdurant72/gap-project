@@ -218,7 +218,7 @@
                 </div>
             </div>
         </div>-->
-    /*wards footer*/
+
         <div class="site-footer__top">
                     <div class="site-footer__main row">
                         <div class="grid__cell col-lg-4">
@@ -293,29 +293,7 @@
                                 <i class="icon-linkedin icon"></i>
                             </a>
                         </li>
-                                        <!--
-                                        <li class="social-list__item">
-                                            <a class="social-list__link" target="_blank" href="https://www.youtube.com/ncdotcommunications">
-                                                <span class="social-list__link-text">YouTube
-                                                </span>
-                                                <i class="icon-youtube"></i>
-                                            </a>
-                                        </li>
-                                        <li class="social-list__item">
-                                            <a class="social-list__link" target="_blank" href="https://www.flickr.com/photos/ncdot">
-                                                <span class="social-list__link-text">Flickr
-                                                </span>
-                                                <i class="icon-flickr"></i>
-                                            </a>
-                                        </li>
-                                        <li class="social-list__item">
-                                            <a class="social-list__link" target="_blank" href="https://www.instagram.com/ncdotcom/">
-                                                <span class="social-list__link-text">Instagram
-                                                </span>
-                                                <i class="icon-instagram icon"></i>
-                                            </a>
-                                        </li>
-                                    -->
+
                                 </ul>
                             </div>
                         </div>
@@ -446,7 +424,7 @@ li{
 }
 
 .main-nav-footer-content li:first-child a {
-    font-family: 'Lato-Bold,, sans-serif;
+    font-family: 'Lato-Bold', sans-serif;
     font-weight:bold;
     font-size: 18px;
 }
