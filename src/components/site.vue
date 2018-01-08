@@ -18,7 +18,7 @@
           </div>
         </div>
         <div class="row">
-            <div class="col-lg-2 col-lg-offset-9 btn-push">
+            <div class="col-lg-2 col-lg-offset-9 col-md-offset-8 btn-push">
                 <p class="lead">
                 <a class="btn btn-cta btn-lg btn-md " href="themes.html" role="button">Available sites</a>
                 </p>

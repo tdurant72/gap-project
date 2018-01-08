@@ -1,7 +1,7 @@
 <template>
   <div class="container industrycards">
-    <div class="row  no-gutters center">
-        <div class="col col-md-3 col-lg-1 col-sm-0"></div>
+    <div class="row justify-content-around  no-gutters center">
+        
         <div v-for="item in items" class="col-md-3 col-lg-2 col-sm-12 ">
             <div class="ind-card " data-aos="flip-up" data-aos-duration="600">
                 <div class="">

@@ -7,7 +7,7 @@
             <div class="card col-lg-10 col-lg-offset-1" >
             <p class="aboutText">A multi-modal industrial park and airports strategically located on the east coast of the United States, to support the manufacturing and logistic needs of the aviation, aerospace, defense, emergency response and advanced materials industries. </p>
             </div>
-            <div class="col-lg-2 col-lg-offset-9 btn-push">
+            <div class="col-lg-2 col-lg-offset-9 col-md-offset-8 btn-push">
                 <p class="lead">
                 <a class="btn btn-cta btn-lg btn-md" href="themes.html" role="button">Learn More</a>
                 </p>

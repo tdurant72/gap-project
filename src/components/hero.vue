@@ -175,9 +175,16 @@ padding: 0;
 
 /*test*/
 .split{
-    top:0;
-    position: absolute;
-    height: 100vh;
+    top:50%;
+    left:50%;
+    position: fixed;
+    min-height:100%;
+    min-width:100%;
+    width:auto
+    height: auto;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size:cover;
 }
 .left .inner {
   margin-left: 9%;
@@ -290,14 +297,14 @@ button{
 
 }
 .callouts:hover .calloutText{
-    width: 400px;
+    width: 600px;
     opacity: 1;
     transition: all 0.3s ease-out;
     
 }
 .callouts:hover .ctLeft{
-    width: 400px;
-    left: -380px;
+    width: 600px;
+    left: -580px;
     opacity: 1;
     transition: all 0.3s ease-out;
 }
@@ -364,7 +371,8 @@ button{
     width:80px;
     height: 80px;
     /* float: left; */
-    font-family: Montserrat-LightItalic;
+    font-family: 'Montserrat-LightItalic', sans-serif;
+    font-weight:ligher;
     font-size: 20px;
     transform: skewX(8deg);
 }
@@ -445,7 +453,6 @@ font-size: 40px;
 font-weight:bold;
 color: #FFFFFF;
 text-shadow: 0 2px 0 #1976D2;
-padding-top: 25%;
 padding-bottom: 10px;
 -webkit-text-stroke:1px #1976d2;
 } 
@@ -472,12 +479,13 @@ padding-bottom: 20px;
     right: 10%;
    position: absolute;
    width: 50%;
+   top: 30%;
 }
 .leftCont {
     left: 15%;
     position: absolute;
     width: 50%;
-    
+    top:30%;
 } 
 .btn-hero{
     width: 150px;
