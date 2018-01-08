@@ -10,7 +10,7 @@
                         <h5 class="reasonText">{{ item.desc}}</h5>
                     </div>
                     <div>
-                        <a class="btn btn-primary btn-lg btn-md why-btn" href="{{item.link}}" role="button">Learn More</a>
+                        <a class="btn btn-primary btn-lg btn-md why-btn" v-bind:href="item.link" role="button">Learn More</a>
                     </div>
                 </div>
             </div>
