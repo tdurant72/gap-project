@@ -440,18 +440,21 @@ button{
 
 h2.heroText{
 
-font-family: Montserrat-Bold;
+font-family: 'Montserrat-Bold', sans-serif;
 font-size: 40px;
+font-weight:bold;
 color: #FFFFFF;
 text-shadow: 0 2px 0 #1976D2;
-padding-top: 15%;
+padding-top: 25%;
 padding-bottom: 10px;
-
+-webkit-text-stroke:1px #1976d2;
 } 
 h3.heroText3{
-font-family: Montserrat-LightItalic;
+font-family: 'Montserrat-LightItalic',sans-serif;
 font-size: 30px;
+font-weight:LightItalic;
 color: #FFFFFF;
+text-shadow:0 1px 0 #1976d2;
 margin-left: 40px;
 padding-bottom: 20px;
 }

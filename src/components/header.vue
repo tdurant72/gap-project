@@ -265,6 +265,7 @@ body.sp-authenticated.ms-backgroundImage {1
 .gtpBurger {
     transform: scale(3);
     cursor: pointer;
+    float:right;
 }
 
 .navContainer {

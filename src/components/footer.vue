@@ -273,21 +273,21 @@
                     <ul class="social-list__list ">
                         <li class="social-list__item">
                             <a class="social-list__link" target="_blank" href="https://www.facebook.com/GlobalTransPark">
-                                <span class="social-list__link-text">Facebook
+                                <span class="social-list__link-text">
                                 </span>
                                 <i class="icon-facebook icon"></i>
                             </a>
                         </li>
                         <li class="social-list__item">
                             <a class="social-list__link" target="_blank" href="https://twitter.com/GlobalTransPark">
-                                <span class="social-list__link-text">Twitter
+                                <span class="social-list__link-text">
                                 </span>
-                                <i class="icon-twitter icon"></i>
+                                <i class="icon-instagram icon"></i>
                             </a>
                         </li>
                         <li class="social-list__item">
                             <a class="social-list__link" target="_blank" href="https://www.linkedin.com/company/287838">
-                                <span class="social-list__link-text">Linkedin
+                                <span class="social-list__link-text">
                                 </span>
                                 <!--TO DO: GET LINKEDIN ICON -->
                                 <i class="icon-linkedin icon"></i>

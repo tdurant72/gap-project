@@ -10,7 +10,7 @@
                 <img :src="item.img" class="card-img-top img-responsive">
                 
                     <p class="lead">
-                        <a class="btn btn-primary btn-lg btn-md" href="{{item.link}}" role="button">Learn More</a>
+                        <a class="btn btn-primary btn-lg btn-md" v-bind:href="item.link" role="button">Learn More</a>
                         </p>
                 </div>
             </div>
@@ -106,7 +106,7 @@ font-family: 'Lato-Light', sans-serif;
 font-size: 14px;
 font-weight:Light;
 color: #FFFFFF;
-margin-left: 20px;
+margin-left: 10px;
 }
 .industrycards{
     padding-bottom: 50px;
