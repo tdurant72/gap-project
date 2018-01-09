@@ -88,7 +88,7 @@
                 <a class="btn btn-primary buttonArrow" href="#why" role="button"><i class="glyphicon glyphicon-chevron-down"></i></a>
             </div>
         </div><!--/end vid wrapper -->
-        <div class="wrapper hidden-md-up>
+        <div class="wrapper hidden-md-up">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -208,7 +208,7 @@ padding: 0;
     position: fixed;
     min-height:100%;
     min-width:100%;
-    width:auto
+    width:auto;
     height: auto;
     -webkit-transform: translateY(-50%) translateX(-50%);
     transform: translateX(-50%) translateY(-50%);
