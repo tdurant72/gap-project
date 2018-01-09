@@ -96,11 +96,11 @@
                     
                 </ol>
                 <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img class="d-block img-fluid" src="../assets/img/hero-bkgd.jpg" alt="GTP">
+                    <div class="carousel-item active itm1">
+                        
                         <div class="carousel-caption d-none d-md-block">
-                            <h3 class="heroText">A world-class, 2,500  acre industrial & business park.</h3>
-                            <p class="heroText3">With multi-modal capabilities for global commerce.</p>
+                            <h3 class="heroTextMobile">A world-class, 2,500  acre industrial & business park.</h3>
+                            <p class="heroText3Mobile">With multi-modal capabilities for global commerce.</p>
                             <div>
                                 <a class="btn btn-primary btn-lg btn-hero btn-md" href="#" role="button">Grow With Us</a>
                             </div>
@@ -109,11 +109,11 @@
                              </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block img-fluid" src="../assets/img/NC-img.jpg" alt="NC Life">
+                    <div class="carousel-item itm2">
+                        
                         <div class="carousel-caption d-none d-md-block">
-                            <h3 class="heroText">North Carolina</h3>
-                            <p class="heroText3">where the living is easy.</p>
+                            <h3 class="heroTextMobile">North Carolina</h3>
+                            <p class="heroText3Mobile">where the living is easy.</p>
                         </div>
                     </div>
                 </div>
@@ -169,38 +169,34 @@ export default {
 padding: 0;
 }
 
-/* 
-#ncCulture {
-    transform: skew(-30deg);
-    margin-left: -1000px; */
-    /* width: calc(50vw + 1300px); */
-/* } */
-/* .vidShowing{
-    width: calc(50vw + 1300px);
+ .itm1 {
+    background: url(/../Style%20Library/static/img/hero-bkgd.jpg) no-repeat center center fixed;
 }
- .notShowing{
-    width: calc(50vw + 600px);
+ .itm2 {
+    background: url(/../Style%20Library/static/img/NC-img.jpg) no-repeat center center fixed;
 }
 
-/* .vid-showing{
-    width:80%;
-    z-index: 45;
-    overflow: hidden;
-    position: absolute;
+.carousel-item {
+    width: 100%;
+    -webkit-background-size: cover;
     background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-} */
-/* .GTP-vid{
-    width:80%;
+    height: 100vh;
 }
-.GTP-img{
-
+.heroText3Mobile {
+    font-size: 16px;
+    line-height: 110%;
 }
-.NC-img{
-
-} */
-
+.heroTextMobile {
+    font-size: 20px;
+}
+.carousel-indicators{
+    position:absolute;
+    bottom: 20%;
+}
+.carousel-caption{
+    position:absolute;
+    bottom:40%;
+}
 /*test*/
 .split{
     top:50%;

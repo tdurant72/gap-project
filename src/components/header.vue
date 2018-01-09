@@ -180,7 +180,7 @@
     <header class="site-header ncgtp-navbar">
         <div class="site-header__inner-wrapper">
 
-            <a href="/" class="logo logo--header " title="">NCGTP
+            <a href="/" class="logo logo--header " title="">
             </a>
 
             <i class="glyphicon glyphicon-menu-hamburger gtpBurger menu-btn" id="menu-btn"></i>    
