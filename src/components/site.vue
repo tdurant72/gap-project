@@ -5,7 +5,7 @@
         <div class="row">
             <h2 class="sectionTitle-light col-lg-8">site selection</h2>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="card col-lg-offset-1 col-lg-10" id="siteCard">
               <div class="row">
                 <div class="col-lg-6">
@@ -18,7 +18,7 @@
           </div>
         </div>
         <div class="row">
-            <div class="col-lg-2 col-lg-offset-9 col-md-offset-8 btn-push">
+            <div class="col-lg-2 col-lg-offset-9 col-md-2 col-md-offset-9 col-sm-offset-10 btn-push">
                 <p class="lead">
                 <a class="btn btn-cta btn-lg btn-md " href="themes.html" role="button">Available sites</a>
                 </p>
@@ -38,8 +38,9 @@ background-image: url("../assets/img/site-bkgd.jpg");
 }
 h2.sectionTitle-light{
 opacity: 0.7;
-font-family: Montserrat-Bold;
+font-family: 'Montserrat-Bold', sans-serif;
 font-size: 48px;
+font-wieght:bold;
 color: #FFFFFF;
 text-transform: uppercase;
 }
@@ -82,5 +83,8 @@ float: right;
 }
 .btn-push{
     padding-right: 0;
+}
+img#map{
+    width:100%;
 }
 </style>

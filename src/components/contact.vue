@@ -3,9 +3,9 @@
 <div class="jumbotron paral paralsec6" id="contact">
 <div class="container" >
         
-        <div class="row">
-            <div class="col-lg-offset-1 col-lg-10" id="contactCard">
-              <div class="row">
+        <div class="row justify-content-center">
+            <div class="col-lg-12" id="contactCard">
+              <div class="row justify-content-center">
                 <div class="col-lg-6">
                 <p class="contactText">To learn more about the services and facilities available at the N.C. Global TransPark, please fill out the form, or contact us directly. Your information will be kept confidential and will not be shared with any outside parties.</p>
                 <p class="contactText">
@@ -23,7 +23,7 @@
                   </a>
                 </p>
               </div>
-                <div class="card col-lg-5 col-lg-offset-1" id="formCard" data-aos="slide-left" data-aos-duration="800" data-aos-delay="200">
+                <div class="card col-lg-5 col-lg-offset-1 col-md-8 col-md-offset-4" id="formCard" data-aos="slide-left" data-aos-duration="800" data-aos-delay="200">
                       <div id="formContainer" >
                           <div class="primary media-wrap">
                               <div class="col-lg-12">
@@ -68,7 +68,8 @@
                               <div class="col-lg-6">
                                   <input type="checkbox" name="industrial" class="contact-learn-checkbox"/>
                                   <label for="industrial" class="contact-learn-label">Building/Sites</label>
-                                  <br>            
+                                </div>
+                                <div class="col-lg-6">           
                                   <input type="checkbox" name="composite" class="contact-learn-checkbox"/>
                                   <label for="composite" class="contact-learn-label">Composite Center</label>
                                   <br>
@@ -76,7 +77,8 @@
                               <div class="col-lg-6 chbxBottom">
                                   <input type="checkbox" name="airport" class="contact-learn-checkbox"/>
                                   <label for="airport" class="contact-learn-label">Airport</label>
-                                  <br>
+                                </div>
+                                <div class="col-lg-6">
                                   <input type="checkbox" name="general" class="contact-learn-checkbox"/>
                                   <label for="general" class="contact-learn-label">General Information</label>
                               </div>

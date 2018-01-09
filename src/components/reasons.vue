@@ -84,6 +84,7 @@ padding-bottom: 20px;
     position: relative;
     border: none;
     height:325px;
+    margin: 10px
 }
 .why-btn{
     bottom:0; left:30px; position:absolute;

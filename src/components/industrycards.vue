@@ -2,8 +2,8 @@
   <div class="container industrycards">
     <div class="row justify-content-around  no-gutters center">
         
-        <div v-for="item in items" class="col-md-3 col-lg-2 col-sm-12 ">
-            <div class="ind-card " data-aos="flip-up" data-aos-duration="600">
+        <div v-for="item in items" class="" data-aos="flip-up" data-aos-duration="600"> <!--fixed width cards means no cols-->
+            <div class="ind-card ">
                 <div class="">
                         <h4 class="top industryCardTitles">{{ item.name }}</h4>
                     </div>
@@ -37,7 +37,7 @@ export default {
 
 h4.industryCardTitles{
 font-family: 'Lato-Bold', sans-serif;
-font-size: 16px;
+font-size: 14px;
 font-weight:Bold;
 color: #212121;
 letter-spacing: -0.28px;

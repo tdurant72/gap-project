@@ -1,7 +1,5 @@
 
-#formContainer {
-    margin: 0 auto;
-}
+
 h3.panel {
 	padding-bottom: 2rem;
 }
@@ -2649,8 +2647,7 @@ input[type="checkbox"] {
         border-bottom-width: 0;
     }
 
-    .mod h3 {
-    }
+   
 
     .mod p {
         width: 100%;
@@ -4212,3 +4209,8 @@ ul li a .icon {    margin-right: 8px;  }
 
 }
 /*end media.css*/
+
+/*add on*/
+.grid__cell{
+    margin: 10px;
+}

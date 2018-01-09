@@ -43,7 +43,8 @@ background-color: #f6f6f6;
 }
 h2.sectionTitle-dark{
 opacity: 0.7;
-font-family: Montserrat-Bold;
+font-family: 'Montserrat-Bold', sans-serif;
+font-weight:bold;
 font-size: 48px;
 color: #212121;
 text-transform: uppercase;

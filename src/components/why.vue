@@ -6,7 +6,7 @@
 <app-reasons  ></app-reasons>
 <!-- <div class="container">
     <div class="row">
-        <div v-for="item in items" class="col-md-3 col-lg-2 col-sm-12">
+        <div v-for="item in items" class=""><!--fixed width cards means no cols-->
             <div class="card h-370">
                 <img :src="item.img" class="card-img-top">
                 <div class="card-body">
@@ -45,8 +45,9 @@ background-image: url("../assets/img/why-bkgd.jpg");
 }
 h2.sectionTitle-dark{
 opacity: 0.7;
-font-family: Montserrat-Bold;
+font-family: 'Montserrat-Bold', sans-serif;
 font-size: 48px;
+font-weight:bold;
 color: #212121;
 text-transform: uppercase;
 text-align: center;

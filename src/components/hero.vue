@@ -1,105 +1,133 @@
 <template>
-  <div class="jumbotron paral paralsec" id="hero">
-    <div class="wrapper">
-    <div class="left" :class="[leftActive ? 'leftNotshowing':'leftShowing']">
-        <div class="inner">
-           <div class="content-wrap"> 
-            <transition name="fade-left-content">
-              
-                  <div v-if="leftActive"  class="leftCont content-body">
-                      <h2 class="heroText">A world-class, 2,500  acre industrial & business park.
-                        </h2>
-                        <h3 class="heroText3">With multi-modal capabilities for global commerce.</h3>
+    <div class="jumbotron paral paralsec" id="hero">
+        <div class="wrapper hidden-sm-down">
+            <div class="left" :class="[leftActive ? 'leftNotshowing':'leftShowing']">
+                <div class="inner">
+                <div class="content-wrap"> 
+                    <transition name="fade-left-content">
+                        <div v-if="leftActive"  class="leftCont content-body">
+                            <h2 class="heroText">A world-class, 2,500  acre industrial & business park.
+                                </h2>
+                                <h3 class="heroText3">With multi-modal capabilities for global commerce.</h3>
+                                <div>
+                                    <a class="btn btn-primary btn-lg btn-hero btn-md" href="#" role="button">Grow With Us</a>
+                                </div>
+                                <div>
+                                    <a class="btn btn-primary btn-lg btn-md btn-hero" href="#" role="button">Contact</a>
+                                </div>
+                        </div>
+                    </transition>
+                </div>
+                    <!-- <img class="split" src="../assets/img/hero-bkgd.jpg" alt="GTP"> -->
+                    <video class="split" src="../assets/vids/left.mp4" poster="../assets/img/hero-bkgd.jpg" autoplay loop muted></video>
+                </div>
+            </div>
+            <div v-if="leftActive" class="controller" :class="[leftActive ? 'controlLeft':'controlRight']">
+                <div class="calloutContainer">
+                    <div class="callouts"  id="callout1">
+                        <span id="callout1text" class="calloutText ctLeft">Acres Shovel Ready</span>
+                        <button class="buttonCallouts btnLeft">900</button>
+                        
+                    </div>
+                    <div class="callouts"  id="callout2">
+                        <span id="callout2text" class="calloutText ctLeft">Acres Environmentally Permitted</span>
+                        <button class="buttonCallouts btnLeft">5,775</button>
+                    </div>
+                    <div class="callouts"  id="callout3">
+                        <span id="callout3text" class="calloutText  ctLeft">Global & National <br>Companies On-Site</span>
+                        <button class="buttonCallouts btnLeft">9</button>
+                    </div>
+                    <div class="callouts"  id="callout4">
+                        <span id="callout4text" class="calloutText ctLeft">Exiting Military Personnel <br>Entering Workforce</span>
+                        <button class="buttonCallouts  btnLeft">18K</button>
+                    </div>
+                    <button id="sliderBckBtn"  class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-right"></i></button>
+                </div>
+            </div>
+            <div v-if="rightActive" class="controller" :class="[rightActive ? 'controlRight':'controlLeft']">
+                <div class="calloutContainer">
+                    <div class="callouts" id="callout5">
+                        <span id="callout5text" class="calloutText">State for Business<br><i>(Forbes, 2017)</i></span>
+                        <button  class="buttonCallouts btnRight">#1</button>
+                    </div>
+                    <div class="callouts"  id="callout6">
+                        <span id="callout6text" class="calloutText">Lower housing costs<br>to National average</span>
+                        <button class="buttonCallouts btnRight">87%</button>
+                        
+                    </div>
+                    <div class="callouts" id="callout7">
+                        <span id="callout7text" class="calloutText ">Colleges & Universities</span>
+                        <button  class="buttonCallouts btnRight">111</button>
+                    </div>
+                    <div class="callouts"  id="callout8text">
+                        <span class="calloutText">Aerospace Manufacturing Attractiveness<br><i>(PricewaterhouseCoopers, 2016)</i></span>
+                        <button id="callout8" class="buttonCallouts  btnRight">#4</button>
+                        
+                    </div>
+                    <button id="sliderBckBtn" class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-left"></i></button>
+                </div>
+                
+            </div>
+            <div class="right" :class="[rightActive ? 'rightNotshowing':'rightShowing']">
+                <div class="inner">
+                    <!-- <img class="split" src="../assets/img/NC-img.jpg" alt="NC Life"> -->
+                    <video class="split" src="../assets/vids/right.mp4" poster="../assets/img/NC-img.jpg" autoplay loop muted></video>
+                    <div  class="content-wrap">
+                        <transition name="fade-right-content" >
+                        <div v-if="rightActive" class="rightCont content-body">
+                            <h2 class="heroText">North Carolina
+                                </h2>
+                                <h3 class="heroText3">where the living is easy.</h3>
+                        </div>
+                        </transition>
+                    </div>
+                    
+                </div>
+            </div>
+            <div  id="arrowContainer">
+                <a class="btn btn-primary buttonArrow" href="#why" role="button"><i class="glyphicon glyphicon-chevron-down"></i></a>
+            </div>
+        </div><!--/end vid wrapper -->
+        <div class="wrapper hidden-md-up>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img class="d-block img-fluid" src="../assets/img/hero-bkgd.jpg" alt="GTP">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="heroText">A world-class, 2,500  acre industrial & business park.</h3>
+                            <p class="heroText3">With multi-modal capabilities for global commerce.</p>
+                        </div>
                         <div>
                             <a class="btn btn-primary btn-lg btn-hero btn-md" href="#" role="button">Grow With Us</a>
                         </div>
                         <div>
                             <a class="btn btn-primary btn-lg btn-md btn-hero" href="#" role="button">Contact</a>
                         </div>
-                  </div>
-                  
-              
-              </transition>
-           </div>
-            <!-- <img class="split" src="../assets/img/hero-bkgd.jpg" alt="GTP"> -->
-            <video class="split" src="../assets/vids/left.mp4" poster="../assets/img/hero-bkgd.jpg" autoplay loop muted></video>
-        </div>
-    </div>
-    <div v-if="leftActive" class="controller" :class="[leftActive ? 'controlLeft':'controlRight']">
-                <div class="calloutContainer">
-            <div class="callouts"  id="callout1">
-                <span id="callout1text" class="calloutText ctLeft">Acres Shovel Ready</span>
-                <button class="buttonCallouts btnLeft">900</button>
-                
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid" src="../assets/img/NC-img.jpg" alt="NC Life">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="heroText">North Carolina</h3>
+                            <p class="heroText3">where the living is easy.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <div class="callouts"  id="callout2">
-                <span id="callout2text" class="calloutText ctLeft">Acres Environmentally Permitted</span>
-                <button class="buttonCallouts btnLeft">5,775</button>
-                
-            </div>
-            <div class="callouts"  id="callout3">
-                <span id="callout3text" class="calloutText  ctLeft">Global & National <br>Companies On-Site</span>
-                <button class="buttonCallouts btnLeft">9</button>
-            </div>
-            <div class="callouts"  id="callout4">
-                <span id="callout4text" class="calloutText ctLeft">Exiting Military Personnel <br>Entering Workforce</span>
-                <button class="buttonCallouts  btnLeft">18K</button>
-                
-            </div>
-            <button id="sliderBckBtn"  class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-right"></i></button>
-        </div>
-    </div>
-    <div v-if="rightActive" class="controller" :class="[rightActive ? 'controlRight':'controlLeft']">
-        <div class="calloutContainer">
-            <div class="callouts" id="callout5">
-                <span id="callout5text" class="calloutText">State for Business<br><i>(Forbes, 2017)</i></span>
-                <button  class="buttonCallouts btnRight">#1</button>
-            </div>
-            <div class="callouts"  id="callout6">
-                <span id="callout6text" class="calloutText">Lower housing costs<br>to National average</span>
-                <button class="buttonCallouts btnRight">87%</button>
-                
-            </div>
-            <div class="callouts" id="callout7">
-                <span id="callout7text" class="calloutText ">Colleges & Universities</span>
-                <button  class="buttonCallouts btnRight">111</button>
-            </div>
-            <div class="callouts"  id="callout8text">
-                <span class="calloutText">Aerospace Manufacturing Attractiveness<br><i>(PricewaterhouseCoopers, 2016)</i></span>
-                <button id="callout8" class="buttonCallouts  btnRight">#4</button>
-                
-            </div>
-            <button id="sliderBckBtn" class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-left"></i></button>
-        </div>
-        
-    </div>
-    <div class="right" :class="[rightActive ? 'rightNotshowing':'rightShowing']">
-        <div class="inner">
-            <!-- <img class="split" src="../assets/img/NC-img.jpg" alt="NC Life"> -->
-            <video class="split" src="../assets/vids/right.mp4" poster="../assets/img/NC-img.jpg" autoplay loop muted></video>
-            <div  class="content-wrap">
-                  <transition name="fade-right-content" >
-                  <div v-if="rightActive" class="rightCont content-body">
-                      <h2 class="heroText">North Carolina
-                        </h2>
-                        <h3 class="heroText3">where the living is easy.</h3>
-                  </div>
-                  </transition>
-              </div>
-            
-        </div>
-    </div>
-    <div  id="arrowContainer">
-        <a class="btn btn-primary buttonArrow" href="#why" role="button"><i class="glyphicon glyphicon-chevron-down"></i></a>
-    </div>
-    </div>
-
-
-
-      <div class="hero-overlay">
-
-      </div> 
-    </div>
+        </div><!--/end pic wrapper-->
+    </div> 
 </template>
 <script>
 var wrapper = $('#wrapper');
@@ -447,7 +475,6 @@ button{
 }
 
 h2.heroText{
-
 font-family: 'Montserrat-Bold', sans-serif;
 font-size: 40px;
 font-weight:bold;
