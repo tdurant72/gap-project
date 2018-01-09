@@ -88,8 +88,8 @@
                 <a class="btn btn-primary buttonArrow" href="#why" role="button"><i class="glyphicon glyphicon-chevron-down"></i></a>
             </div>
         </div><!--/end vid wrapper -->
-        <div class="wrapper hidden-md-up">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="hidden-md-up">
+            <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -101,12 +101,12 @@
                         <div class="carousel-caption d-none d-md-block">
                             <h3 class="heroText">A world-class, 2,500  acre industrial & business park.</h3>
                             <p class="heroText3">With multi-modal capabilities for global commerce.</p>
-                        </div>
-                        <div>
-                            <a class="btn btn-primary btn-lg btn-hero btn-md" href="#" role="button">Grow With Us</a>
-                        </div>
-                        <div>
-                            <a class="btn btn-primary btn-lg btn-md btn-hero" href="#" role="button">Contact</a>
+                            <div>
+                                <a class="btn btn-primary btn-lg btn-hero btn-md" href="#" role="button">Grow With Us</a>
+                            </div>
+                            <div>
+                                <a class="btn btn-primary btn-lg btn-md btn-hero" href="#" role="button">Contact</a>
+                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">

@@ -31,7 +31,7 @@ font-family: 'Montserrat-Bold', sans-serif;
 font-size: 60px;
 font-weight:bold;
 color: #FFFFFF;
-padding-left: 10%;
+
 }
 
 p.aboutText{

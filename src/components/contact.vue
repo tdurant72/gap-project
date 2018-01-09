@@ -23,7 +23,7 @@
                   </a>
                 </p>
               </div>
-                <div class="card col-lg-5 col-lg-offset-1 col-md-8 col-md-offset-4" id="formCard" data-aos="slide-left" data-aos-duration="800" data-aos-delay="200">
+                <div class="card col-lg-5 col-lg-offset-1 col-md-8 col-md-offset-4" id="formCard" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
                       <div id="formContainer" >
                           <div class="primary media-wrap">
                               <div class="col-lg-12">
@@ -180,7 +180,7 @@ font-weight:normal;
 #formCard{
   padding-top: 40px;
   padding-bottom: 40px;
-  top:-20px;
+  
 }
 #submitFormButton{
   float: right;
