@@ -6,7 +6,7 @@
                   <h2 class="bannerText">Top 10 Reasons to Move To Eastern NC</h2>
               </div>
               <div class="ccol-lg-3 col-md-3">
-                  <a class="btn btn-cta btn-lg btn-md " id="moveBtn" href="themes.html" role="button">Learn More</a>
+                  <a class="btn btn-cta btn-lg btn-md " id="moveBtn" href="https://stage-wwwtest.ncgtp.com/live/Pages/10-reasons.aspx" role="button">Learn More</a>
                   
               </div>
           </div>

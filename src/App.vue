@@ -142,7 +142,7 @@ text-transform: uppercase;
 .social-list__list {text-align: center;}
 li.social-list__item { transform: scale(3);padding: 0 2rem;}
 .site-footer {margin-top: 2rem;}
-.site-footer, .site-footer__bottom, .social-list  { background: #0c98e2;}
+.site-footer, .site-footer__bottom  { background: #0c98e2;}
 .main-nav-footer-location-info a {text-decoration: none; cursor: text;}
 ul.main-nav-footer-content.main-nav-footer-location-info > p {font-size: 16px;font-family: 'Lato',sans-serif;}
 .site-footer__main.row { padding-bottom: 20px;}

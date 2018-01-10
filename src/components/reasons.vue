@@ -1,20 +1,44 @@
 <template>
     <div class="container" >
     <div class="row " data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
-        <!-- <div class="col col-md-2 col-lg-1 col-sm-0"></div> -->
-        <div v-for="item in items" class="col-md-4 col-lg-4 col-sm-12 " :key="item.name">
+        <div  class="col-md-4 col-lg-4 col-sm-12 ">
+            <div class="text-center res-card">
+                <li><span aria-hidden="false" data-icon="&#xe98b;" class="icon-Increasing-Chart2" id="growIconRC"></span></li>
+                
+                    <div>
+                        <h5 class="reasonText">How & why to grow your company at NC Global TransPark.</h5>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary btn-lg btn-md why-btn" href="#grow" role="button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-12 " >
             <div class="text-center res-card">
                 <img :src="item.img" class="card-img-top">
                 
                     <div>
-                        <h5 class="reasonText">{{ item.desc}}</h5>
+                        <h5 class="reasonText">Experience the quality of life we have to offer.</h5>
                     </div>
                     <div>
-                        <a class="btn btn-primary btn-lg btn-md why-btn" v-bind:href="item.link" role="button">Learn More</a>
+                        <a class="btn btn-primary btn-lg btn-md why-btn" href="#live" role="button">Learn More</a>
                     </div>
                 </div>
             </div>
-        
+        </div>
+        <div  class="col-md-4 col-lg-4 col-sm-12 " ">
+            <div class="text-center res-card">
+                <img :src="item.img" class="card-img-top">
+                
+                    <div>
+                        <h5 class="reasonText">A customizable workforce with state of the art training.</h5>
+                    </div>
+                    <div>
+                        <a class="btn btn-primary btn-lg btn-md why-btn" href="#work" role="button">Learn More</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -54,6 +78,10 @@ img{
     margin: auto;
     padding-bottom: 20px;
 } 
+
+#growIconRC{
+    font-size:50px;
+}
 .card{
     position: relative;
     border: none;

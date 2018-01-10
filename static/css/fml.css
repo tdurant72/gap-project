@@ -2728,7 +2728,7 @@ input[type="checkbox"] {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#515e67', EndColorStr='#32424c');
 }
 
-.vertical-tabs. a .supplemental {
+.vertical-tabs a .supplemental {
     display: none;
 }
 
@@ -3133,7 +3133,7 @@ h2.with-icon .icon {
 }
 
 textarea.code-block {
-    width: 100%;
+    
     position: relative;
     resize: none;
     overflow: hidden;
@@ -3295,7 +3295,7 @@ textarea.code-block {
 
 code.documentation {
     background-color: #ffffcc;
-    text-shaodow: 0 -1px 0 rgba(255,255,255,1);
+    text-shadow: 0 -1px 0 rgba(255,255,255,1);
 }
 
 /* end core.css */
@@ -3610,7 +3610,6 @@ ul.study-header.horizontal-list li:first-child {
 						
 #site-header ul#nav-main-list li a{
 		display: inline-block !important;
-		float: left;
 		line-height: 50px;
 		}
 		
@@ -4211,6 +4210,6 @@ ul li a .icon {    margin-right: 8px;  }
 /*end media.css*/
 
 /*add on*/
-.grid__cell{
-    margin: 10px;
+#formContainer{
+    margin: 0;
 }

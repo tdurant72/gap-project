@@ -1,182 +1,4 @@
 <template>
-<!--
-    <nav class="navbar  fixed-top bg-faded" role="navigation" style="padding: 0px;">
-  <button id="toggler" class="navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsing-navbar">
-    &#9776;
- </button>
-        <a class="navbar-brand" href="#">
-            <img src="../assets/img/logo.jpg" height="41" alt="">
-        </a>
-  <div class="collapse navbar-toggleable col-sm-8 col-sm-offset-3" id="collapsing-navbar">
-    <ul class="nav navbar-nav">
-      <li class="nav-item home">
-        <a href="#" class="nav-link primary active" id="home">Home</a>
-      </li>
-      <li class="nav-item dropdown menu-large">
-        <a class="nav-link primary" data-toggle="dropdown" href="#" id="grow">Grow</a>
-        <ul class="dropdown-menu megamenu row">
-          <li class="col-sm-3 col-sm-offset-1">
-            <ul>
-                <li>
-                    <a href="#" class="secondary">
-                        <i class="secondary" aria-hidden="true">
-                        </i> Site Selection
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="secondary">
-                        <i class="fa fa-circle" aria-hidden="true">
-                        </i>Accessibility
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="secondary">
-                        <i class="fa fa-circle" aria-hidden="true">
-                        </i>Foreign Trade Zone
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="secondary">
-                        <i class="fa fa-circle" aria-hidden="true">
-                        </i>Workforce
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="secondary">
-                        <i class="fa fa-circle" aria-hidden="true">
-                        </i>Development & Training
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="secondary">
-                        <i class="fa fa-circle" aria-hidden="true">
-                        </i>Incentives & Resources
-                    </a>
-                </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-   
-      <li class="nav-item dropdown menu-large">
-        <a class="nav-link primary" data-toggle="dropdown" href="#" id="work">Work</a>
-        <ul class="dropdown-menu megamenu row">
-          <li class="col-sm-3 col-sm-offset-2">
-            <ul>
-              <li>
-                    <a href="#" class="secondary">
-                        <i class="secondary" aria-hidden="true">
-                        </i>Major Employers
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="secondary">
-                        <i class="fa fa-circle" aria-hidden="true">
-                        </i>GTP Jobs
-                    </a>
-                </li>
-              <li><a href="#" class="secondary"><i class="fa fa-circle" aria-hidden="true"></i>Workforce</a></li>
-              <li>
-                  <a href="#" class="secondary">
-                        <i class="fa fa-circle" aria-hidden="true">
-                        </i>Development & Training
-                    </a>
-                </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-
-      <li class="nav-item dropdown menu-large">
-        <a class="nav-link primary" data-toggle="dropdown" href="#" id="live">Live</a>
-        <ul class="dropdown-menu megamenu row">
-          <li class="col-sm-3 col-sm-offset-3">
-            <ul>
-              <li>
-                  <a href="#" class="secondary">
-                    <i class="secondary" aria-hidden="true">
-                    </i>Why Eastern NC
-                  </a>
-                </li>
-              <li><a href="#" class="secondary"><i class="fa fa-circle" aria-hidden="true"></i>NC Events</a></li>
-              <li><a href="#" class="secondary"><i class="fa fa-circle" aria-hidden="true"></i>Attractions & Culture</a></li>
-              <li>
-                  <a href="#" class="secondary">
-                        <i class="fa fa-circle" aria-hidden="true">
-                        </i>Econonmy
-                    </a>
-                </li>
-                <li>
-                  <a href="#" class="secondary">
-                        <i class="fa fa-circle" aria-hidden="true">
-                        </i>History
-                    </a>
-                </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-
-      <li class="nav-item dropdown menu-large">
-        <a class="nav-link primary" data-toggle="dropdown" href="#" id="resources">Resources</a>
-        <ul class="dropdown-menu megamenu row">
-          <li class="col-sm-3 col-sm-offset-4">
-            <ul>
-              <li>
-                  <a href="#" class="secondary">
-                    <i class="secondary" aria-hidden="true">
-                    </i>Industry News
-                  </a>
-                </li>
-              <li>
-                    <a href="#" class="secondary">
-                        <i class="fa fa-circle" aria-hidden="true">
-                        </i>Environment
-                    </a>
-                </li>
-              <li><a href="#" class="secondary"><i class="fa fa-circle" aria-hidden="true"></i>RFP's & RFQ's</a></li>
-              <li>
-                  <a href="#" class="secondary">
-                        <i class="fa fa-circle" aria-hidden="true">
-                        </i>Maps
-                    </a>
-                </li>
-                <li>
-                  <a href="#" class="secondary">
-                        <i class="fa fa-circle" aria-hidden="true">
-                        </i>Downloads
-                    </a>
-                </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-
-      <li class="nav-item dropdown menu-large">
-        <a class="nav-link primary" data-toggle="dropdown" href="#">Contact</a>
-        <ul class="dropdown-menu megamenu row">
-          <li class="col-sm-3 col-sm-offset-6">
-            <ul>
-              <li>
-                  <a href="#" class="secondary">
-                    <i class="fa fa-check" aria-hidden="true">
-                    </i>Contact Us
-                  </a>
-                </li>
-              <li>
-                  <a href="#" class="secondary"><i class="fa fa-circle" aria-hidden="true"></i>Meet the Director</a></li>
-              <li><a href="#" class="secondary"><i class="fa fa-circle" aria-hidden="true"></i>Our Team</a></li>
-              <li><a href="#" class="secondary"><i class="fa fa-circle" aria-hidden="true"></i>Board of Directors</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-
-    </ul>
-  </div>
-</nav>    
- -->
-
     <header class="site-header ncgtp-navbar">
         <div class="site-header__inner-wrapper">
 
@@ -187,7 +9,7 @@
                     
                 
         </div>
-        <div class="navContainer row">
+        <div class="navContainer ">
             <div class="main-nav-column col-lg-offset-1 col-lg-2">
                 <ul class="main-nav-header-content main-nav-grow">
                     <!--<a href="#">Link 1</a> -->
@@ -260,6 +82,7 @@ body.sp-authenticated.ms-backgroundImage {1
 
 .ncgtp-navbar .logo {
     background-image: url(../assets/img/logo.jpg);
+    width:300px;
 }
 
 .gtpBurger {
@@ -295,6 +118,7 @@ body.sp-authenticated.ms-backgroundImage {1
 .main-nav-header-content li{
     display: inline-block;
     width: 100%;
+    line-height:110%;
 }
 
 .main-nav-header-content li:first-child a{
@@ -342,7 +166,11 @@ li.social-list__item {
     cursor: text;
 }
 
-
+@media only screen and (min-width: 600px){
+    .main-nav-column {
+    width: auto;
+    }
+}
 
 
 

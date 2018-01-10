@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-lg-2 col-lg-offset-9 col-md-2 col-md-offset-9 col-sm-offset-10 btn-push">
                 <p class="lead">
-                <a class="btn btn-cta btn-lg btn-md " href="themes.html" role="button">Available sites</a>
+                <a class="btn btn-cta btn-lg btn-md " href="https://stage-wwwtest.ncgtp.com/grow/Pages/site-selection.aspx" role="button">Available sites</a>
                 </p>
             </div>
         </div>

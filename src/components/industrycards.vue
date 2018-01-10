@@ -1,6 +1,6 @@
 <template>
   <div class="container industrycards">
-    <div class="row justify-content-around  no-gutters center">
+    <div class="row justify-content-center">
         
         <div v-for="item in items" class="" data-aos="flip-up" data-aos-duration="600"> <!--fixed width cards means no cols-->
             <div class="ind-card ">

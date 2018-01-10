@@ -10,10 +10,10 @@
                                 </h2>
                                 <h3 class="heroText3">With multi-modal capabilities for global commerce.</h3>
                                 <div>
-                                    <a class="btn btn-primary btn-lg btn-hero btn-md" href="#" role="button">Grow With Us</a>
+                                    <a class="btn btn-primary btn-lg btn-hero btn-md" href="https://stage-wwwtest.ncgtp.com/grow/Pages/default.aspx" role="button">Grow With Us</a>
                                 </div>
                                 <div>
-                                    <a class="btn btn-primary btn-lg btn-md btn-hero" href="#" role="button">Contact</a>
+                                    <a class="btn btn-primary btn-lg btn-md btn-hero" href="https://stage-wwwtest.ncgtp.com/contact/Pages/default.aspx" role="button">Contact</a>
                                 </div>
                         </div>
                     </transition>
@@ -98,7 +98,7 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active itm1">
                         
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-md-block">
                             <h3 class="heroTextMobile">A world-class, 2,500  acre industrial & business park.</h3>
                             <p class="heroText3Mobile">With multi-modal capabilities for global commerce.</p>
                             <div>
@@ -111,7 +111,7 @@
                     </div>
                     <div class="carousel-item itm2">
                         
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-md-block">
                             <h3 class="heroTextMobile">North Carolina</h3>
                             <p class="heroText3Mobile">where the living is easy.</p>
                         </div>
@@ -170,10 +170,10 @@ padding: 0;
 }
 
  .itm1 {
-    background: url(/../Style%20Library/static/img/hero-bkgd.jpg) no-repeat center center fixed;
+    background: url(../assets/img/hero-bkgd.jpg) no-repeat center center fixed;
 }
  .itm2 {
-    background: url(/../Style%20Library/static/img/NC-img.jpg) no-repeat center center fixed;
+    background: url(../assets/img/NC-img.jpg) no-repeat center center fixed;
 }
 
 .carousel-item {
@@ -183,11 +183,27 @@ padding: 0;
     height: 100vh;
 }
 .heroText3Mobile {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 110%;
+    color:#337ab7;
+    text-shadow:1px 0 0;
+    font-weight: normal;
 }
 .heroTextMobile {
-    font-size: 20px;
+    font-size: 22px;
+    color:#337ab7;
+    text-shadow: 1px 0 0;
+    font-weight: bold;
+}
+.cap-mobile {
+    width: 80%;
+    text-align: center;
+    left: 7%;
+}
+
+a.btn-mobile {
+    margin-right: 10px;
+    font-size: 12px;
 }
 .carousel-indicators{
     position:absolute;
@@ -195,7 +211,7 @@ padding: 0;
 }
 .carousel-caption{
     position:absolute;
-    bottom:40%;
+    top:30%;
 }
 /*test*/
 .split{
