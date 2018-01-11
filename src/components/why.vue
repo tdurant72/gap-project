@@ -1,26 +1,14 @@
 <template>
   <!-- Second Parallax Section -->
-<div class="jumbotron paral-sm paralsec2" id="why">
-<h2 class="display-3 sectionTitle-dark">why global transpark</h2>
-<!-- <app-statcards></app-statcards> -->
-<app-reasons  ></app-reasons>
-<!-- <div class="container">
-    <div class="row">
-        <div v-for="item in items" class=""><!--fixed width cards means no cols-->
-            <div class="card h-370">
-                <img :src="item.img" class="card-img-top">
-                <div class="card-body">
-                    <div class="card-title">{{ item.name }}</div>
-                    <div>
-                        <span class="badge badge-pill badge-info">${{ item.price }}</span>
-                    </div>
-                </div>
+    <div class="jumbotron paral-sm paralsec2" id="why">
+        <div class="row align-content-center" id="whyCont">
+            <div class="col">
+    <h2 class="display-3 sectionTitle-dark">why global transpark</h2>
+    <app-statcards></app-statcards>
+    <!-- <app-reasons  ></app-reasons> -->
             </div>
         </div>
     </div>
-</div> -->
-
-</div>
 </template>
 <script>
 import statcards from './statcards.vue';
@@ -51,5 +39,8 @@ font-weight:bold;
 color: #212121;
 text-transform: uppercase;
 text-align: center;
+margin-top: 50px;
+margin-bottom: 50px;
 }
+
 </style>

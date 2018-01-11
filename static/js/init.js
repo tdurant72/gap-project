@@ -6,9 +6,11 @@ AOS.init({
   }, {offset:'50%'});
 
   jQuery(document).ready(function($) {
-            $('.navbar-toggle').click(function(event) {
-            $('.navbar-collapse').toggle('in');
-          });
+        $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+         
 
           initNav();
           

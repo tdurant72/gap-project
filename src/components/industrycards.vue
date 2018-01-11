@@ -1,18 +1,20 @@
 <template>
   <div class="container industrycards">
     <div class="row justify-content-center">
-        
-        <div v-for="item in items" class="" data-aos="flip-up" data-aos-duration="600"> <!--fixed width cards means no cols-->
-            <div class="ind-card ">
+        <div v-for="item in items" class="col-lg-2" :key="item.name" > <!--fixed width cards means no cols-->
+            
                 <div class="">
                         <h4 class="top industryCardTitles">{{ item.name }}</h4>
                     </div>
-                <img :src="item.img" class="card-img-top img-responsive">
-                
-                    <p class="lead">
-                        <a class="btn btn-primary btn-lg btn-md" v-bind:href="item.link" role="button">Learn More</a>
-                        </p>
+                <img :src="item.img" class="card-img-top">
                 </div>
+           
+        </div>
+        <div class="row xtra">
+            <div class="col-lg-12">
+                <p class="lead">
+                        <a class="btn btn-primary btn-lg btn-md" href="#all" role="button">View All</a>
+                        </p>
             </div>
         </div>
     </div>
@@ -23,18 +25,20 @@ export default {
     data:  function(items) {
         return{
             items: [
-            {name: 'AEROSPACE & AVIATION', img: require('../assets/img/airplane-icon.png'),link:'#aerospace'},
-            {name: 'ADVANCED MANUFACTURING', img: require('../assets/img/advanced-icon.png'), link:'#manufacturing'},
-            {name: 'LOGISTICS & EXPORTING', img: require ('../assets/img/ship-icon.png'), link:'#logistics'},
-            {name: 'DEFENSE & SECURITY', img: require ('../assets/img/defense-icon.png'), link:'#defense'},
-            {name: 'EMERGENCY RESPONSE', img: require ('../assets/img/truck-icon.png'), link:'#emergency'}
+            {name: 'AEROSPACE & AVIATION', img: require('../assets/img/icon-aero.png'),link:'#aerospace'},
+            {name: 'ADVANCED MANUFACTURING', img: require('../assets/img/icon-man.png'), link:'#manufacturing'},
+            {name: 'LOGISTICS & EXPORTING', img: require ('../assets/img/icon-log.png'), link:'#logistics'},
+            {name: 'DEFENSE & SECURITY', img: require ('../assets/img/icon-def.png'), link:'#defense'},
+            {name: 'EMERGENCY RESPONSE', img: require ('../assets/img/icon-emer.png'), link:'#emergency'}
             ]
         }
   }
 }
 </script>
 <style scoped>
-
+.xtra{
+    margin-top: 40px;
+}
 h4.industryCardTitles{
 font-family: 'Lato-Bold', sans-serif;
 font-size: 14px;

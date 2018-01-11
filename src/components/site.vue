@@ -3,10 +3,10 @@
 <div class="jumbotron paral paralsec5" >
 <div class="container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
         <div class="row">
-            <h2 class="sectionTitle-light col-lg-8">site selection</h2>
+            <h2 class="sectionTitle-light col-lg-8 col-lg-offset-1">site selection</h2>
         </div>
         <div class="row justify-content-center">
-            <div class="card col-lg-offset-1 col-lg-10" id="siteCard">
+            <div class="card col-lg-offset-1 col-lg-11" id="siteCard">
               <div class="row">
                 <div class="col-lg-6">
                 <img id="map" src="../assets/img/map.jpg" alt="map-icon">
@@ -18,9 +18,14 @@
           </div>
         </div>
         <div class="row">
-            <div class="col-lg-2 col-lg-offset-9 col-md-2 col-md-offset-9 col-sm-offset-10 btn-push">
+            <div class="col-lg-2 col-lg-offset-8 col-md-2 col-md-offset-6 col-sm-6 btn-push">
                 <p class="lead">
-                <a class="btn btn-cta btn-lg btn-md " href="https://stage-wwwtest.ncgtp.com/grow/Pages/site-selection.aspx" role="button">Available sites</a>
+                <a class="btn btn-cta btn-lg btn-md " href="https://stage-wwwtest.ncgtp.com/grow/Pages/site-selection.aspx" role="button">Parcels</a>
+                </p>
+            </div>
+            <div class="col-lg-2 col-sm-6  btn-push">
+                <p class="lead">
+                <a class="btn btn-cta btn-lg btn-md " href="https://stage-wwwtest.ncgtp.com/grow/Pages/site-selection.aspx" role="button">Buildings</a>
                 </p>
             </div>
         </div>
@@ -34,7 +39,7 @@ export default {
 </script>
 <style scoped>
 .paralsec5 {
-background-image: url("../assets/img/site-bkgd.jpg");
+background-image: url("../assets/img/about-bkgd.jpg");
 }
 h2.sectionTitle-light{
 opacity: 0.7;

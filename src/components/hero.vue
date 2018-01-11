@@ -6,9 +6,9 @@
                 <div class="content-wrap"> 
                     <transition name="fade-left-content">
                         <div v-if="leftActive"  class="leftCont content-body">
-                            <h2 class="heroText">A world-class, 2,500  acre industrial & business park.
+                            <h2 class="heroText">Putting the World Within Your Reach
                                 </h2>
-                                <h3 class="heroText3">With multi-modal capabilities for global commerce.</h3>
+                                <h3 class="heroText3">A world-class, 2,500  acre industrial & business park.</h3>
                                 <div>
                                     <a class="btn btn-primary btn-lg btn-hero btn-md" href="https://stage-wwwtest.ncgtp.com/grow/Pages/default.aspx" role="button">Grow With Us</a>
                                 </div>
@@ -25,45 +25,38 @@
             <div v-if="leftActive" class="controller" :class="[leftActive ? 'controlLeft':'controlRight']">
                 <div class="calloutContainer">
                     <div class="callouts"  id="callout1">
-                        <span id="callout1text" class="calloutText ctLeft">Acres Shovel Ready</span>
-                        <button class="buttonCallouts btnLeft">900</button>
+                        <span id="callout1text" class="calloutText ctLeft">How we grow here</span>
+                        <a class="buttonCallouts btnLeft" role="button" href="https://stage-wwwtest.ncgtp.com/grow/Pages/default.aspx"   >GROW</a>
                         
                     </div>
                     <div class="callouts"  id="callout2">
-                        <span id="callout2text" class="calloutText ctLeft">Acres Environmentally Permitted</span>
-                        <button class="buttonCallouts btnLeft">5,775</button>
+                        <span id="callout2text" class="calloutText ctLeft">Our quality of life</span>
+                        <a class="buttonCallouts btnLeft" role="button" href="https://stage-wwwtest.ncgtp.com/live/Pages/default.aspx" >LIVE</a>
                     </div>
                     <div class="callouts"  id="callout3">
-                        <span id="callout3text" class="calloutText  ctLeft">Global & National <br>Companies On-Site</span>
-                        <button class="buttonCallouts btnLeft">9</button>
+                        <span id="callout3text" class="calloutText  ctLeft">State of the art<br>workforce training</span>
+                        <a class="buttonCallouts btnLeft" role="button" href="https://stage-wwwtest.ncgtp.com/work/Pages/default.aspx" >WORK</a>
                     </div>
-                    <div class="callouts"  id="callout4">
-                        <span id="callout4text" class="calloutText ctLeft">Exiting Military Personnel <br>Entering Workforce</span>
-                        <button class="buttonCallouts  btnLeft">18K</button>
-                    </div>
+                    
                     <button id="sliderBckBtn"  class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-right"></i></button>
                 </div>
             </div>
             <div v-if="rightActive" class="controller" :class="[rightActive ? 'controlRight':'controlLeft']">
                 <div class="calloutContainer">
                     <div class="callouts" id="callout5">
-                        <span id="callout5text" class="calloutText">State for Business<br><i>(Forbes, 2017)</i></span>
-                        <button  class="buttonCallouts btnRight">#1</button>
+                        <span id="callout5text" class="calloutText">How we grow here</span>
+                        <a  class="buttonCallouts btnRight" role="button" href="https://stage-wwwtest.ncgtp.com/grow/Pages/default.aspx" >GROW</a>
                     </div>
                     <div class="callouts"  id="callout6">
-                        <span id="callout6text" class="calloutText">Lower housing costs<br>to National average</span>
-                        <button class="buttonCallouts btnRight">87%</button>
+                        <span id="callout6text" class="calloutText">State of the art<br>workforce training</span>
+                        <a class="buttonCallouts btnRight" role="button" href="https://stage-wwwtest.ncgtp.com/work/Pages/default.aspx" >WORK</a>
                         
                     </div>
                     <div class="callouts" id="callout7">
-                        <span id="callout7text" class="calloutText ">Colleges & Universities</span>
-                        <button  class="buttonCallouts btnRight">111</button>
+                        <span id="callout7text" class="calloutText ">Our quality of life</span>
+                        <a  class="buttonCallouts btnRight" role="button" href="https://stage-wwwtest.ncgtp.com/live/Pages/default.aspx" >LIVE</a>
                     </div>
-                    <div class="callouts"  id="callout8text">
-                        <span class="calloutText">Aerospace Manufacturing Attractiveness<br><i>(PricewaterhouseCoopers, 2016)</i></span>
-                        <button id="callout8" class="buttonCallouts  btnRight">#4</button>
-                        
-                    </div>
+    
                     <button id="sliderBckBtn" class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-left"></i></button>
                 </div>
                 
@@ -84,9 +77,7 @@
                     
                 </div>
             </div>
-            <div  id="arrowContainer">
-                <a class="btn btn-primary buttonArrow" href="#why" role="button"><i class="glyphicon glyphicon-chevron-down"></i></a>
-            </div>
+
         </div><!--/end vid wrapper -->
         <div class="hidden-md-up">
             <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
@@ -99,8 +90,8 @@
                     <div class="carousel-item active itm1">
                         
                         <div class="carousel-caption d-md-block">
-                            <h3 class="heroTextMobile">A world-class, 2,500  acre industrial & business park.</h3>
-                            <p class="heroText3Mobile">With multi-modal capabilities for global commerce.</p>
+                            <h3 class="heroTextMobile">Putting the World Within Your Reach</h3>
+                            <p class="heroText3Mobile">A world-class, 2,500  acre industrial & business park.</p>
                             <div>
                                 <a class="btn btn-primary btn-lg btn-hero btn-md" href="#" role="button">Grow With Us</a>
                             </div>
@@ -314,18 +305,50 @@ button{
 
 .callouts{
     height: 100px;
+    margin:20px;
 }
 #callout1{
     position: relative;
-    right: 31px;
+    right: 61px;
 }
+#callout1:hover >span{
+        background:url(../assets/img/icon-grow-white.png) no-repeat left 10px center;
+    display: block;
+    background-color: #0167B8;
+}
+#callout5:hover >span{
+        background:url(../assets/img/icon-grow-white.png) no-repeat right 10px center;
+    display: block;
+    background-color: #0167B8;
+}
+#callout2:hover >span{
+        background:url(../assets/img/icon-live-white.png) no-repeat left 10px center;
+    display: block;
+    background-color: #0167B8;
+}
+#callout6:hover >span{
+        background:url(../assets/img/icon-live-white.png) no-repeat right 10px center;
+    display: block;
+    background-color: #0167B8;
+}
+#callout3:hover >span{
+        background:url(../assets/img/icon-work-white.png) no-repeat left 10px center;
+    display: block;
+    background-color: #0167B8;
+}
+#callout7:hover >span{
+        background:url(../assets/img/icon-work-white.png) no-repeat right 10px center;
+    display: block;
+    background-color: #0167B8;
+}
+
 #callout2{
     position: relative;
-    right: 34px;
+    right: 64px;
 }
 #callout3{
     position: relative;
-    right: 37px;
+    right: 67px;
 }
 #callout4{
     position: relative;
@@ -333,30 +356,30 @@ button{
 }
 #callout5{
     position: relative;
-    right: 31px;
+    right: 61px;
 
 }
 .callouts:hover .calloutText{
-    width: 600px;
+    width: 400px;
     opacity: 1;
     transition: all 0.3s ease-out;
     
 }
 .callouts:hover .ctLeft{
-    width: 600px;
-    left: -580px;
+    width: 400px;
+    left: -380px;
     opacity: 1;
     transition: all 0.3s ease-out;
 }
 
 .calloutText{
     opacity: 0;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 22px;
     padding: 10px;
     /* height: 60px; */
     line-height: 110%;
-    background-color: #0167B8;
+    
     height: 70px;
     /* padding: 6.25% 70% 0 0; */
     padding: 20px;
@@ -388,11 +411,11 @@ button{
 
 #callout6{
     position: relative;
-    right: 34px;
+    right: 64px;
 }
 #callout7{
     position: relative;
-    right: 32px;
+    right: 67px;
 }
 #callout8{
     position: relative;
@@ -403,13 +426,13 @@ button{
     background-color: #008EFF;
     border: none;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding-top: 35%;
     text-decoration: none;
     margin: 4px 2px;
     border-radius: 50%;
-    width:80px;
-    height: 80px;
+    width:90px;
+    height: 90px;
     /* float: left; */
     font-family: 'Montserrat-LightItalic', sans-serif;
     font-weight:ligher;
@@ -418,8 +441,8 @@ button{
 }
 .buttonCallouts:hover {
     background-color: #0167B8;
-    width:85px;
-    height: 85px;
+    width:100px;
+    height: 100px;
     -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
