@@ -128,7 +128,7 @@ text-transform: uppercase;
 .ncgtp-navbar a {float: left;display: block;text-align: center; padding: 5px 10px;text-decoration: none;}
 .ncgtp-navbar .logo {background-image: url(./assets/img/logo.jpg); width:400px; height:50px; margin:10px 10px	5px 10px; background-repeat:no-repeat; position:relative; left:20px;}
 .ncgtp-navbar .logo {mix-blend-mode: darken;}
-.gtpBurger {transform: scale(1.5);cursor: pointer; position:absolute; right:0px; margin:20px;}
+.gtpBurger {transform: scale(1.5);cursor: pointer;margin:20px;}
 .navContainer {display: none;}
 .expand { display: block;padding-top:75px;}
 .main-nav-column {float: left;width: 20%;}

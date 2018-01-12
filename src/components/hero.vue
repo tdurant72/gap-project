@@ -257,6 +257,7 @@ a.btn-mobile {
     width: 10px;
     background-color: #fff;
     transform: skewX(-8deg);
+    background-image:url("../assets/img/swoosh.svg");
 }
 .calloutContainer{
     position: absolute;
