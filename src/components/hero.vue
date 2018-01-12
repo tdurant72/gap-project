@@ -1,83 +1,90 @@
 <template>
     <div class="jumbotron paral paralsec" id="hero">
         <div class="wrapper hidden-sm-down">
-            <div class="left" :class="[leftActive ? 'leftNotshowing':'leftShowing']">
-                <div class="inner">
-                <div class="content-wrap"> 
-                    <transition name="fade-left-content">
-                        <div v-if="leftActive"  class="leftCont content-body">
-                            <h2 class="heroText">Putting the World Within Your Reach
-                                </h2>
-                                <h3 class="heroText3">A world-class, 2,500  acre industrial & business park.</h3>
-                                <div>
-                                    <a class="btn btn-primary btn-lg btn-hero btn-md" href="https://stage-wwwtest.ncgtp.com/grow/Pages/default.aspx" role="button">Grow With Us</a>
-                                </div>
-                                <div>
-                                    <a class="btn btn-primary btn-lg btn-md btn-hero" href="https://stage-wwwtest.ncgtp.com/contact/Pages/default.aspx" role="button">Contact</a>
-                                </div>
+    <div id="controllers"  >
+                <div v-if="leftActive" class="controller controllerImg" :class="[leftActive ? 'controlLeft':'controlRight']">
+                    <div class="calloutContainer">
+                        <div class="callouts"  id="callout1">
+                            <span id="callout1text" class="calloutText ctLeft">How we grow here</span>
+                            <a class="buttonCallouts btnLeft" role="button" href="https://stage-wwwtest.ncgtp.com/grow/Pages/default.aspx"   >GROW</a>
                         </div>
-                    </transition>
-                </div>
-                    <!-- <img class="split" src="../assets/img/hero-bkgd.jpg" alt="GTP"> -->
-                    <video class="split" src="../assets/vids/left.mp4" poster="../assets/img/hero-bkgd.jpg" autoplay loop muted></video>
-                </div>
-            </div>
-            <div v-if="leftActive" class="controller" :class="[leftActive ? 'controlLeft':'controlRight']">
-                <div class="calloutContainer">
-                    <div class="callouts"  id="callout1">
-                        <span id="callout1text" class="calloutText ctLeft">How we grow here</span>
-                        <a class="buttonCallouts btnLeft" role="button" href="https://stage-wwwtest.ncgtp.com/grow/Pages/default.aspx"   >GROW</a>
-                        
-                    </div>
-                    <div class="callouts"  id="callout2">
-                        <span id="callout2text" class="calloutText ctLeft">Our quality of life</span>
-                        <a class="buttonCallouts btnLeft" role="button" href="https://stage-wwwtest.ncgtp.com/live/Pages/default.aspx" >LIVE</a>
-                    </div>
-                    <div class="callouts"  id="callout3">
-                        <span id="callout3text" class="calloutText  ctLeft">State of the art<br>workforce training</span>
-                        <a class="buttonCallouts btnLeft" role="button" href="https://stage-wwwtest.ncgtp.com/work/Pages/default.aspx" >WORK</a>
-                    </div>
-                    
-                    <button id="sliderBckBtn"  class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-right"></i></button>
-                </div>
-            </div>
-            <div v-if="rightActive" class="controller" :class="[rightActive ? 'controlRight':'controlLeft']">
-                <div class="calloutContainer">
-                    <div class="callouts" id="callout5">
-                        <span id="callout5text" class="calloutText">How we grow here</span>
-                        <a  class="buttonCallouts btnRight" role="button" href="https://stage-wwwtest.ncgtp.com/grow/Pages/default.aspx" >GROW</a>
-                    </div>
-                    <div class="callouts"  id="callout6">
-                        <span id="callout6text" class="calloutText">State of the art<br>workforce training</span>
-                        <a class="buttonCallouts btnRight" role="button" href="https://stage-wwwtest.ncgtp.com/work/Pages/default.aspx" >WORK</a>
-                        
-                    </div>
-                    <div class="callouts" id="callout7">
-                        <span id="callout7text" class="calloutText ">Our quality of life</span>
-                        <a  class="buttonCallouts btnRight" role="button" href="https://stage-wwwtest.ncgtp.com/live/Pages/default.aspx" >LIVE</a>
-                    </div>
-    
-                    <button id="sliderBckBtn" class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-left"></i></button>
-                </div>
-                
-            </div>
-            <div class="right" :class="[rightActive ? 'rightNotshowing':'rightShowing']">
-                <div class="inner">
-                    <!-- <img class="split" src="../assets/img/NC-img.jpg" alt="NC Life"> -->
-                    <video class="split" src="../assets/vids/right.mp4" poster="../assets/img/NC-img.jpg" autoplay loop muted></video>
-                    <div  class="content-wrap">
-                        <transition name="fade-right-content" >
-                        <div v-if="rightActive" class="rightCont content-body">
-                            <h2 class="heroText">North Carolina
-                                </h2>
-                                <h3 class="heroText3">where the living is easy.</h3>
+                        <div class="callouts"  id="callout2">
+                            <span id="callout2text" class="calloutText ctLeft">Our quality of life</span>
+                            <a class="buttonCallouts btnLeft" role="button" href="https://stage-wwwtest.ncgtp.com/live/Pages/default.aspx" >LIVE</a>
                         </div>
-                        </transition>
+                        <div class="callouts"  id="callout3">
+                            <span id="callout3text" class="calloutText  ctLeft">State of the art<br>workforce training</span>
+                            <a class="buttonCallouts btnLeft" role="button" href="https://stage-wwwtest.ncgtp.com/work/Pages/default.aspx" >WORK</a>
+                        </div>
+                        <button id="sliderBckBtn"  class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-right"></i></button>
                     </div>
-                    
+                </div>
+            
+                <div v-if="rightActive" class="controller controllerImg" :class="[rightActive ? 'controlRight':'controlLeft']">
+                    <div class="calloutContainer">
+                        <div class="callouts" id="callout5">
+                            <span id="callout5text" class="calloutText">How we grow here</span>
+                            <a  class="buttonCallouts btnRight" role="button" href="https://stage-wwwtest.ncgtp.com/grow/Pages/default.aspx" >GROW</a>
+                        </div>
+                        <div class="callouts"  id="callout6">
+                            <span id="callout6text" class="calloutText">State of the art<br>workforce training</span>
+                            <a class="buttonCallouts btnRight" role="button" href="https://stage-wwwtest.ncgtp.com/work/Pages/default.aspx" >WORK</a>
+                        </div>
+                        <div class="callouts" id="callout7">
+                            <span id="callout7text" class="calloutText ">Our quality of life</span>
+                            <a  class="buttonCallouts btnRight" role="button" href="https://stage-wwwtest.ncgtp.com/live/Pages/default.aspx" >LIVE</a>
+                        </div>
+                        <button id="sliderBckBtn2" class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-left"></i></button>
+                    </div>
                 </div>
             </div>
 
+            <div class="right" :class="[rightActive ? 'rightNotshowing':'rightShowing']">
+                    <div class="inner">
+                        <!-- <img class="split" src="../assets/img/NC-img.jpg" alt="NC Life"> -->
+                        <video class="split" src="../assets/vids/right.mp4" poster="../assets/img/NC-img.jpg" autoplay loop muted></video>
+                        <div  class="content-wrap">
+                            <transition name="fade-right-content" >
+                            <div v-if="rightActive" class="rightCont content-body">
+                                <h2 class="heroText">North Carolina
+                                    </h2>
+                                    <h3 class="heroText3">where the living is easy.</h3>
+                            </div>
+                            </transition>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            <div class="left" :class="[leftActive ? 'leftNotshowing':'leftShowing']">
+                <div class="inner masked">
+                    <div class="content-wrap"> 
+                        <transition name="fade-left-content">
+                            <div v-if="leftActive"  class="leftCont content-body">
+                                <h2 class="heroText">Putting the World Within Your Reach
+                                    </h2>
+                                    <h3 class="heroText3">A world-class, 2,500  acre industrial & business park.</h3>
+                                    <div>
+                                        <a class="btn btn-primary btn-lg btn-hero btn-md" href="https://stage-wwwtest.ncgtp.com/grow/Pages/default.aspx" role="button">Grow With Us</a>
+                                    </div>
+                                    <div>
+                                        <a class="btn btn-primary btn-lg btn-md btn-hero" href="https://stage-wwwtest.ncgtp.com/contact/Pages/default.aspx" role="button">Contact</a>
+                                    </div>
+                            </div>
+                        </transition>
+                    </div>
+                    <transition >
+                        <div >
+                            <video class="split" src="../assets/vids/left.mp4" poster="../assets/img/hero-bkgd.jpg" autoplay loop muted></video>
+                        </div>
+                    </transition>
+                </div>
+            </div>
+            
+            
+
+                
+            
         </div><!--/end vid wrapper -->
         <div class="hidden-md-up">
             <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
@@ -159,7 +166,13 @@ export default {
  min-height: 700px;
 padding: 0;
 }
-
+.masked{
+    height:100vh;
+    width: 100%;
+    background:white;
+    -webkit-mask-image: url(../assets/img/mask.svg);
+    -webkit-mask-repeat: no-repeat;
+}
  .itm1 {
     background: url(../assets/img/hero-bkgd.jpg) no-repeat center center fixed;
 }
@@ -248,16 +261,31 @@ a.btn-mobile {
   overflow: hidden;
   position: absolute;
 }
+#controllers{
+    z-index: 1000;
+    width:200px;
+    
+}
+
 .controller {
     position: absolute;
     height: 100%;
     display: block;
     top: 0;
     z-index: 10;
-    width: 10px;
-    background-color: #fff;
+    /* background-color: #ffffff; */
+    width:10px;
     transform: skewX(-8deg);
-    background-image:url("../assets/img/swoosh.svg");
+    
+}
+.controllerImg {
+
+    /* height: 100vh;
+    display: block;
+    top: 0;
+    z-index: 20;
+    width:100px;
+    background-image: url("../assets/img/swoosh.svg") ; */
 }
 .calloutContainer{
     position: absolute;
@@ -265,7 +293,7 @@ a.btn-mobile {
     transform: translateY(-50%);
 }
 .controlLeft{
-    right:15%;
+    right:25%;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
 }
@@ -288,18 +316,18 @@ button{
     transform: skewX(8deg);
     width: 75px;
 }
-#sliderBtn {
-    position: relative;
-    z-index: 100;
-    right: 40px;
-    padding: 0 10px;
-    margin-top: 50px;
-    padding-top: 20px;
-}
+
 #sliderBckBtn {
     position: relative;
     z-index: 100;
-    right: 40px;
+    right: 70px;
+    padding: 0 10px;
+    margin-top: 50px;
+}
+#sliderBckBtn2 {
+    position: relative;
+    z-index: 100;
+    right: -50px;
     padding: 0 10px;
     margin-top: 50px;
 }
@@ -310,7 +338,7 @@ button{
 }
 #callout1{
     position: relative;
-    right: 61px;
+    right: 20px;
 }
 #callout1:hover >span{
         background:url(../assets/img/icon-grow-white.png) no-repeat left 10px center;
@@ -345,11 +373,11 @@ button{
 
 #callout2{
     position: relative;
-    right: 64px;
+    right: 50px;
 }
 #callout3{
     position: relative;
-    right: 67px;
+    right: 80px;
 }
 #callout4{
     position: relative;
@@ -357,7 +385,7 @@ button{
 }
 #callout5{
     position: relative;
-    right: 61px;
+    right: -100px;
 
 }
 .callouts:hover .calloutText{
@@ -412,11 +440,11 @@ button{
 
 #callout6{
     position: relative;
-    right: 64px;
+    right: -64px;
 }
 #callout7{
     position: relative;
-    right: 67px;
+    right: -40px;
 }
 #callout8{
     position: relative;
@@ -481,25 +509,29 @@ button{
   position: relative;
 }
 .leftShowing{
-    left: -85%;
+    left: -65%;
+  -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 .leftNotshowing{
     left: -15%;
+
 }
 .right {
   position: absolute;
 }
 .rightShowing {
   position: absolute;
-  right: -85%;
+  right: -65%;
+  
   -webkit-transition: all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 .rightNotshowing {
   position: absolute;
   right: -16%;
-  -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+
+
 }
 .left .inner,
 .right .inner {
@@ -564,16 +596,29 @@ padding-bottom: 20px;
 .fade-right-content-leave-active {
   transition: opacity 2s;
 }
+.overlay-right-content-enter,
+.overlay-right-content-leave-to {
+  opacity: 0.5;
+}
+.overlay-right-content-enter-active,
+.overlay-right-content-leave-active {
+  transition: opacity 2s;
+}
 .fade-left-content-enter,
 .fade-left-content-leave-to {
-    
   opacity: 0;
-    
 }
 .fade-left-content-enter-active,
 .fade-left-content-leave-active {
     transition: opacity 2s;
-  
+}
+.overlay-left-content-enter,
+.overlay-left-content-leave-to {
+  opacity: 0.5;
+}
+.overlay-left-content-enter-active,
+.overlay-left-content-leave-active {
+    transition: opacity 2s;
 }
 
 .slide-left-leave-active,
