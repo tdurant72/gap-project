@@ -16,7 +16,7 @@
                             <span id="callout3text" class="calloutText  ctLeft">State of the art<br>workforce training</span>
                             <a class="buttonCallouts btnLeft" role="button" href="https://stage-wwwtest.ncgtp.com/work/Pages/default.aspx" >WORK</a>
                         </div>
-                        <button id="sliderBckBtn"  class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-right"></i></button>
+                        <button id="sliderBckBtn"  class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-left"></i></button>
                     </div>
                 </div>
             
@@ -34,33 +34,18 @@
                             <span id="callout7text" class="calloutText ">Our quality of life</span>
                             <a  class="buttonCallouts btnRight" role="button" href="https://stage-wwwtest.ncgtp.com/live/Pages/default.aspx" >LIVE</a>
                         </div>
-                        <button id="sliderBckBtn2" class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-left"></i></button>
+                        <button id="sliderBckBtn2" class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-right"></i></button>
                     </div>
                 </div>
             </div>
-
-            <div class="right" :class="[rightActive ? 'rightNotshowing':'rightShowing']">
-                    <div class="inner">
-                        <!-- <img class="split" src="../assets/img/NC-img.jpg" alt="NC Life"> -->
-                        <video class="split" src="../assets/vids/right.mp4" poster="../assets/img/NC-img.jpg" autoplay loop muted></video>
-                        <div  class="content-wrap">
-                            <transition name="fade-right-content" >
-                            <div v-if="rightActive" class="rightCont content-body">
-                                <h2 class="heroText">North Carolina
-                                    </h2>
-                                    <h3 class="heroText3">where the living is easy.</h3>
-                            </div>
-                            </transition>
-                        </div>
-                        
-                    </div>
-                </div>
-                
             <div class="left" :class="[leftActive ? 'leftNotshowing':'leftShowing']">
-                <div class="inner masked">
+                <div class="inner">
                     <div class="content-wrap"> 
+                        <div v-if="rightActive" class="overlay"></div>
+                        <!-- <h1 class="knockout-text-one">WHY GTP</h1> -->
                         <transition name="fade-left-content">
                             <div v-if="leftActive"  class="leftCont content-body">
+                                
                                 <h2 class="heroText">Putting the World Within Your Reach
                                     </h2>
                                     <h3 class="heroText3">A world-class, 2,500  acre industrial & business park.</h3>
@@ -80,6 +65,29 @@
                     </transition>
                 </div>
             </div>
+            <div class="right" :class="[rightActive ? 'rightNotshowing':'rightShowing']">
+                
+                    <div class="inner masked">
+                        <div v-if="leftActive" class="overlay"></div>
+                        <!-- <h1 class="knockout-text-two">WHY NC</h1> -->
+                        <!-- <img class="split" src="../assets/img/NC-img.jpg" alt="NC Life"> -->
+                        <video class="split" src="../assets/vids/right.mp4" poster="../assets/img/NC-img.jpg" autoplay loop muted></video>
+                        <div  class="content-wrap">
+                            <transition name="fade-right-content" >
+                            <div v-if="rightActive" class="rightCont content-body">
+                                <h2 class="heroText">North Carolina
+                                    </h2>
+                                    <h3 class="heroText3">where the living is easy.</h3>
+                            </div>
+                            </transition>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            
+
+            
             
             
 
@@ -167,12 +175,33 @@ export default {
 padding: 0;
 }
 .masked{
-    height:100vh;
-    width: 100%;
-    background:white;
-    -webkit-mask-image: url(../assets/img/mask.svg);
-    -webkit-mask-repeat: no-repeat;
+
+  -webkit-mask-image: radial-gradient(ellipse 85% 100% at 90% 60%, black 90%, transparent 60%);
+  mask-image: radial-gradient(ellipse 85% 100% at 90% 60%, black 90%, transparent 60%);
+   
+
 }
+ .overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    /* background:#337ab7; */
+    background:rgb(196, 196, 196);
+    opacity: 0.6;
+    
+}
+/* .knockout-text-one{
+    color:white;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size:100vh;
+    text-align: center;
+} */
  .itm1 {
     background: url(../assets/img/hero-bkgd.jpg) no-repeat center center fixed;
 }
@@ -320,14 +349,14 @@ button{
 #sliderBckBtn {
     position: relative;
     z-index: 100;
-    right: 70px;
+    right: 50px;
     padding: 0 10px;
     margin-top: 50px;
 }
 #sliderBckBtn2 {
     position: relative;
     z-index: 100;
-    right: -50px;
+    right: -65px;
     padding: 0 10px;
     margin-top: 50px;
 }
@@ -338,7 +367,7 @@ button{
 }
 #callout1{
     position: relative;
-    right: 20px;
+    right: 80px;
 }
 #callout1:hover >span{
         background:url(../assets/img/icon-grow-white.png) no-repeat left 10px center;
@@ -373,11 +402,11 @@ button{
 
 #callout2{
     position: relative;
-    right: 50px;
+    right: 110px;
 }
 #callout3{
     position: relative;
-    right: 80px;
+    right: 110px;
 }
 #callout4{
     position: relative;
@@ -385,7 +414,7 @@ button{
 }
 #callout5{
     position: relative;
-    right: -100px;
+    right: -30px;
 
 }
 .callouts:hover .calloutText{
@@ -440,11 +469,11 @@ button{
 
 #callout6{
     position: relative;
-    right: -64px;
+    right: -6px;
 }
 #callout7{
     position: relative;
-    right: -40px;
+    right: -10px;
 }
 #callout8{
     position: relative;
@@ -529,7 +558,7 @@ button{
 }
 .rightNotshowing {
   position: absolute;
-  right: -16%;
+  right: -15%;
 
 
 }
