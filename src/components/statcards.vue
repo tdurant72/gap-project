@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="row  justify-content-center stats">
-            <div class="col-md-3 col-lg-4 col-sm-12">
+            <div class="col-md-6 col-lg-3 col-sm-12">
                 
                     <div>
                         <p class="calc"><span class="counter">5,775</span></p>
@@ -9,7 +9,7 @@
                     </div>
                 
             </div>
-            <div class="col-md-3 col-lg-4 col-sm-12">
+            <div class="col-md-6 col-lg-3 col-sm-12">
                
                         <div>
                             <p class="calc"><span class="counter">450,000</span>+</p>
@@ -17,18 +17,22 @@
                         </div>
                 
             </div>
-            <div class="col-md-3 col-lg-4 col-sm-12">
-                
+            <div class="col-md-6 col-lg-3 col-sm-12">
                         <div>
                             <p class="calc"><span class="counter">33,000</span></p>
                             <p class="whyText">Square-Foot Composite Training Center</p>
                         </div>
-                
             </div>
+            <div class="col-md-6 col-lg-3 col-sm-12">
+                        <div>
+                            <p class="calc"><span class="counter">11,500</span></p>
+                            <p class="whyText">Square-Foot Runway</p>
+                        </div>
+            </div>
+
         </div>
         <div class="row  justify-content-center stats">
-            <div class="col-md-3 col-lg-4 col-sm-12">
-                
+            <div class="col-md-6 col-lg-3 col-sm-12">
                     <div>
                         <p class="calc"><span >#1</span></p>
                         <p class="whyText">Best State for Business</p>
@@ -36,24 +40,29 @@
                     </div>
                 
             </div>
-            <div class="col-md-3 col-lg-4 col-sm-12">
-               
+            
+            <div class="col-md-6 col-lg-3 col-sm-12">
                         <div>
                             <p class="calc"><span >#2</span></p>
                             <p class="whyText">Business Climate Ranking</p>
                             <p class="whyText"><i>(Site Selection 2016)</i></p>
                         </div>
-                
             </div>
-            <div class="col-md-3 col-lg-4 col-sm-12">
-                
+            <div class="col-md-6 col-lg-3 col-sm-12">
                         <div>
                             <p class="calc"><span >3%</span></p>
                             <p class="whyText">Corporate Income Tax Rate, Lowest in the U.S.</p>
                             <p class="whyText"><i>(Tax Foundation 2017)</i></p>
                         </div>
-                
             </div>
+            <div class="col-md-6 col-lg-3 col-sm-12">
+                        <div>
+                            <p class="calc"><span >#4</span></p>
+                            <p class="whyText">Aerospace Manufacturing Attractiveness</p>
+                            <p class="whyText"><i>(2016 PricewaterhouseCoopers)</i></p>
+                        </div>
+            </div>
+
         </div>
     </div>
 </template>
