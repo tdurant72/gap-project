@@ -41,7 +41,7 @@
             <div class="left" :class="[leftActive ? 'leftNotshowing':'leftShowing']">
                 <div class="inner">
                     <div class="content-wrap"> 
-                        <div v-if="rightActive" class="overlay"></div>
+                        <div v-if="rightActive" class="overlay"><h2 class="overlayTextLt">Why NC</h2></div>
                         <!-- <h1 class="knockout-text-one">WHY GTP</h1> -->
                         <transition name="fade-left-content">
                             <div v-if="leftActive"  class="leftCont content-body">
@@ -68,7 +68,7 @@
             <div class="right" :class="[rightActive ? 'rightNotshowing':'rightShowing']">
                 
                     <div class="inner masked">
-                        <div v-if="leftActive" class="overlay"></div>
+                        <div v-if="leftActive" class="overlay"><h2 class="overlayTextRt">Why GTP</h2></div>
                         <!-- <h1 class="knockout-text-two">WHY NC</h1> -->
                         <!-- <img class="split" src="../assets/img/NC-img.jpg" alt="NC Life"> -->
                         <video class="split" src="../assets/vids/right.mp4" poster="../assets/img/NC-img.jpg" autoplay loop muted></video>
@@ -178,6 +178,8 @@ padding: 0;
 
   -webkit-mask-image: radial-gradient(ellipse 85% 100% at 90% 60%, black 90%, transparent 60%);
   mask-image: radial-gradient(ellipse 85% 100% at 90% 60%, black 90%, transparent 60%);
+
+
    
 
 }
@@ -190,7 +192,30 @@ padding: 0;
     z-index: 2;
     /* background:#337ab7; */
     background:rgb(196, 196, 196);
-    opacity: 0.6;
+    opacity: 0.6;   
+}
+h2.overlayTextLt{
+    font-size: 10em;
+    line-height: 90%;
+    font-weight: bold;
+    text-align: right;
+    width: 45%;
+    position: relative;
+    top: 10%;
+    right:-5%;
+    margin: 0 auto;
+    
+}
+h2.overlayTextRt{
+    font-size: 10em;
+    line-height: 90%;
+    font-weight: bold;
+    text-align: left;
+    width: 40%;
+    position: relative;
+    top: 50%;
+    left:-10%;
+    margin: 0 auto;
     
 }
 /* .knockout-text-one{
