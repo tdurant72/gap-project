@@ -124,11 +124,11 @@ text-transform: uppercase;
 }
 
 
-.ncgtp-navbar {background-color: #eee;top: 100px; width: 100%;}
+.ncgtp-navbar {background-color: #eee; position:fixed; z-index:1000; width: 100%;border-bottom: #757575 2px solid;}
 .ncgtp-navbar a {float: left;display: block;text-align: center; padding: 5px 10px;text-decoration: none;}
 .ncgtp-navbar .logo {background-image: url(./assets/img/logo.jpg); width:400px; height:50px; margin:10px 10px	5px 10px; background-repeat:no-repeat; position:relative; left:20px;}
 .ncgtp-navbar .logo {mix-blend-mode: darken;}
-.gtpBurger {transform: scale(1.5);cursor: pointer;margin:20px;}
+.gtpBurger {transform: scale(1.5);cursor: pointer;margin:20px; float:right;}
 .navContainer {display: none;}
 .expand { display: block;padding-top:75px;}
 .main-nav-column {float: left;width: 20%;}

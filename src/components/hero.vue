@@ -349,7 +349,7 @@ button{
 #sliderBckBtn {
     position: relative;
     z-index: 100;
-    right: 50px;
+    right: 90px;
     padding: 0 10px;
     margin-top: 50px;
 }
@@ -367,7 +367,7 @@ button{
 }
 #callout1{
     position: relative;
-    right: 80px;
+    right: 120px;
 }
 #callout1:hover >span{
         background:url(../assets/img/icon-grow-white.png) no-repeat left 10px center;
@@ -402,11 +402,11 @@ button{
 
 #callout2{
     position: relative;
-    right: 110px;
+    right: 140px;
 }
 #callout3{
     position: relative;
-    right: 110px;
+    right: 140px;
 }
 #callout4{
     position: relative;
