@@ -41,7 +41,9 @@
             <div class="left" :class="[leftActive ? 'leftNotshowing':'leftShowing']">
                 <div class="inner">
                     <div class="content-wrap"> 
-                        <div v-if="rightActive" class="overlay"><h2 class="overlayTextLt">Why NC</h2></div>
+                        <div v-if="rightActive" class="overlay">
+                            <!-- <h2 class="overlayTextLt">Why NC</h2> -->
+                            </div>
                         <!-- <h1 class="knockout-text-one">WHY GTP</h1> -->
                         <transition name="fade-left-content">
                             <div v-if="leftActive"  class="leftCont content-body">
@@ -68,7 +70,9 @@
             <div class="right" :class="[rightActive ? 'rightNotshowing':'rightShowing']">
                 
                     <div class="inner masked">
-                        <div v-if="leftActive" class="overlay"><h2 class="overlayTextRt">Why GTP</h2></div>
+                        <div v-if="leftActive" class="overlay">
+                            <!-- <h2 class="overlayTextRt">Why GTP</h2> -->
+                            </div>
                         <!-- <h1 class="knockout-text-two">WHY NC</h1> -->
                         <!-- <img class="split" src="../assets/img/NC-img.jpg" alt="NC Life"> -->
                         <video class="split" src="../assets/vids/right.mp4" poster="../assets/img/NC-img.jpg" autoplay loop muted></video>
