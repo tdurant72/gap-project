@@ -289,7 +289,7 @@
                             <a class="social-list__link" target="_blank" href="https://www.linkedin.com/company/287838">
                                 <span class="social-list__link-text">
                                 </span>
-                                <!--TO DO: GET LINKEDIN ICON -->
+                                
                                 <i class="icon-linkedin icon"></i>
                             </a>
                         </li>
@@ -298,8 +298,8 @@
                             </div>
                         </div>
                     </div>
-            </div>-->
-    </div>
+            </div>
+    </div>-->
   </div>
 </template>
 <script>
