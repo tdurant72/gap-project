@@ -1,7 +1,7 @@
 <template>
   <div class="jumbotron paral-sm paralsec8" id="footer">
     <div class="container" id="footerContainer">
-        <!--<div class="row">
+        <div class="row">
                 <div class="col-lg-4" id="growLinks">
                     <ul class="" >
                     <li class="">
@@ -202,23 +202,23 @@
 
             <div class="row container" id="socialContainer" >
                 <div class="col-lg-1">
-                    <a class="buttonSocial" href="#">
+                    <a class="buttonSocial" href="#facebook">
                             <img src="../assets/img/facebook.png" alt="facebook">
                         </a>
                 </div>
                 <div class="col-lg-1">
-                    <a class="buttonSocial" href="#">
+                    <a class="buttonSocial" href="#instagram">
                             <img src="../assets/img/instagram.png" alt="facebook">
                         </a>
                 </div>
                 <div class=" col-lg-1">
-                    <a class="buttonSocial" href="#">
+                    <a class="buttonSocial" href="#linkedin">
                             <img src="../assets/img/linkedIn.png" alt="facebook">
                         </a>
                 </div>
             </div>
-        </div>-->
-
+        </div>
+        <!-- wards
         <div class="site-footer__top">
                     <div class="site-footer__main row">
                         <div class="grid__cell col-lg-4">
@@ -298,7 +298,7 @@
                             </div>
                         </div>
                     </div>
-            </div>
+            </div>-->
     </div>
   </div>
 </template>
