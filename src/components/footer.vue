@@ -1,7 +1,9 @@
 <template>
   <div class="jumbotron paral-sm paralsec8" id="footer">
     <div class="container" id="footerContainer">
-        <div class="row">
+
+        <!-- manual -->
+        <!-- <div class="row">
                 <div class="col-lg-4" id="growLinks">
                     <ul class="" >
                     <li class="">
@@ -217,8 +219,9 @@
                         </a>
                 </div>
             </div>
-        </div>
-        <!-- wards
+        </div> -->
+
+        <!-- dynamic -->
         <div class="site-footer__top">
                     <div class="site-footer__main row">
                         <div class="grid__cell col-lg-4">
@@ -299,7 +302,7 @@
                         </div>
                     </div>
             </div>
-    </div>-->
+    </div>
   </div>
 </template>
 <script>

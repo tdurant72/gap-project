@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="914px" height="1080px" viewBox="0 0 914 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="714px" height="1080px" viewBox="0 0 714 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
     <title>rt-mask</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Apple-TV" transform="translate(-543.000000, 0.000000)" fill="#000000">
-            <g id="rt-mask" transform="translate(543.000000, 0.000000)">
-                <path d="M139.546616,4.26351239e-13 C611.716667,-1.94960444e-13 563.648492,2.65864517e-13 913.111257,4.7757017e-13 C913.111257,532.473212 913.111257,892.473212 913.111257,1080 C662.283565,1080 404.428685,1080 139.546616,1080 C-54.5984093,625.698109 -37.2918395,540 139.546616,4.26351239e-13 Z" id="Rect-mask"></path>
+        <g id="Apple-TV" transform="translate(-834.000000, 0.000000)">
+            <g id="rt-mask" transform="translate(834.000000, -1.000000)">
+                <rect id="Rectangle-2" fill="#FFFFFF" x="0" y="1" width="270" height="1080"></rect>
+                <path d="M197.37917,4.26325837e-13 C419.342291,-1.94985846e-13 549.72053,2.65920355e-13 714,4.77626008e-13 C714,532.473212 714,892.473212 714,1080 C494.104919,1080 321.897975,1080 197.37917,1080 C-69.9801574,798.68363 114.248918,540 197.37917,4.26325837e-13 Z" id="Rect-mask" fill="#000000"></path>
             </g>
         </g>
     </g>

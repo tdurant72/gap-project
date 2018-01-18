@@ -53,7 +53,7 @@ AOS.init({
           var camlQueryUniqueID  = "<Query><Where><And><Eq><FieldRef Name='RR_IsVisible' /><Value Type='Text'>Yes</Value></Eq><Eq><FieldRef Name='RR_UniqueID' /><Value Type='Text'>"+uniqueId+"</Value></Eq></And></Where><OrderBy><FieldRef Name='RR_SortOrder' Ascending='True' /></OrderBy></Query>";
           var camlViewFields = "<ViewFields><FieldRef Name='Title' /><FieldRef Name='RR_LinkUrl' /><FieldRef Name='RR_UniqueID' /></ViewFields>";
           var getNavItems = $().SPServices.SPGetListItemsJson({
-            webURL: "/",
+            webURL: "../",
             listName: "Global Navigation",
             viewName: "",
             CAMLQuery: camlQueryUniqueID,

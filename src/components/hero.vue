@@ -5,15 +5,15 @@
                 <div v-if="leftActive" class="controller controllerImg" :class="[leftActive ? 'controlLeft':'controlRight']">
                     <div class="calloutContainer">
                         <div class="callouts"  id="callout1">
-                            <span id="callout1text" class="calloutText ctLeft">How we grow here</span>
+                            <span id="callout1text" class="calloutText ctLeft">Expand Your Business</span>
                             <a class="buttonCallouts btnLeft" role="button" href="https://stage-wwwtest.ncgtp.com/grow/Pages/default.aspx"   >GROW</a>
                         </div>
                         <div class="callouts"  id="callout2">
-                            <span id="callout2text" class="calloutText ctLeft">Our quality of life</span>
+                            <span id="callout2text" class="calloutText ctLeft">Carolina Quality of Life</span>
                             <a class="buttonCallouts btnLeft" role="button" href="https://stage-wwwtest.ncgtp.com/live/Pages/default.aspx" >LIVE</a>
                         </div>
                         <div class="callouts"  id="callout3">
-                            <span id="callout3text" class="calloutText  ctLeft">State of the art<br>workforce training</span>
+                            <span id="callout3text" class="calloutText  ctLeft">Economic Impact<br>& Opportunities</span>
                             <a class="buttonCallouts btnLeft" role="button" href="https://stage-wwwtest.ncgtp.com/work/Pages/default.aspx" >WORK</a>
                         </div>
                         <button id="sliderBckBtn"  class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-left"></i></button>
@@ -23,16 +23,21 @@
                 <div v-if="rightActive" class="controller controllerImg" :class="[rightActive ? 'controlRight':'controlLeft']">
                     <div class="calloutContainer">
                         <div class="callouts" id="callout5">
-                            <span id="callout5text" class="calloutText">How we grow here</span>
+                            <span id="callout5text" class="calloutText">Expand Your Business</span>
                             <a  class="buttonCallouts btnRight" role="button" href="https://stage-wwwtest.ncgtp.com/grow/Pages/default.aspx" >GROW</a>
                         </div>
                         <div class="callouts"  id="callout6">
-                            <span id="callout6text" class="calloutText">State of the art<br>workforce training</span>
-                            <a class="buttonCallouts btnRight" role="button" href="https://stage-wwwtest.ncgtp.com/work/Pages/default.aspx" >WORK</a>
+                            <span id="callout6text" class="calloutText">
+                                Our quality of life</span>
+                            <a  class="buttonCallouts btnRight" role="button" href="https://stage-wwwtest.ncgtp.com/live/Pages/default.aspx" >LIVE</a>
+                                
+
                         </div>
                         <div class="callouts" id="callout7">
-                            <span id="callout7text" class="calloutText ">Our quality of life</span>
-                            <a  class="buttonCallouts btnRight" role="button" href="https://stage-wwwtest.ncgtp.com/live/Pages/default.aspx" >LIVE</a>
+                            <span id="callout7text" class="calloutText ">
+                                Economic Impact<br>& Opportunities</span>
+                            <a class="buttonCallouts btnRight" role="button" href="https://stage-wwwtest.ncgtp.com/work/Pages/default.aspx" >WORK</a>
+
                         </div>
                         <button id="sliderBckBtn2" class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-right"></i></button>
                     </div>
@@ -69,13 +74,13 @@
             </div>
             <div class="right" :class="[rightActive ? 'rightNotshowing':'rightShowing']">
                 
-                    <div class="inner masked">
+                    <div class="inner ">
                         <div v-if="leftActive" class="overlay">
                             <!-- <h2 class="overlayTextRt">Why GTP</h2> -->
-                            </div>
+                        </div>
                         <!-- <h1 class="knockout-text-two">WHY NC</h1> -->
-                        <!-- <img class="split" src="../assets/img/NC-img.jpg" alt="NC Life"> -->
-                        <video class="split" src="../assets/vids/right.mp4" poster="../assets/img/NC-img.jpg" autoplay loop muted></video>
+                      
+                        <video class="split masked" src="../assets/vids/right.mp4" poster="../assets/img/NC-img.jpg" autoplay loop muted></video>
                         <div  class="content-wrap">
                             <transition name="fade-right-content" >
                             <div v-if="rightActive" class="rightCont content-body">
@@ -180,23 +185,25 @@ padding: 0;
 }
 .masked{
 
-  -webkit-mask-image: radial-gradient(ellipse 85% 100% at 90% 60%, black 90%, transparent 60%);
-  mask-image: radial-gradient(ellipse 85% 100% at 90% 60%, black 90%, transparent 60%);
-
-
-   
+  /* -webkit-mask-image: radial-gradient(ellipse 85% 100% at 90% 60%, black 90%, transparent 60%);
+  mask-image: radial-gradient(ellipse 85% 100% at 90% 60%, black 90%, transparent 60%); */
+-webkit-mask-image:url('../assets/img/test.svg');
 
 }
+.bordered{
+    border-left:10px white solid;
+}
  .overlay {
-    height: 100%;
+    /* height: 100%;
     width: 100%;
     position: absolute;
     top: 0px;
     left: 0px;
-    z-index: 2;
+    z-index: 2; */
     /* background:#337ab7; */
-    background:rgb(196, 196, 196);
-    opacity: 0.6;   
+    /* background:rgb(196, 196, 196);
+    opacity: 0.6;    */
+   
 }
 h2.overlayTextLt{
     font-size: 10em;
@@ -296,7 +303,7 @@ a.btn-mobile {
   width: 100%;
 }
 .right .inner {
-  margin-left: -9%;
+  /* margin-left: -9%; */
 }
 .right .inner img {
   
@@ -332,8 +339,8 @@ a.btn-mobile {
     top: 0;
     z-index: 10;
     /* background-color: #ffffff; */
-    width:10px;
-    transform: skewX(-8deg);
+    width:250px;
+    transform: skewX(3deg);
     
 }
 .controllerImg {
@@ -342,8 +349,8 @@ a.btn-mobile {
     display: block;
     top: 0;
     z-index: 20;
-    width:100px;
-    background-image: url("../assets/img/swoosh.svg") ; */
+    width:100px;*/
+    background-image: url("../assets/img/white-border.svg") ; 
 }
 .calloutContainer{
     position: absolute;
@@ -351,12 +358,12 @@ a.btn-mobile {
     transform: translateY(-50%);
 }
 .controlLeft{
-    right:25%;
+    right:13%;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
 }
 .controlRight{
-    right:84%;
+    right:68%;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
 }
@@ -366,26 +373,26 @@ button{
 }
 .switch{
      border: none;
-    background-color: #757575;
+    background-color: #FFC107;
     color: #fff;
     border-radius: 8px;
     font-size: 2em;
     padding: 15px;
-    transform: skewX(8deg);
+    /* transform: skewX(8deg); */
     width: 75px;
 }
 
 #sliderBckBtn {
     position: relative;
     z-index: 100;
-    right: 90px;
+    right: 0px;
     padding: 0 10px;
     margin-top: 50px;
 }
 #sliderBckBtn2 {
     position: relative;
     z-index: 100;
-    right: -65px;
+    right: 5px;
     padding: 0 10px;
     margin-top: 50px;
 }
@@ -396,7 +403,7 @@ button{
 }
 #callout1{
     position: relative;
-    right: 120px;
+    right: -10px;
 }
 #callout1:hover >span{
         background:url(../assets/img/icon-grow-white.png) no-repeat left 10px center;
@@ -431,11 +438,11 @@ button{
 
 #callout2{
     position: relative;
-    right: 140px;
+    right: 26px;
 }
 #callout3{
     position: relative;
-    right: 140px;
+    right: 45px;
 }
 #callout4{
     position: relative;
@@ -498,11 +505,11 @@ button{
 
 #callout6{
     position: relative;
-    right: -6px;
+    right: 25px;
 }
 #callout7{
     position: relative;
-    right: -10px;
+    right: 45px;
 }
 #callout8{
     position: relative;
@@ -524,7 +531,7 @@ button{
     font-family: 'Montserrat-LightItalic', sans-serif;
     font-weight:ligher;
     font-size: 20px;
-    transform: skewX(8deg);
+    transform: skewX(-2deg);
 }
 .buttonCallouts:hover {
     background-color: #0167B8;
@@ -580,7 +587,7 @@ button{
 }
 .rightShowing {
   position: absolute;
-  right: -65%;
+  right: -70%;
   
   -webkit-transition: all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
