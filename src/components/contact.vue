@@ -23,7 +23,7 @@
                   </a>
                 </p>
               </div>
-                <div class="card col-lg-6 col-md-5" id="formCard" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                <div class="card col-lg-5 col-lg-offset-1 col-md-5" id="formCard" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
                       <div id="formContainer" >
                           <div class="primary media-wrap">
                               <div class="col-lg-12">

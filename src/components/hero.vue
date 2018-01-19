@@ -188,6 +188,13 @@ padding: 0;
   /* -webkit-mask-image: radial-gradient(ellipse 85% 100% at 90% 60%, black 90%, transparent 60%);
   mask-image: radial-gradient(ellipse 85% 100% at 90% 60%, black 90%, transparent 60%); */
 -webkit-mask-image:url('../assets/img/test.png');
+-webkit-mask-repeat:no-repeat;
+-webkit-mask-position:center;
+-webkit-mask-position-y:180px;
+mask-image:url('../assets/img/test.png');
+mask-repeat:no-repeat;
+mask-position:center;
+mask-position-y:180px;
 
 }
 .bordered{
