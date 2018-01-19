@@ -187,7 +187,7 @@ padding: 0;
 
   /* -webkit-mask-image: radial-gradient(ellipse 85% 100% at 90% 60%, black 90%, transparent 60%);
   mask-image: radial-gradient(ellipse 85% 100% at 90% 60%, black 90%, transparent 60%); */
--webkit-mask-image:url('../assets/img/test.svg');
+-webkit-mask-image:url('../assets/img/test.png');
 
 }
 .bordered{

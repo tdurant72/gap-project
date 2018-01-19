@@ -1,13 +1,14 @@
 <template>
     <header class="site-header ncgtp-navbar">
         
-        <div class="site-header__inner-wrapper">
-
-            <a href="/" class="logo logo--header " title="">
-            </a>
-
-            <i class="glyphicon glyphicon-menu-hamburger gtpBurger menu-btn" id="menu-btn"></i>    
-                    
+        <div class="site-header__inner-wrapper row">
+            <div class="col-lg-10">
+                <a href="/" class="logo logo--header " title="">
+                </a>
+            </div>
+            <div class="col-lg-2">
+                <i class="glyphicon glyphicon-menu-hamburger gtpBurger menu-btn" id="menu-btn"></i>    
+            </div>
                 
         </div>
 
@@ -376,8 +377,7 @@ body {
 .ncgtp-navbar {
     background-color: #fff;
     position: fixed; /* Set the navbar to fixed position */
-    top: 100px; /* Position the navbar at the top of the page, should be top: 0 if we didn't have other SharePoint stuff in the way; */
-    width: 100%; /* Full width */
+    width: 100%;  /*Full width */
 }
 
 /* Links inside the navbar */
@@ -401,6 +401,7 @@ body.sp-authenticated.ms-backgroundImage {
     transform: scale(3);
     cursor: pointer;
     float:right;
+    padding-right: 10px;
 }
 
 .navContainer {
