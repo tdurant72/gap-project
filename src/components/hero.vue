@@ -79,8 +79,17 @@
                             <!-- <h2 class="overlayTextRt">Why GTP</h2> -->
                         </div>
                         <!-- <h1 class="knockout-text-two">WHY NC</h1> -->
-                      
-                        <video class="split masked" src="../assets/vids/right.mp4" poster="../assets/img/NC-img.jpg" autoplay loop muted></video>
+                        <div class="bordered">
+                            <video class="split masked" src="../assets/vids/right.mp4" poster="../assets/img/NC-img.jpg" autoplay loop muted></video>
+                        </div>
+                        <!-- <svg width="100%" height="100%" version="1.2">
+                            <defs>
+                                <mask id="svgmask">
+                                    <image width="100%" height="100%" xlink:href="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/test.7647664.png"/>
+                                </mask>
+                            </defs>
+                        <video mask="url(#svgmask)"  width="100%" height="100%" xlink:href="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/right.60bfb96.mp4" poster="../assets/img/NC-img.jpg" autoplay loop muted></video>
+                        </svg> -->
                         <div  class="content-wrap">
                             <transition name="fade-right-content" >
                             <div v-if="rightActive" class="rightCont content-body">
@@ -187,18 +196,23 @@ padding: 0;
 
   /* -webkit-mask-image: radial-gradient(ellipse 85% 100% at 90% 60%, black 90%, transparent 60%);
   mask-image: radial-gradient(ellipse 85% 100% at 90% 60%, black 90%, transparent 60%); */
--webkit-mask-image:url('../assets/img/test.png');
+/* -webkit-mask-image:url('../assets/img/test.png');
 -webkit-mask-repeat:no-repeat;
 -webkit-mask-position:center;
 -webkit-mask-position-y:180px;
 mask-image:url('../assets/img/test.png');
 mask-repeat:no-repeat;
 mask-position:center;
-mask-position-y:180px;
+mask-position-y:180px; */
+-webkit-clip-path:circle(106% at 100% 100%);
+clip-path: circle(106% at 100% 100%);
 
 }
 .bordered{
-    border-left:10px white solid;
+    background-color:white;
+    -webkit-clip-path:circle(106% at 97% 100%);
+    clip-path: circle(106% at 97% 100%);
+    height: 110%;
 }
  .overlay {
     /* height: 100%;
@@ -357,7 +371,7 @@ a.btn-mobile {
     top: 0;
     z-index: 20;
     width:100px;*/
-    background-image: url("../assets/img/white-border.svg") ; 
+    /* background-image: url("../assets/img/white-border.svg") ;  */
 }
 .calloutContainer{
     position: absolute;
@@ -365,7 +379,7 @@ a.btn-mobile {
     transform: translateY(-50%);
 }
 .controlLeft{
-    right:13%;
+    right:3%;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
 }
@@ -392,14 +406,14 @@ button{
 #sliderBckBtn {
     position: relative;
     z-index: 100;
-    right: 0px;
+    right: 110px;
     padding: 0 10px;
     margin-top: 50px;
 }
 #sliderBckBtn2 {
     position: relative;
     z-index: 100;
-    right: 5px;
+    right: -15px;
     padding: 0 10px;
     margin-top: 50px;
 }
@@ -445,11 +459,11 @@ button{
 
 #callout2{
     position: relative;
-    right: 26px;
+    right: 50px;
 }
 #callout3{
     position: relative;
-    right: 45px;
+    right: 100px;
 }
 #callout4{
     position: relative;
@@ -457,7 +471,7 @@ button{
 }
 #callout5{
     position: relative;
-    right: -30px;
+    right: -140px;
 
 }
 .callouts:hover .calloutText{
@@ -512,11 +526,11 @@ button{
 
 #callout6{
     position: relative;
-    right: 25px;
+    right: -75px;
 }
 #callout7{
     position: relative;
-    right: 45px;
+    right: -20px;
 }
 #callout8{
     position: relative;
@@ -586,7 +600,7 @@ button{
     transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 .leftNotshowing{
-    left: -15%;
+    left: -10%;
 
 }
 .right {
@@ -594,15 +608,14 @@ button{
 }
 .rightShowing {
   position: absolute;
-  right: -70%;
+  right: -60%;
   
   -webkit-transition: all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 .rightNotshowing {
   position: absolute;
-  right: -15%;
-
+    right:-5%;
 
 }
 .left .inner,
