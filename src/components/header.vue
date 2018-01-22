@@ -398,7 +398,7 @@ body.sp-authenticated.ms-backgroundImage {
 }
 
 .gtpBurger {
-    transform: scale(3);
+    transform: scale(2);
     cursor: pointer;
     float:right;
     padding-right: 10px;

@@ -72,15 +72,15 @@
                     </transition>
                 </div>
             </div>
-            <div class="right" :class="[rightActive ? 'rightNotshowing':'rightShowing']">
+            <div class="right bordered" :class="[rightActive ? 'rightNotshowing':'rightShowing']">
                 
-                    <div class="inner ">
+                    <div class="inner masked">
                         
                         <!-- <h1 class="knockout-text-two">WHY NC</h1> -->
-                        <div class="bordered  ">
+                        <div class="">
                             <div class="">
                             <div v-if="leftActive" class="overlay"></div>
-                                <video class="video split masked" src="../assets/vids/right.mp4" poster="../assets/img/NC-img.jpg" autoplay loop muted></video>
+                                <video class="video split" src="../assets/vids/right.mp4" poster="../assets/img/NC-img.jpg" autoplay loop muted></video>
 
                             </div>
                         </div>
@@ -199,14 +199,14 @@ mask-image:url('../assets/img/test.png');
 mask-repeat:no-repeat;
 mask-position:center;
 mask-position-y:180px; */
--webkit-clip-path:circle(106% at 100% 100%);
-clip-path: circle(106% at 100% 100%);
+-webkit-clip-path:circle(80% at 90% 95%);
+clip-path: circle(80% at 90% 95%);
 
 }
 .bordered{
     background-color:white;
-    -webkit-clip-path:circle(106% at 97% 100%);
-    clip-path: circle(106% at 97% 100%);
+    -webkit-clip-path:circle(92% at 97% 100%);
+    clip-path: circle(92% at 97% 100%);
     height: 110%;
     position: relative;
 }
@@ -339,8 +339,8 @@ a.btn-mobile {
 }
 .left,
 .right {
-  width: 100%;
-  height: 100%;
+  width: 110%;
+  height: 110%;
   top: 0;
   transform: skewX(-8deg);
   overflow: hidden;
@@ -348,7 +348,7 @@ a.btn-mobile {
 }
 #controllers{
     z-index: 1000;
-    width:200px;
+    width:10px;
     
 }
 
@@ -378,7 +378,7 @@ a.btn-mobile {
     transform: translateY(-50%);
 }
 .controlLeft{
-    right:3%;
+    right:15%;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
 }
@@ -599,7 +599,7 @@ button{
     transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 .leftNotshowing{
-    left: -10%;
+    left: -5%;
 
 }
 .right {
@@ -663,7 +663,7 @@ padding-bottom: 20px;
 .leftCont {
     left: 15%;
     position: absolute;
-    width: 50%;
+    width: 40%;
     top:30%;
 } 
 .btn-hero{
