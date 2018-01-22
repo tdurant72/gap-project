@@ -75,21 +75,16 @@
             <div class="right" :class="[rightActive ? 'rightNotshowing':'rightShowing']">
                 
                     <div class="inner ">
-                        <div v-if="leftActive" class="overlay">
-                            <!-- <h2 class="overlayTextRt">Why GTP</h2> -->
-                        </div>
+                        
                         <!-- <h1 class="knockout-text-two">WHY NC</h1> -->
-                        <div class="bordered">
-                            <video class="split masked" src="../assets/vids/right.mp4" poster="../assets/img/NC-img.jpg" autoplay loop muted></video>
+                        <div class="bordered  ">
+                            <div class="">
+                            <div v-if="leftActive" class="overlay"></div>
+                                <video class="video split masked" src="../assets/vids/right.mp4" poster="../assets/img/NC-img.jpg" autoplay loop muted></video>
+
+                            </div>
                         </div>
-                        <!-- <svg width="100%" height="100%" version="1.2">
-                            <defs>
-                                <mask id="svgmask">
-                                    <image width="100%" height="100%" xlink:href="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/test.7647664.png"/>
-                                </mask>
-                            </defs>
-                        <video mask="url(#svgmask)"  width="100%" height="100%" xlink:href="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/right.60bfb96.mp4" poster="../assets/img/NC-img.jpg" autoplay loop muted></video>
-                        </svg> -->
+                       
                         <div  class="content-wrap">
                             <transition name="fade-right-content" >
                             <div v-if="rightActive" class="rightCont content-body">
@@ -213,6 +208,10 @@ clip-path: circle(106% at 100% 100%);
     -webkit-clip-path:circle(106% at 97% 100%);
     clip-path: circle(106% at 97% 100%);
     height: 110%;
+    position: relative;
+}
+.video{
+    position: relative;
 }
  .overlay {
     /* height: 100%;
