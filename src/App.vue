@@ -124,13 +124,13 @@ text-transform: uppercase;
 }
 
 
-.ncgtp-navbar {background-color: #eee; position:fixed; z-index:1000; width: 100%;border-bottom: #757575 2px solid;}
+.ncgtp-navbar {background-color: #eee; position:fixed; z-index:1000; width: 100%;border-bottom: #757575 2px solid; padding-bottom: 10px;}
 .ncgtp-navbar a {display: block;padding: 5px 10px;text-decoration: none;}
 .ncgtp-navbar .logo {background-image: url(./assets/img/logo.jpg); width:400px; height:50px; margin:10px 10px	5px 10px; background-repeat:no-repeat; position:relative; left:20px;}
 .ncgtp-navbar .logo {mix-blend-mode: darken;}
 .gtpBurger {transform: scale(1.5);cursor: pointer;margin:20px; float:right;}
 .navContainer {display: none;}
-.expand { display: block;padding-top:75px;}
+.expand { display: block;padding-top:20px;}
 .main-nav-column {float: left;width: 20%;}
 .main-nav-header { size: 2rem;color: white;}
 .main-nav-header-content, .main-nav-footer-content {list-style: none;color: white;display: inline-block;}

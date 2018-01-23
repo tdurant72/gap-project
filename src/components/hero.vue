@@ -67,7 +67,9 @@
                     </div>
                     <transition >
                         <div >
-                            <video class="split" src="../assets/vids/left.mp4" poster="../assets/img/hero-bkgd.jpg" autoplay loop muted></video>
+                            <video class="split" autoplay="autoplay" loop="loop" muted="muted" preload="preload" controls >
+                            <source src="../assets/vids/left.mp4" poster="../assets/img/hero-bkgd.jpg" />
+                            </video>
                         </div>
                     </transition>
                 </div>
@@ -81,7 +83,8 @@
                             <div v-if="leftActive" class="overlay"></div>
                                 
                                     
-                                        <video  class="video rounded" autoplay="autoplay" loop="loop" muted="muted" preload="preload" src="../assets/vids/right.mp4" >
+                                        <video  class="video rounded" autoplay="autoplay" loop="loop" muted="muted" preload="preload" controls >
+                                        <source src="../assets/vids/right.mp4" poster="../assets/img/NC-imgjpg"   />
                                         </video>
                        
                         <div  class="content-wrap">
