@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1413px" height="866px" viewBox="0 0 1413 866" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>test</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Apple-TV" transform="translate(-30.000000, -149.000000)">
+            <g id="test" transform="translate(31.000000, 150.000000)">
+                <clipPath id="clip-path">
+                <path d="M456,-1.70530257e-13 C636.101744,-5.68434189e-14 954.76841,-5.68434189e-14 1412,-1.70530257e-13 L1412,864 C1001.72251,864 683.055844,864 456,864 C-161.82081,849.483208 -103.34291,14.5903539 456,-1.70530257e-13 Z" id="blk-rec" fill="#000000"></path>
+                </clipPath>
+                
+                <path d="M433,864 C167.826006,801.304514 31.3947917,670.587012 31.3947917,432 C31.3947917,193.412988 207.62451,40.0101836 433,0 C193.860703,0 0,193.412988 0,432 C0,670.587012 193.860703,864 433,864 Z" id="white-border" stroke="#979797" fill="#FFFFFF"></path>
+                
+            </g>
+        </g>
+    </g>
+</svg>

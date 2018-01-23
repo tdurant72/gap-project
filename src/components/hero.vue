@@ -72,16 +72,22 @@
                     </transition>
                 </div>
             </div>
-            <div class="right bordered" :class="[rightActive ? 'rightNotshowing':'rightShowing']">
+            <div class="right " :class="[rightActive ? 'rightNotshowing':'rightShowing']">
                 
-                    <div class="inner masked">
+                    <div class="inner ">
                         
                         <!-- <h1 class="knockout-text-two">WHY NC</h1> -->
                         <div class="">
-                            <div class="">
+                            <div class="rounded">
                             <div v-if="leftActive" class="overlay"></div>
-                                <video class="video split" src="../assets/vids/right.mp4" poster="../assets/img/NC-img.jpg" autoplay loop muted></video>
-
+                                
+                                    
+                                        <video  class="video split rounded" autoplay="autoplay" loop="loop" muted="muted" preload="preload" src="../assets/vids/right.mp4" >
+                                        </video>
+                                   
+                        
+                                        
+                                
                             </div>
                         </div>
                        
@@ -187,7 +193,7 @@ export default {
  min-height: 700px;
 padding: 0;
 }
-.masked{
+#masked{
 
   /* -webkit-mask-image: radial-gradient(ellipse 85% 100% at 90% 60%, black 90%, transparent 60%);
   mask-image: radial-gradient(ellipse 85% 100% at 90% 60%, black 90%, transparent 60%); */
@@ -199,19 +205,29 @@ mask-image:url('../assets/img/test.png');
 mask-repeat:no-repeat;
 mask-position:center;
 mask-position-y:180px; */
--webkit-clip-path:circle(80% at 90% 95%);
-clip-path: circle(80% at 90% 95%);
-
+/* -webkit-clip-path:circle(80% at 90% 95%);
+clip-path: circle(80% at 90% 95%); */
+clip-path:url("#mask");
+-webkit-clip-path: url("#mask");
+position: relative;
 }
 .bordered{
-    background-color:white;
+    /* background-color:white;
     -webkit-clip-path:circle(92% at 97% 100%);
     clip-path: circle(92% at 97% 100%);
     height: 110%;
-    position: relative;
+    position: relative; */
+}
+.rounded{
+    border-top-left-radius: 120% 220%;
+    border-bottom-left-radius: 30% 70%;
+    border: white solid 10px;
 }
 .video{
     position: relative;
+    min-height: auto;
+    min-width: auto;
+    width: auto;
 }
  .overlay {
     /* height: 100%;
@@ -316,7 +332,7 @@ a.btn-mobile {
     background-size:cover;
 }
 .left .inner {
-  margin-left: 9%;
+  margin-left: 10px;
 }
 .left .inner  img{
   
@@ -378,7 +394,7 @@ a.btn-mobile {
     transform: translateY(-50%);
 }
 .controlLeft{
-    right:15%;
+    right:-5%;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
 }
@@ -607,14 +623,14 @@ button{
 }
 .rightShowing {
   position: absolute;
-  right: -60%;
+  right: -90%;
   
   -webkit-transition: all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 .rightNotshowing {
   position: absolute;
-    right:-5%;
+    right:-27%;
 
 }
 .left .inner,
