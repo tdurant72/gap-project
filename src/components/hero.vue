@@ -78,17 +78,14 @@
                         
                         <!-- <h1 class="knockout-text-two">WHY NC</h1> -->
                         <div class="">
-                            <div class="rounded">
+          
                             <div v-if="leftActive" class="overlay"></div>
                                 
                                     
-                                        <video  class="video split rounded" autoplay="autoplay" loop="loop" muted="muted" preload="preload" src="../assets/vids/right.mp4" >
+                                        <video  class="video rounded" autoplay="autoplay" loop="loop" muted="muted" preload="preload" src="../assets/vids/right.mp4" >
                                         </video>
                                    
-                        
-                                        
-                                
-                            </div>
+
                         </div>
                        
                         <div  class="content-wrap">
@@ -353,12 +350,20 @@ a.btn-mobile {
   overflow: hidden;
   background-color: #bdbdbd;
 }
-.left,
-.right {
+.left{
   width: 110%;
   height: 110%;
   top: 0;
   transform: skewX(-8deg);
+  overflow: hidden;
+  position: absolute;
+}
+
+.right {
+  width: 110%;
+  height: 110%;
+  top: 0;
+
   overflow: hidden;
   position: absolute;
 }
@@ -421,7 +426,7 @@ button{
 #sliderBckBtn {
     position: relative;
     z-index: 100;
-    right: 110px;
+    right: 100px;
     padding: 0 10px;
     margin-top: 50px;
 }
@@ -439,7 +444,7 @@ button{
 }
 #callout1{
     position: relative;
-    right: -10px;
+    right: -20px;
 }
 #callout1:hover >span{
         background:url(../assets/img/icon-grow-white.png) no-repeat left 10px center;
@@ -474,7 +479,7 @@ button{
 
 #callout2{
     position: relative;
-    right: 50px;
+    right: 70px;
 }
 #callout3{
     position: relative;
@@ -633,13 +638,19 @@ button{
     right:-27%;
 
 }
-.left .inner,
-.right .inner {
+.left .inner{
   width: 100%;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   transform: skewX(8deg);
+}
+.right .inner {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
 }
 
 h2.heroText{
