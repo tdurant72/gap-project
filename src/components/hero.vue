@@ -77,16 +77,12 @@
                     <div class="inner ">
                         
                         <!-- <h1 class="knockout-text-two">WHY NC</h1> -->
-                        <div class="">
           
                             <div v-if="leftActive" class="overlay"></div>
                                 
                                     
                                         <video  class="video rounded" autoplay="autoplay" loop="loop" muted="muted" preload="preload" src="../assets/vids/right.mp4" >
                                         </video>
-                                   
-
-                        </div>
                        
                         <div  class="content-wrap">
                             <transition name="fade-right-content" >
