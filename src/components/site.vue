@@ -6,19 +6,19 @@
             <h2 class="sectionTitle-light col-lg-8 col-lg-offset-1">site selection</h2>
         </div>
         <div class="row justify-content-center">
-            <div class="card col-lg-offset-1 col-lg-11" id="siteCard">
+            <div class="card col-lg-11" id="siteCard">
               <div class="row">
                 <div class="col-lg-6">
                 <img id="map" src="../assets/img/map.jpg" alt="map-icon">
               </div>
-                <div class=" col-lg-6">
+                <div class=" col-lg-5">
                     <p class="siteText">Our sites and buildings are fully equipped and ready to go to work. From utility planning to advanced telecommunications connectivity, everything you need is in place so you’ll be up and doing business - with preapproved environmental, we are prepared to break ground on a new facility. </p>
                 </div>
               </div>
           </div>
         </div>
-        <div class="row">
-            <div class="col-lg-2 col-lg-offset-8 col-md-2 col-md-offset-6 col-sm-6 btn-push">
+        <div class="row justify-content-end">
+            <div class="col-lg-2  col-md-2 col-md-offset-6 col-sm-6 btn-push">
                 <p class="lead">
                 <a class="btn btn-cta btn-lg btn-md " href="https://stage-wwwtest.ncgtp.com/grow/Pages/site-selection.aspx" role="button">Parcels</a>
                 </p>

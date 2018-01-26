@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div>
         <div class="row  justify-content-center stats">
             <div class="col-md-6 col-lg-3 col-sm-12">
                 
