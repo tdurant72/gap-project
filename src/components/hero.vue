@@ -680,7 +680,7 @@ padding-bottom: 20px;
     transform: skewX(8deg);
 }
 .content-body{
-    /* z-index: 50; */
+    z-index: 50;
 }
 .rightCont {
     right: 10%;
