@@ -1,8 +1,16 @@
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  
+  
   var player1;
   var player2;
       function onYouTubeIframeAPIReady() {
           player1 = new YT.Player('player1', {
               videoId: 'iiV5udOKPc4',
+              host: 'https://www.youtube.com',
               playerVars: {
                   mute: 1,
                   autoplay: 1,

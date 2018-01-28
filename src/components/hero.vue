@@ -29,7 +29,7 @@
                             <!-- <div id="video-overlay1" class="split" style="background-image:url(https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/video-overlay1.png);">></div>
                             <div id="player1" class="split"></div> -->
                             <video  id="leftVid" class="split" loop="loop" autoplay="autoplay" muted="muted" preload="preload" src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/left.1e0211a.mp4"   />
-
+                            
                             <!-- <iframe id="ytplayer1" class="embed-responsive-item" src="https://www.youtube.com/embed/iiV5udOKPc4?rel=0&autoplay=1&loop=1&playlist=iiV5udOKPc4&controls=0&showinfo=0&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen poster="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/hero-bkgd.8b17347.jpg"  ></iframe> -->
                         </div>
                     </transition>
@@ -760,13 +760,13 @@ padding-bottom: 20px;
    -o-background-size:cover;
    background-size:cover;
 }
-video#leftVid{
+video#leftVid {
     background:transparent url('../assets/img/hero-bkgd.jpg') no-repeat 0 0;
-   /* -webkit-background-size:cover;
+   -webkit-background-size:cover;
    -moz-background-size:cover;
    -o-background-size:cover;
-   background-size:cover; */
-   width:100%;
+   background-size:cover;
+   
 }
 
 @media (-webkit-video-playable-inline){
