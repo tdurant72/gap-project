@@ -50,10 +50,11 @@
                             </transition>
                         </div>
                         <!-- <div v-if="leftActive" class="overlay"></div> -->
-                        <div id="_buffering-background2" class="ytOverlay rounded"></div>
+                        
                             <!-- <video  id="rightVid" class="video rounded" autoplay="autoplay" loop="loop" muted="muted" preload="preload" playsinline src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/right.60bfb96.mp4"   >
                             </video> -->
                             <div id="rtVidCont" class="swoosh split">
+                                <div id="_buffering-background2" class="ytOverlay "></div>
                                 <iframe id="ytplayer2" class="none" src="https://www.youtube.com/embed/m60jj_-8Z6o?rel=0&loop=1&playlist=m60jj_-8Z6o&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/NC-img.a241866.jpg"  ></iframe>
                             </div>
                             <!-- <div class="split rounded ">
@@ -207,9 +208,9 @@ border-top-left-radius:120% 220%;
 border-bottom-left-radius:30% 70%;
 border:1px solid #fff; 
 height:100vh;
--webkit-box-shadow: -15px 5px 0px 1px rgba(255, 255, 255, 1);
--moz-box-shadow:    -15px 5px 0px 1px rgba(255, 255, 255, 1);
-box-shadow:         -15px 5px 0px 1px rgba(255, 255, 255, 1);
+-webkit-box-shadow: -40px 15px 0px 1px rgba(255, 255, 255, 1);
+-moz-box-shadow:    -40px 15px 0px 1px rgba(255, 255, 255, 1);
+box-shadow:         -40px 15px 0px 1px rgba(255, 255, 255, 1);
 position: relative;
 overflow: hidden;
 }
@@ -321,7 +322,7 @@ h2.overlayTextRt{
     /* background: url(../assets/img/hero-bkgd.jpg) no-repeat center center fixed; */
     height: 110vh;
     width: 100vw;
-    margin-top: 20px;
+    margin-top: 10px;
 }
  #ytplayer2 {
     /* background: url(../assets/img/NC-img.jpg) no-repeat center center fixed; */
