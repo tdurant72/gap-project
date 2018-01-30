@@ -26,11 +26,13 @@
                     </div>
                     <transition >
                         <div class="split embed-responsive embed-responsive-16by9">
-                            <!-- <div id="video-overlay1" class="split" style="background-image:url(https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/video-overlay1.png);">></div>
-                            <div id="player1" class="split"></div> -->
-                            <video  id="leftVid" class="split" loop="loop" autoplay="autoplay" muted="muted" preload="preload" src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/left.1e0211a.mp4"   />
+                            <!-- <div id="video-overlay1" class="split" style="background-image:url(https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/video-overlay1.png);">></div>-->
                             
-                            <!-- <iframe id="ytplayer1" class="embed-responsive-item" src="https://www.youtube.com/embed/iiV5udOKPc4?rel=0&autoplay=1&loop=1&playlist=iiV5udOKPc4&controls=0&showinfo=0&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen poster="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/hero-bkgd.8b17347.jpg"  ></iframe> -->
+                            <div id="video" class="split"></div> 
+                            <div id="_buffering-background1" class="ytOverlay"></div>
+                            <!-- <video  id="leftVid" class="split" loop="loop" autoplay="autoplay" muted="muted" preload="preload" src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/left.1e0211a.mp4"   /> -->
+                            
+                            <iframe id="ytplayer1" class="split" src="https://www.youtube.com/embed/iiV5udOKPc4?rel=0&loop=1&playlist=iiV5udOKPc4&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/hero-bkgd.8b17347.jpg"  ></iframe>
                         </div>
                     </transition>
                 </div><!--end of left inner-->
@@ -47,9 +49,13 @@
                             </div>
                             </transition>
                         </div>
-                        <div v-if="leftActive" class="overlay"></div>
-                            <video  id="rightVid" class="video rounded" autoplay="autoplay" loop="loop" muted="muted" preload="preload" playsinline src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/right.60bfb96.mp4"   >
-                            </video>
+                        <!-- <div v-if="leftActive" class="overlay"></div> -->
+                        <div id="_buffering-background2" class="ytOverlay rounded"></div>
+                            <!-- <video  id="rightVid" class="video rounded" autoplay="autoplay" loop="loop" muted="muted" preload="preload" playsinline src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/right.60bfb96.mp4"   >
+                            </video> -->
+                            <div id="rtVidCont" class="swoosh split">
+                                <iframe id="ytplayer2" class="none" src="https://www.youtube.com/embed/m60jj_-8Z6o?rel=0&loop=1&playlist=m60jj_-8Z6o&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/NC-img.a241866.jpg"  ></iframe>
+                            </div>
                             <!-- <div class="split rounded ">
                             <div id="video-overlay2" class="split" style="background-image:url(https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/NC-img.a241866.jpg);">></div>
                             <div id="player2" class="split video"></div>
@@ -61,8 +67,10 @@
                     <div v-if="leftActive" class="controller controllerImg" :class="[leftActive ? 'controlLeft':'controlRight']">
                         <div class="calloutContainer">
                             <div class="callouts"  id="callout1">
-                                <span id="callout1text" class="calloutText ctLeft">Expand Your Business</span>
                                 <a class="buttonCallouts btnLeft" role="button" href="https://stage-wwwtest.ncgtp.com/grow/Pages/default.aspx"   >GROW</a>
+
+                                <span id="callout1text" class="calloutText ctLeft">Expand Your Business</span>
+                                
                             </div>
                             <div class="callouts"  id="callout2">
                                 <span id="callout2text" class="calloutText ctLeft">Carolina Quality of Life</span>
@@ -79,18 +87,18 @@
                     <div v-if="rightActive" class="controller controllerImg" :class="[rightActive ? 'controlRight':'controlLeft']">
                         <div class="calloutContainer">
                             <div class="callouts" id="callout5">
-                                <span id="callout5text" class="calloutText">Expand Your Business</span>
+                                <span id="callout5text" class="calloutText rtLeft">Expand Your Business</span>
                                 <a  class="buttonCallouts btnRight" role="button" href="https://stage-wwwtest.ncgtp.com/grow/Pages/default.aspx" >GROW</a>
                             </div>
                             <div class="callouts"  id="callout6">
-                                <span id="callout6text" class="calloutText">
+                                <span id="callout6text" class="calloutText rtLeft">
                                     Our quality of life</span>
                                 <a  class="buttonCallouts btnRight" role="button" href="https://stage-wwwtest.ncgtp.com/live/Pages/default.aspx" >LIVE</a>
                                     
 
                             </div>
                             <div class="callouts" id="callout7">
-                                <span id="callout7text" class="calloutText ">
+                                <span id="callout7text" class="calloutText rtLeft">
                                     Economic Impact<br>& Opportunities</span>
                                 <a class="buttonCallouts btnRight" role="button" href="https://stage-wwwtest.ncgtp.com/work/Pages/default.aspx" >WORK</a>
 
@@ -194,7 +202,7 @@ padding: 0;
 vidAlt{
     background-size: cover;
 }
-.rounded{
+.swoosh{
 border-top-left-radius:120% 220%;
 border-bottom-left-radius:30% 70%;
 border:1px solid #fff; 
@@ -202,14 +210,53 @@ height:100vh;
 -webkit-box-shadow: -15px 5px 0px 1px rgba(255, 255, 255, 1);
 -moz-box-shadow:    -15px 5px 0px 1px rgba(255, 255, 255, 1);
 box-shadow:         -15px 5px 0px 1px rgba(255, 255, 255, 1);
+position: relative;
+overflow: hidden;
 }
-.video{
-    position: relative;
-    min-height: auto;
-    min-width: auto;
-    width: auto;
+.rounded{
+border-top-left-radius:120% 220%;
+border-bottom-left-radius:30% 70%;
+height:100vh;
+
+overflow: hidden;
+}
+
+
+#_buffering-background1 {
+		position: absolute;
+        height: 100vh;
+        width: 100%;
+		top: 30%;
+		/* bottom: 0; */
+		background:url(../assets/img/video-overlay1.png) no-repeat center center ;
+		z-index: 1;
+        padding: 0;
+        background-size:cover;
+        
+	}
+#_buffering-background2 {
+		position: absolute;
+		height: auto;
+        width: 100vw;
+		top: 0;
+		bottom: 0;
+		background:url(../assets/img/video-overlay2.png) no-repeat center center;
+		z-index: 1;
+        margin-top: 18px;
+	}
+#rtVidCont{
     height: 100vh;
+    width: 100vw;
 }
+.ytOverlay {
+/* opacity:1; */
+transition: opacity 1s; 
+}
+
+.ytOverlay.fade {
+opacity:0;
+}
+
 #player2{
 border-top-left-radius:120% 220%;
 border-bottom-left-radius:30% 70%;
@@ -269,15 +316,21 @@ h2.overlayTextRt{
     font-size:100vh;
     text-align: center;
 } */
- .itm1 {
-    background: url(../assets/img/hero-bkgd.jpg) no-repeat center center fixed;
-}
+
  #ytplayer1 {
-    background: url(../assets/img/hero-bkgd.jpg) no-repeat center center fixed;
+    /* background: url(../assets/img/hero-bkgd.jpg) no-repeat center center fixed; */
+    height: 110vh;
+    width: 100vw;
+    margin-top: 20px;
 }
- .itm2 {
-    background: url(../assets/img/NC-img.jpg) no-repeat center center fixed;
+ #ytplayer2 {
+    /* background: url(../assets/img/NC-img.jpg) no-repeat center center fixed; */
+    height: 110vh;
+    width: 100vw;
+    margin-left: -50px;
+    margin-top: 20px;
 }
+
 
 .carousel-item {
     width: 100%;
@@ -320,7 +373,7 @@ a.btn-mobile {
 .split{
     top:50%;
     left:50%;
-    position: fixed;
+    /* position: fixed; */
     min-height:100%;
     min-width:100%;
     width:auto;
@@ -355,7 +408,7 @@ a.btn-mobile {
   width: 110%;
   height: 110%;
   top: 0;
-  transform: skewX(-8deg);
+  /* transform: skewX(-8deg); */
   overflow: hidden;
   position: absolute;
 }
@@ -371,7 +424,7 @@ a.btn-mobile {
 #controllers{
     /* z-index: 1000; */
     width:10px;
-    
+    /* position: absolute; */
 }
 
 .controller {
@@ -379,10 +432,10 @@ a.btn-mobile {
     height: 100%;
     display: block;
     top: 0;
-    /* z-index: 10; */
+    z-index: 10;
     /* background-color: #ffffff; */
     width:250px;
-    transform: skewX(3deg);
+    /* transform: skewX(3deg); */
     
 }
 .controllerImg {
@@ -427,14 +480,14 @@ button{
 #sliderBckBtn {
     position: relative;
     /* z-index: 100; */
-    right: 100px;
+    right: 50%;
     padding: 0 10px;
     margin-top: 50px;
 }
 #sliderBckBtn2 {
     position: relative;
     /* z-index: 100; */
-    right: -15px;
+    right: -40%;
     padding: 0 10px;
     margin-top: 50px;
 }
@@ -445,7 +498,7 @@ button{
 }
 #callout1{
     position: relative;
-    right: -20px;
+    right: -8%;
 }
 #callout1:hover >span{
         background:url(../assets/img/icon-grow-white.png) no-repeat left 10px center;
@@ -480,11 +533,11 @@ button{
 
 #callout2{
     position: relative;
-    right: 70px;
+    right: 30%;
 }
 #callout3{
     position: relative;
-    right: 100px;
+    right: 60%;
 }
 #callout4{
     position: relative;
@@ -492,20 +545,21 @@ button{
 }
 #callout5{
     position: relative;
-    right: -140px;
+    right: -90%;
 
 }
 .callouts:hover .calloutText{
     width: 400px;
     opacity: 1;
-    transition: all 0.3s ease-out;
-    
 }
 .callouts:hover .ctLeft{
     width: 400px;
-    left: -380px;
+    left: -405px;
     opacity: 1;
     transition: all 0.3s ease-out;
+}
+.callouts:hover .rtLeft{
+    margin-left: 85px;
 }
 
 .calloutText{
@@ -515,7 +569,7 @@ button{
     padding: 10px;
     /* height: 60px; */
     line-height: 110%;
-    
+    z-index: 50;
     height: 70px;
     /* padding: 6.25% 70% 0 0; */
     padding: 20px;
@@ -547,11 +601,11 @@ button{
 
 #callout6{
     position: relative;
-    right: -75px;
+    right: -50%;
 }
 #callout7{
     position: relative;
-    right: -20px;
+    right: -20%;
 }
 #callout8{
     position: relative;
@@ -569,11 +623,12 @@ button{
     border-radius: 50%;
     width:90px;
     height: 90px;
+    z-index: 60;
     /* float: left; */
     font-family: 'Montserrat-LightItalic', sans-serif;
     font-weight:ligher;
     font-size: 20px;
-    transform: skewX(-2deg);
+    /* transform: skewX(-2deg); */
 }
 .buttonCallouts:hover {
     background-color: #0167B8;
@@ -581,6 +636,7 @@ button{
     height: 100px;
     -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    z-index: 50;
 }
 #arrowContainer{
     left:50%;
@@ -644,7 +700,7 @@ button{
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  transform: skewX(8deg);
+  /* transform: skewX(8deg); */
 }
 .right .inner {
   width: 100%;
@@ -677,7 +733,7 @@ padding-bottom: 20px;
     position: relative;
     top: 50%;
   
-    transform: skewX(8deg);
+    /* transform: skewX(8deg); */
 }
 .content-body{
     z-index: 50;
@@ -760,14 +816,14 @@ padding-bottom: 20px;
    -o-background-size:cover;
    background-size:cover;
 }
-video#leftVid {
+/* video#leftVid {
     background:transparent url('../assets/img/hero-bkgd.jpg') no-repeat 0 0;
    -webkit-background-size:cover;
    -moz-background-size:cover;
    -o-background-size:cover;
    background-size:cover;
    
-}
+} */
 
 @media (-webkit-video-playable-inline){
     .video img{display: none};
