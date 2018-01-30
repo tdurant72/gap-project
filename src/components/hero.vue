@@ -226,7 +226,7 @@ overflow: hidden;
 #_buffering-background1 {
 		position: absolute;
         height: 100vh;
-        width: 100%;
+        width: 150%;
 		top: 30%;
 		/* bottom: 0; */
 		background:url(../assets/img/video-overlay1.png) no-repeat center center ;
@@ -236,9 +236,10 @@ overflow: hidden;
         
 	}
 #_buffering-background2 {
+        margin-left:-45%;
 		position: absolute;
-		height: auto;
-        width: 100vw;
+		height: 100vh;
+        width: 160%;
 		top: 0;
 		bottom: 0;
 		background:url(../assets/img/video-overlay2.png) no-repeat center center;
@@ -328,8 +329,8 @@ h2.overlayTextRt{
     /* background: url(../assets/img/NC-img.jpg) no-repeat center center fixed; */
     height: 110vh;
     width: 100vw;
-    margin-left: -50px;
-    margin-top: 20px;
+    margin-left: -10%;
+    margin-top: 5px;
 }
 
 
@@ -481,14 +482,14 @@ button{
 #sliderBckBtn {
     position: relative;
     /* z-index: 100; */
-    right: 50%;
+    right: 100%;
     padding: 0 10px;
     margin-top: 50px;
 }
 #sliderBckBtn2 {
     position: relative;
     /* z-index: 100; */
-    right: -40%;
+    right: -10%;
     padding: 0 10px;
     margin-top: 50px;
 }
@@ -499,7 +500,7 @@ button{
 }
 #callout1{
     position: relative;
-    right: -8%;
+    right: -10%;
 }
 #callout1:hover >span{
         background:url(../assets/img/icon-grow-white.png) no-repeat left 10px center;
@@ -534,11 +535,11 @@ button{
 
 #callout2{
     position: relative;
-    right: 30%;
+    right: 70%;
 }
 #callout3{
     position: relative;
-    right: 60%;
+    right: 110%;
 }
 #callout4{
     position: relative;
@@ -546,7 +547,7 @@ button{
 }
 #callout5{
     position: relative;
-    right: -90%;
+    right: -110%;
 
 }
 .callouts:hover .calloutText{
@@ -606,7 +607,7 @@ button{
 }
 #callout7{
     position: relative;
-    right: -20%;
+    right: -10%;
 }
 #callout8{
     position: relative;
