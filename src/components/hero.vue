@@ -25,14 +25,15 @@
                         </transition>
                     </div>
                     <transition >
-                        <div class="split embed-responsive embed-responsive-16by9">
+                        <div>
                             <!-- <div id="video-overlay1" class="split" style="background-image:url(https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/video-overlay1.png);">></div>-->
                             
-                            <div id="video" class="split"></div> 
+                            <!-- <div id="video" class="split"></div>  -->
                             <div id="_buffering-background1" class="ytOverlay"></div>
                             <!-- <video  id="leftVid" class="split" loop="loop" autoplay="autoplay" muted="muted" preload="preload" src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/left.1e0211a.mp4"   /> -->
-                            
-                            <iframe id="ytplayer1" class="split" src="https://www.youtube.com/embed/iiV5udOKPc4?rel=0&loop=1&playlist=iiV5udOKPc4&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/hero-bkgd.8b17347.jpg"  ></iframe>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe id="ytplayer1" class="embed-responsive-item float-left" src="https://www.youtube.com/embed/iiV5udOKPc4?rel=0&loop=1&playlist=iiV5udOKPc4&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/hero-bkgd.8b17347.jpg"  ></iframe>
+                        </div>
                         </div>
                     </transition>
                 </div><!--end of left inner-->
@@ -53,9 +54,11 @@
                         
                             <!-- <video  id="rightVid" class="video rounded" autoplay="autoplay" loop="loop" muted="muted" preload="preload" playsinline src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/right.60bfb96.mp4"   >
                             </video> -->
-                            <div id="rtVidCont" class="swoosh split">
+                            <div id="rtVidCont" class="swoosh ">
                                 <div id="_buffering-background2" class="ytOverlay "></div>
-                                <iframe id="ytplayer2" class="none" src="https://www.youtube.com/embed/m60jj_-8Z6o?rel=0&loop=1&playlist=m60jj_-8Z6o&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/NC-img.a241866.jpg"  ></iframe>
+                                <div class="embed-responsive embed-responsive-16by9 rtAdjust">
+                                    <iframe id="ytplayer2" class="embed-responsive-item float-right" src="https://www.youtube.com/embed/m60jj_-8Z6o?rel=0&loop=1&playlist=m60jj_-8Z6o&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/NC-img.a241866.jpg"  ></iframe>
+                            </div>
                             </div>
                             <!-- <div class="split rounded ">
                             <div id="video-overlay2" class="split" style="background-image:url(https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/NC-img.a241866.jpg);">></div>
@@ -207,7 +210,7 @@ vidAlt{
 border-top-left-radius:120% 220%;
 border-bottom-left-radius:30% 70%;
 border:1px solid #fff; 
-height:100vh;
+height:100%;
 -webkit-box-shadow: -40px 15px 0px 1px rgba(255, 255, 255, 1);
 -moz-box-shadow:    -40px 15px 0px 1px rgba(255, 255, 255, 1);
 box-shadow:         -40px 15px 0px 1px rgba(255, 255, 255, 1);
@@ -225,30 +228,37 @@ overflow: hidden;
 
 #_buffering-background1 {
 		position: absolute;
-        height: 100vh;
-        width: 150%;
-		top: 30%;
+        min-width: 100%;
+        min-height: 100%;
+        height: 100%;
+        width: 100%;
+		top: 65px;
+        left: -2%;
 		/* bottom: 0; */
-		background:url(../assets/img/video-overlay1.png) no-repeat center center ;
-		z-index: 1;
+		background:url(../assets/img/video-overlay1.png) no-repeat;
+		/* z-index: 1; */
         padding: 0;
         background-size:cover;
+        z-index: 1;
         
 	}
 #_buffering-background2 {
-        margin-left:-45%;
+        margin-left:-105px;
 		position: absolute;
-		height: 100vh;
-        width: 160%;
+		height: 100%;
+        width: 100%;
 		top: 0;
 		bottom: 0;
-		background:url(../assets/img/video-overlay2.png) no-repeat center center;
+		background:url(../assets/img/video-overlay2.png) no-repeat;
 		z-index: 1;
-        margin-top: 18px;
+        background-size: cover;
 	}
 #rtVidCont{
-    height: 100vh;
-    width: 100vw;
+    /* height: 100vh;
+    width: 100vw; */
+    height: 100%;
+    width: 100%;
+    margin-left: 30px;
 }
 .ytOverlay {
 /* opacity:1; */
@@ -263,7 +273,7 @@ opacity:0;
 border-top-left-radius:120% 220%;
 border-bottom-left-radius:30% 70%;
 border:1px solid #fff; 
-height:100vh;
+height:100%;
 -webkit-box-shadow: -15px 5px 0px 1px rgba(255, 255, 255, 1);
 -moz-box-shadow:    -15px 5px 0px 1px rgba(255, 255, 255, 1);
 box-shadow:         -15px 5px 0px 1px rgba(255, 255, 255, 1);
@@ -271,7 +281,7 @@ box-shadow:         -15px 5px 0px 1px rgba(255, 255, 255, 1);
     min-height: auto;
     min-width: auto;
     width: auto;
-    height: 100vh;
+    
 }
  .overlay {
     /* height: 100%;
@@ -321,18 +331,35 @@ h2.overlayTextRt{
 
  #ytplayer1 {
     /* background: url(../assets/img/hero-bkgd.jpg) no-repeat center center fixed; */
-    height: 110vh;
-    width: 100vw;
-    margin-top: 10px;
+    position: absolute;
+    /* top:50px; */
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    height: 110%;
+    width: 110%;
+    
 }
  #ytplayer2 {
     /* background: url(../assets/img/NC-img.jpg) no-repeat center center fixed; */
-    height: 110vh;
-    width: 100vw;
+    position: absolute;
+    top:5px;
+    /* right: 8%; */
+    /* height: 110vh;
+    width: 100vw; */
+    height: 100%;
+    width: 100%;
     margin-left: -10%;
-    margin-top: 5px;
+    /* margin-top: 5px; */
 }
-
+.rtAdjust{
+    height:100%;
+}
+.vids{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
 
 .carousel-item {
     width: 100%;
@@ -342,7 +369,7 @@ h2.overlayTextRt{
 }
 .heroText3Mobile {
     font-size: 18px;
-    line-height: 110%;
+    line-height: 100%;
     color:#337ab7;
     text-shadow:1px 0 0;
     font-weight: normal;
@@ -401,14 +428,14 @@ a.btn-mobile {
 }
 .wrapper {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: relative;
   overflow: hidden;
   background-color: #bdbdbd;
 }
 .left{
-  width: 110%;
-  height: 110%;
+  width: 100%;
+  height: 100%;
   top: 0;
   /* transform: skewX(-8deg); */
   overflow: hidden;
@@ -416,15 +443,15 @@ a.btn-mobile {
 }
 
 .right {
-  width: 110%;
-  height: 110%;
+  width: 100%;
+  height: 100%;
   top: 0;
 
   overflow: hidden;
   position: absolute;
 }
 #controllers{
-    /* z-index: 1000; */
+    /* z-index: 10000; */
     width:10px;
     /* position: absolute; */
 }
@@ -434,9 +461,9 @@ a.btn-mobile {
     height: 100%;
     display: block;
     top: 0;
-    z-index: 10;
+    z-index: 500;
     /* background-color: #ffffff; */
-    width:250px;
+    width:10px;
     /* transform: skewX(3deg); */
     
 }
@@ -451,16 +478,16 @@ a.btn-mobile {
 }
 .calloutContainer{
     position: absolute;
-    top:50%;
+    top:58%;
     transform: translateY(-50%);
 }
 .controlLeft{
-    right:-5%;
+    right:22%;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
 }
 .controlRight{
-    right:68%;
+    right:87%;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
 }
@@ -482,14 +509,14 @@ button{
 #sliderBckBtn {
     position: relative;
     /* z-index: 100; */
-    right: 100%;
+    right: 75%;
     padding: 0 10px;
     margin-top: 50px;
 }
 #sliderBckBtn2 {
     position: relative;
     /* z-index: 100; */
-    right: -10%;
+    right: -40%;
     padding: 0 10px;
     margin-top: 50px;
 }
@@ -500,7 +527,7 @@ button{
 }
 #callout1{
     position: relative;
-    right: -10%;
+    right: 40%;
 }
 #callout1:hover >span{
         background:url(../assets/img/icon-grow-white.png) no-repeat left 10px center;
@@ -535,11 +562,11 @@ button{
 
 #callout2{
     position: relative;
-    right: 70%;
+    right: 80%;
 }
 #callout3{
     position: relative;
-    right: 110%;
+    right: 100%;
 }
 #callout4{
     position: relative;
@@ -547,7 +574,7 @@ button{
 }
 #callout5{
     position: relative;
-    right: -110%;
+    right: -80%;
 
 }
 .callouts:hover .calloutText{
@@ -570,7 +597,7 @@ button{
     margin-left: 22px;
     padding: 10px;
     /* height: 60px; */
-    line-height: 110%;
+    line-height: 100%;
     z-index: 50;
     height: 70px;
     /* padding: 6.25% 70% 0 0; */
@@ -603,11 +630,11 @@ button{
 
 #callout6{
     position: relative;
-    right: -50%;
+    right: -40%;
 }
 #callout7{
     position: relative;
-    right: -10%;
+    right: -20%;
 }
 #callout8{
     position: relative;
@@ -674,7 +701,7 @@ button{
   position: relative;
 }
 .leftShowing{
-    left: -65%;
+    left: -50%;
   -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
@@ -684,17 +711,18 @@ button{
 }
 .right {
   position: absolute;
+  z-index: 10;
 }
 .rightShowing {
   position: absolute;
-  right: -90%;
+  right: -70%;
   padding-left: 20px;
   -webkit-transition: all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 .rightNotshowing {
   position: absolute;
-    right:-27%;
+    right:-17%;
     padding-left: 20px;
 }
 .left .inner{
