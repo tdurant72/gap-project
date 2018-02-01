@@ -224,19 +224,19 @@
         <!-- dynamic -->
         <div class="site-footer__top">
                     <div class="site-footer__main row">
-                        <div class="grid__cell col-lg-4">
+                        <div class="grid__cell col-lg">
                             <div class="grid__cell-inner">
                                 <ul class="main-nav-footer-content main-nav-footer-grow">
                                 </ul>
                             </div>
                         </div>
-                        <div class="grid__cell col-lg-4">
+                        <div class="grid__cell col-lg">
                             <div class="grid__cell-inner">
                                 <ul class="main-nav-footer-content main-nav-footer-live">
                                 </ul>
                             </div>
                         </div>
-                        <div class="grid__cell col-lg-4">
+                        <div class="grid__cell col-lg">
                             <div class="grid__cell-inner">
                                 <ul class="main-nav-footer-content main-nav-footer-work">
                                 </ul>
@@ -244,19 +244,19 @@
                         </div>
                     </div>
                 <div class="site-footer__main row">
-                    <div class="grid__cell col-lg-4">
+                    <div class="grid__cell col-lg">
                         <div class="grid__cell-inner">
                             <ul class="main-nav-footer-content main-nav-footer-resources">
                             </ul>
                         </div>
                     </div>
-                    <div class="grid__cell col-lg-4">
+                    <div class="grid__cell col-lg">
                         <div class="grid__cell-inner">
                             <ul class="main-nav-footer-content main-nav-footer-contact">
                             </ul>
                         </div>
                     </div>
-                    <div class="grid__cell col-lg-4">
+                    <div class="grid__cell col-lg">
                         <div class="grid__cell-inner">
                             <ul class="main-nav-footer-content main-nav-footer-location-info">
                                 <p>3800 Hwy. 58 North<br>
