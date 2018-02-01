@@ -207,7 +207,7 @@ vidAlt{
     background-size: cover;
 }
 .swoosh{
-border-top-left-radius:120% 220%;
+border-top-left-radius:93% 220%;
 border-bottom-left-radius:30% 70%;
 border:1px solid #fff; 
 height:100%;
@@ -259,6 +259,7 @@ overflow: hidden;
     height: 100%;
     width: 100%;
     margin-left: 30px;
+    z-index: 10;;
 }
 .ytOverlay {
 /* opacity:1; */
@@ -336,9 +337,9 @@ h2.overlayTextRt{
     left: 0;
     min-height: 100%;
     min-width: 100%;
-    height: 110%;
-    width: 110%;
-    
+    height: 115%;
+    width: 115%;
+    top:-42px;
 }
  #ytplayer2 {
     /* background: url(../assets/img/NC-img.jpg) no-repeat center center fixed; */
@@ -482,7 +483,7 @@ a.btn-mobile {
     transform: translateY(-50%);
 }
 .controlLeft{
-    right:22%;
+    right:24%;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
 }

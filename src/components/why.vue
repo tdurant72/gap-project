@@ -2,12 +2,12 @@
   <!-- Second Parallax Section -->
     <div class="jumbotron paral-sm paralsec2" id="why">
         <div class="row justify-content-center" id="whyCont">
-
-    <h2 class="display-3 sectionTitle-dark">why global transpark</h2>
+            <h2 class="display-3 sectionTitle-dark">why global transpark</h2>
+        </div>
     <app-statcards></app-statcards>
     <!-- <app-reasons  ></app-reasons> -->
 
-        </div>
+        
     </div>
 </template>
 <script>
