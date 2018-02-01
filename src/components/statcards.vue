@@ -1,21 +1,20 @@
 <template>
     <div>
+        <div class="row justify-content-center" id="whyCont">
+            <h2 class="display-3 sectionTitle-dark col-lg-12">why global transpark</h2>
+        </div>
         <div class="row  justify-content-center stats">
             <div class="col-md-6 col-lg col-sm-12">
-                
                     <div>
                         <p class="calc"><span class="counter">5,775</span></p>
                         <p class="whyText">Acres of Environmentally Permitted Land</p>
                     </div>
-                
             </div>
             <div class="col-md-6 col-lg col-sm-12">
-               
                         <div>
                             <p class="calc"><span class="counter">450,000</span>+</p>
                             <p class="whyText">Regional Workforce</p>
                         </div>
-                
             </div>
             <div class="col-md-6 col-lg col-sm-12">
                         <div>
@@ -82,6 +81,17 @@
   };
 </script>
 <style scoped>
+h2.sectionTitle-dark{
+opacity: 0.7;
+font-family: 'Montserrat-Bold', sans-serif;
+font-size: 48px;
+font-weight:bold;
+color: #212121;
+text-transform: uppercase;
+text-align: center;
+margin-top: 50px;
+margin-bottom: 50px;
+}
 .stats{
     margin-top: 20px;
 }

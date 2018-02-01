@@ -664,10 +664,11 @@ button{
     background-color: #0167B8;
     width:100px;
     height: 100px;
-    -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    /* -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715); */
     z-index: 50;
 }
+
 #arrowContainer{
     left:50%;
     top:75%;
