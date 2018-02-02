@@ -35,8 +35,8 @@
                                 <iframe id="ytplayer1" class="embed-responsive-item float-left" src="https://www.youtube.com/embed/iiV5udOKPc4?rel=0&loop=1&playlist=iiV5udOKPc4&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/video-overlay1.7f242e8.png"  ></iframe>
                         </div>
                         </div>
-                        <div v-else>
-                            <video  id="leftVid" class="split" loop="loop" autoplay="autoplay" muted="muted" preload="preload" src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/left.1e0211a.mp4"   /> 
+                        <div v-else class="embed-responsive embed-responsive-16by9">
+                            <video  id="leftVid" class="responsive-item float-left" loop="loop" autoplay="autoplay" muted="muted" preload="preload" src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/left.1e0211a.mp4"   /> 
                         </div>
                     </transition>
                 </div><!--end of left inner-->
@@ -63,8 +63,8 @@
                                     <iframe id="ytplayer2" class="embed-responsive-item float-right" src="https://www.youtube.com/embed/m60jj_-8Z6o?rel=0&loop=1&playlist=m60jj_-8Z6o&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/video-overlay2.ed7812a.png"  ></iframe>
                                 </div>
                             </div>
-                            <div v-else class="split swoosh ">
-                                <video  id="rightVid" class="video" autoplay="autoplay" loop="loop" muted="muted" preload="preload" playsinline src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/right.60bfb96.mp4"   ></video>
+                            <div v-else class="swoosh embed-responsive embed-responsive-16by9 ">
+                                <video  id="rightVid" class="video responsive-item float-right" autoplay="autoplay" loop="loop" muted="muted" preload="preload" playsinline src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/right.60bfb96.mp4"   ></video>
                             <!-- <div id="video-overlay2" class="split" style="background-image:url(https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/NC-img.a241866.jpg);">></div>
                             <div id="player2" class="split video"></div> -->
                             </div> 
@@ -498,7 +498,7 @@ a.btn-mobile {
 }
 .calloutContainer{
     position: absolute;
-    top:58%;
+    top:50%;
     transform: translateY(-50%);
 }
 .controlLeft{
@@ -507,7 +507,7 @@ a.btn-mobile {
     transition: all 300ms ease-in-out;
 }
 .controlRight{
-    right:87%;
+    right:85%;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
 }
@@ -670,8 +670,8 @@ button{
     text-decoration: none;
     margin: 4px 2px;
     border-radius: 50%;
-    width:90px;
-    height: 90px;
+    width:100px;
+    height: 100px;
     z-index: 60;
     /* float: left; */
     font-family: 'Montserrat-LightItalic', sans-serif;
@@ -866,7 +866,10 @@ padding-bottom: 20px;
    -moz-background-size:cover;
    -o-background-size:cover;
    background-size:cover;
-   margin-top: 25px;
+   position: absolute;
+   width: 100vw;
+   margin-left: -10%;
+   margin-top:25px;
 }
 video#leftVid {
     background:transparent url('../assets/img/video-overlay1.png') no-repeat 0 0;
@@ -874,14 +877,12 @@ video#leftVid {
    -moz-background-size:cover;
    -o-background-size:cover;
    background-size:cover;
-   position: relative;
-   top:550px;
-   left:50%;
-   background-size:100% 100%;
+   position: absolute;
+   top:0;
+   left:0;
+  
    min-height: 100%;
    min-width: 100%;
-   height:auto;
-   width:auto;
 }
 
 @media (-webkit-video-playable-inline){
