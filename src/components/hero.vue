@@ -63,7 +63,7 @@
                                     <iframe id="ytplayer2" class="embed-responsive-item float-right" src="https://www.youtube.com/embed/m60jj_-8Z6o?rel=0&loop=1&playlist=m60jj_-8Z6o&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/video-overlay2.ed7812a.png"  ></iframe>
                                 </div>
                             </div>
-                            <div v-else class="swoosh embed-responsive embed-responsive-16by9 ">
+                            <div v-else class="swoosh embed-responsive embed-responsive-16by9 " id="rtVidContEb">
                                 <video  id="rightVid" class="video responsive-item float-right" autoplay="autoplay" loop="loop" muted="muted" preload="preload" playsinline src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/right.60bfb96.mp4"   ></video>
                             <!-- <div id="video-overlay2" class="split" style="background-image:url(https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/NC-img.a241866.jpg);">></div>
                             <div id="player2" class="split video"></div> -->
@@ -278,7 +278,10 @@ overflow: hidden;
     height: 100%;
     width: 100%;
     margin-left: 30px;
-    z-index: 10;;
+    z-index: 10;
+}
+#rtVidContEb{
+    z-index: 10;
 }
 .ytOverlay {
 /* opacity:1; */
