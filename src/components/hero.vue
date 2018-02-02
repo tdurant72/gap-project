@@ -33,7 +33,7 @@
                             <!-- <video  id="leftVid" class="split" loop="loop" autoplay="autoplay" muted="muted" preload="preload" src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/left.1e0211a.mp4"   /> -->
                             <div class="embed-responsive embed-responsive-16by9">
                                 <iframe id="ytplayer1" class="embed-responsive-item float-left" src="https://www.youtube.com/embed/iiV5udOKPc4?rel=0&loop=1&playlist=iiV5udOKPc4&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/video-overlay1.7f242e8.png"  ></iframe>
-                        </div>
+                            </div>
                         </div>
                         <div v-else class="embed-responsive embed-responsive-16by9">
                             <video  id="leftVid" class="responsive-item float-left" loop="loop" autoplay="autoplay" muted="muted" preload="preload" src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/left.1e0211a.mp4"   /> 
@@ -195,8 +195,8 @@ export default {
   },
   computed:{
       detectBrowser(){
-          if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-              alert('Its Safari');
+          if (navigator.userAgent.indexOf('Safari') != -1) {
+              console.log('Its Safari');
               this.isSafari = true;
           }
       }
