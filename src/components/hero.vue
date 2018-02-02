@@ -57,7 +57,7 @@
                         
                             <!-- <video  id="rightVid" class="video rounded" autoplay="autoplay" loop="loop" muted="muted" preload="preload" playsinline src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/right.60bfb96.mp4"   >
                             </video> -->
-                            <div v-if="isSafari ==='true'" id="rtVidCont" class="swoosh ">
+                            <div v-if="isSafari" id="rtVidCont" class="swoosh ">
                                 <div id="_buffering-background2" class="ytOverlay "></div>
                                 <div class="embed-responsive embed-responsive-16by9 rtAdjust">
                                     <iframe id="ytplayer2" class="embed-responsive-item float-right" src="https://www.youtube.com/embed/m60jj_-8Z6o?rel=0&loop=1&playlist=m60jj_-8Z6o&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/video-overlay2.ed7812a.png"  ></iframe>
