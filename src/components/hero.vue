@@ -25,15 +25,18 @@
                         </transition>
                     </div>
                     <transition >
-                        <div>
+                        <div v-if="isSafari">
                             <!-- <div id="video-overlay1" class="split" style="background-image:url(https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/video-overlay1.png);">></div>-->
                             
                             <!-- <div id="video" class="split"></div>  -->
                             <div id="_buffering-background1" class="ytOverlay"></div>
                             <!-- <video  id="leftVid" class="split" loop="loop" autoplay="autoplay" muted="muted" preload="preload" src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/left.1e0211a.mp4"   /> -->
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe id="ytplayer1" class="embed-responsive-item float-left" src="https://www.youtube.com/embed/iiV5udOKPc4?rel=0&loop=1&playlist=iiV5udOKPc4&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/hero-bkgd.8b17347.jpg"  ></iframe>
+                                <iframe id="ytplayer1" class="embed-responsive-item float-left" src="https://www.youtube.com/embed/iiV5udOKPc4?rel=0&loop=1&playlist=iiV5udOKPc4&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/video-overlay1.7f242e8.png"  ></iframe>
                         </div>
+                        </div>
+                        <div v-else>
+                            <video  id="leftVid" class="split" loop="loop" autoplay="autoplay" muted="muted" preload="preload" src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/left.1e0211a.mp4"   /> 
                         </div>
                     </transition>
                 </div><!--end of left inner-->
@@ -54,16 +57,17 @@
                         
                             <!-- <video  id="rightVid" class="video rounded" autoplay="autoplay" loop="loop" muted="muted" preload="preload" playsinline src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/right.60bfb96.mp4"   >
                             </video> -->
-                            <div id="rtVidCont" class="swoosh ">
+                            <div v-if="isSafari" id="rtVidCont" class="swoosh ">
                                 <div id="_buffering-background2" class="ytOverlay "></div>
                                 <div class="embed-responsive embed-responsive-16by9 rtAdjust">
-                                    <iframe id="ytplayer2" class="embed-responsive-item float-right" src="https://www.youtube.com/embed/m60jj_-8Z6o?rel=0&loop=1&playlist=m60jj_-8Z6o&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/NC-img.a241866.jpg"  ></iframe>
+                                    <iframe id="ytplayer2" class="embed-responsive-item float-right" src="https://www.youtube.com/embed/m60jj_-8Z6o?rel=0&loop=1&playlist=m60jj_-8Z6o&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/video-overlay2.ed7812a.png"  ></iframe>
+                                </div>
                             </div>
-                            </div>
-                            <!-- <div class="split rounded ">
-                            <div id="video-overlay2" class="split" style="background-image:url(https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/NC-img.a241866.jpg);">></div>
-                            <div id="player2" class="split video"></div>
-                            </div> -->
+                            <div v-else class="split swoosh ">
+                                <video  id="rightVid" class="video" autoplay="autoplay" loop="loop" muted="muted" preload="preload" playsinline src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/right.60bfb96.mp4"   ></video>
+                            <!-- <div id="video-overlay2" class="split" style="background-image:url(https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/NC-img.a241866.jpg);">></div>
+                            <div id="player2" class="split video"></div> -->
+                            </div> 
                     </div><!--end of righ inner-->
             </div>
                 
@@ -183,14 +187,28 @@ export default {
       skew : skew,
       leftActive: true,
       rightActive: false,
+      notSafari:true,
+      isSafari:false,
       isOnTop: true,
       delta: delta,
+      }
+  },
+  computed:{
+      detectBrowser(){
+          if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+              alert('Its Safari');
+              this.isSafari = true;
+          }
       }
   },
   methods:{
       changeWidth(){
           this.rightActive = !this.rightActive;
           this.leftActive = !this.leftActive;
+      },
+      changeVidSource(){
+          this.isSafari = !this.isSafari;
+          this.notSafari = !notSafari;
       }
   }
  
@@ -216,6 +234,7 @@ height:100%;
 box-shadow:         -40px 15px 0px 1px rgba(255, 255, 255, 1);
 position: relative;
 overflow: hidden;
+margin-left:30px;
 }
 .rounded{
 border-top-left-radius:120% 220%;
@@ -842,20 +861,28 @@ padding-bottom: 20px;
   transform: translate(-100%, 0);
 }
 #rightVid{
-    background:transparent url('../assets/img/NC-img.jpg') no-repeat 0 0;
+    background:transparent url('../assets/img/video-overlay2.png') no-repeat 0 0;
    -webkit-background-size:cover;
    -moz-background-size:cover;
    -o-background-size:cover;
    background-size:cover;
+   margin-top: 25px;
 }
-/* video#leftVid {
-    background:transparent url('../assets/img/hero-bkgd.jpg') no-repeat 0 0;
+video#leftVid {
+    background:transparent url('../assets/img/video-overlay1.png') no-repeat 0 0;
    -webkit-background-size:cover;
    -moz-background-size:cover;
    -o-background-size:cover;
    background-size:cover;
-   
-} */
+   position: relative;
+   top:550px;
+   left:50%;
+   background-size:100% 100%;
+   min-height: 100%;
+   min-width: 100%;
+   height:auto;
+   width:auto;
+}
 
 @media (-webkit-video-playable-inline){
     .video img{display: none};
