@@ -48,9 +48,10 @@ export default {
 <style>
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
 }
 /* Header Parallax Element Style*/ 
 .paral {
@@ -76,7 +77,7 @@ background-position: 50% 50%;
 }
 /* Paragraph for Parallax Section */ 
 .paral p {
-font-size: 24px;
+font-size: 1rem;
 color:#f5f5f5;
 text-align: center;
 line-height: 60px;
@@ -85,7 +86,7 @@ line-height: 60px;
 /* Heading for Parallax Section */ 
 .paral h1 {
 color: rgba(255, 255, 255, 0.8);
-font-size: 60px;
+font-size: 4.286rem;
 text-align: center;
 /* padding-top: 60px; */
 line-height: 100px;
@@ -103,7 +104,7 @@ background: #0081C3;
 
 a.btn-cta{
 font-family: 'Lato-Light', sans-serif;
-font-size: 16px;
+font-size: 1.143rem;
 color: #FFFFFF;
 text-shadow: 0 1px 0 #BDBDBD;
 text-transform: uppercase;
@@ -117,7 +118,21 @@ border-radius: 10px;
 
 a.btn-primary{
 font-family: 'Lato-Light',sans-serif;
-font-size: 16px;
+font-size: 1.143rem;
+color: #FFFFFF;
+text-shadow: 0 1px 0 #BDBDBD;
+text-transform: uppercase;
+}
+.btn-secondary{
+background: rgb(85, 198, 255);
+/* border: 1px solid #006396;
+box-shadow: 0 2px 0 0 #004E76, inset 0 2px 0 0 #01A9FF; */
+border-radius: 10px;
+}
+
+a.btn-secondary{
+font-family: 'Lato-Light',sans-serif;
+font-size: 1.143rem;
 color: #FFFFFF;
 text-shadow: 0 1px 0 #BDBDBD;
 text-transform: uppercase;
@@ -128,23 +143,23 @@ text-transform: uppercase;
 .ncgtp-navbar a {display: block;padding: 5px 10px;text-decoration: none;}
 .ncgtp-navbar .logo {background-image: url(./assets/img/logo.jpg); width:400px; height:50px; margin:10px 10px	5px 10px; background-repeat:no-repeat; position:relative; left:20px;}
 .ncgtp-navbar .logo {mix-blend-mode: darken;}
-.gtpBurger {transform: scale(1.5);cursor: pointer;margin:20px; float:right;}
+.gtpBurger {transform: scale(1.0);cursor: pointer;margin:20px; float:right;}
 .navContainer {display: none;}
 .expand { display: block;padding-top:20px;}
 .main-nav-column {float: left;width: 20%;}
-.main-nav-header { size: 2rem;color: white;}
+.main-nav-header { size: 0.857rem;color: white;}
 .main-nav-header-content, .main-nav-footer-content {list-style: none;color: white;display: inline-block;}
 .main-nav-header-content li{display: inline-block;width: 100%;}
-.main-nav-header-content li:first-child a{color: #0081C3;font-size: 18px;border-bottom: .2rem solid;}
+.main-nav-header-content li:first-child a{color: #0081C3;font-size: 0.714rem;border-bottom: .2rem solid;}
 .main-nav-header-content li a { text-align: left;}
 .main-nav-footer-content a {font-family: 'Lato', sans-serif;text-decoration: none; margin-left:0px;}
-.main-nav-footer-content li:first-child a {font-family: 'Montserrat', sans-serif;font-size: 20px; font-weight:bold; margin-left:-10px}
+.main-nav-footer-content li:first-child a {font-family: 'Montserrat', sans-serif;font-size: 0.714rem; font-weight:bold; margin-left:-10px}
 .social-list__list {text-align: center;}
 li.social-list__item { transform: scale(3);padding: 0 2rem;}
 .site-footer {margin-top: 2rem;}
 .site-footer, .site-footer__bottom  { background: #0c98e2;}
 .main-nav-footer-location-info a {text-decoration: none; cursor: text;}
-ul.main-nav-footer-content.main-nav-footer-location-info > p {font-size: 16px;font-family: 'Lato',sans-serif;}
+ul.main-nav-footer-content.main-nav-footer-location-info > p {font-size: 1.0.714rem;font-family: 'Lato',sans-serif;}
 .site-footer__main.row { padding-bottom: 20px;}
 i.icon-instagram{background:url(./assets/img/instagram.png) left bottom;background-size:50%;background-repeat:no-repeat;}
 i.icon-facebook{background:url(./assets/img/facebook.png) left bottom; background-size:50%;background-repeat:no-repeat;}
@@ -157,5 +172,18 @@ ul.social-list__list>li { display: inline-block;}
 
 ul{
   list-style: none;
+}
+/* 1rem(16px) @ 30rem(480px) increasing to 2rem(32px) @ 125rem(2000px) */
+@media (min-width: 30rem) {
+  :root {
+    font-size: calc(0.857rem + ((1vw - 0.3rem) * 1.0526));
+    /* Where: * 1.0526 = 100 * font_Size_Difference / viewport_Width_Difference */
+  }
+}
+/* Prevent font scaling beyond this breakpoint */
+@media (min-width: 125rem) {
+  :root {
+    font-size:1.875rem;
+  }
 }
 </style>

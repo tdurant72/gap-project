@@ -86,7 +86,7 @@ function onPlayerStateChange1(el){
     if(el.data === 1) {
         $('#_buffering-background1').fadeOut();
     }else{
-        $('#_buffering-background1').fadeIn(300);
+        $('#_buffering-background1').fadeIn();
     }
     console.log('vid1 playing');
 }

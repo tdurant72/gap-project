@@ -1,29 +1,30 @@
 <template>
   <!-- Third Parallax Section -->
 <div class="jumbotron paral paralsec6" id="contact">
-<div class="container" >
+<div class="none" >
         
         <div class="row justify-content-center">
             <div class="col-lg-12" id="contactCard">
               <div class="row justify-content-center">
                 <div class="col-lg-6">
+                    <p class="contactText">
+                        <a class="contactLink" href="#">
+                            <img src="../assets/img/logo.jpg" height="41" alt="">
+                        </a>
+                    </p>  
                 <p class="contactText">To learn more about the services and facilities available at the N.C. Global TransPark, please fill out the form, or contact us directly. Your information will be kept confidential and will not be shared with any outside parties.</p>
                 <p class="contactText">
                   3800 Hwy. 58 North<br>
                   Kinston, N.C. 28501<br>
-                  Phone: 252/523-1351<br>
-                  Fax: 252/522-1765
                 </p>
                 <p class="contactText">
-                  For directions to the N.C. Global TransPark Authority, <a href="http://www.ncgtp.com/contact/directions.html">click here</a>
+                  Phone: (252)523-1351<br>
+                  Fax: (252)522-1765
                 </p>
-                <p class="contactText">
-                  <a class="contactLink" href="#">
-                    <img src="../assets/img/logo.jpg" height="41" alt="">
-                  </a>
-                </p>
+               
+                 <a id="directionsBtn" class="btn btn-secondary btn-lg btn-md btn-hero" href="http://www.ncgtp.com/contact/directions.html" role="button">Get Directions</a>
               </div>
-                <div class="card col-lg-5 col-md-5" id="formCard" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                <div class="card col-lg-5 col-md-5" id="formCard" >
                       <div id="formContainer" >
                           <div class="primary media-wrap">
                               <div class="col-lg-12">
@@ -135,13 +136,13 @@ background-color: #f6f6f6;
 }
 p.contactText{
 font-family: 'Lato-Light', sans-serif;
-font-size: 16px;
+font-size: 0.857rem;
 color: #212121;
 letter-spacing: 0;
 line-height: 125%;
 margin-top: 20px;
-padding-right: 2.5em;
-padding-left: 2.5em;
+padding-right: 2.5rem;
+
 text-align: left;
 }
 .contactInfo{
@@ -149,21 +150,13 @@ text-align: left;
 }
 .contactLink{
   height: 50px;
-  padding-right: 2.5em;
+  padding-right: 2.5rem;
   margin-bottom: 20px;
 }
 a > img{
     mix-blend-mode: darken;
 }
-h2{
-opacity: 0.65;
-/* offset-x | offset-y | blur-radius | color */
-text-shadow: 1px 1px 1px black;
-font-family: Avenir-Black;
-font-size: 5em;
-color: #FFFFFF;
-text-align: center;
-}
+
 .chbxTop{
   padding-top: 15px;
 }
@@ -172,7 +165,7 @@ text-align: center;
 }
  label{
 font-family: 'Lato-Regular', sans-serif;
-font-size: 14px;
+font-size: 0.857rem;
 color: #757575;
 font-weight:normal;
 }
@@ -197,5 +190,8 @@ font-weight:normal;
 }
 .btn-cta:hover{
   color: #eeeeee;
+}
+#directionsBtn{
+    font-size:0.857rem;
 }
 </style>

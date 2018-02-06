@@ -1,7 +1,7 @@
 <template>
-  <div class="container industrycards">
+  <div class="container-card industrycards">
     <div class="row justify-content-center">
-        <div v-for="item in items" class="col-lg-2" :key="item.name" > <!--fixed width cards means no cols-->
+        <div v-for="item in items" class="col-lg" :key="item.name" > <!--fixed width cards means no cols-->
             
                 <div class="">
                         <h4 class="top industryCardTitles">{{ item.name }}</h4>
@@ -13,7 +13,7 @@
         <div class="row xtra">
             <div class="col-lg-12">
                 <p class="lead">
-                        <a class="btn btn-primary btn-lg btn-md" href="#all" role="button">View All</a>
+                        <a class="btn btn-primary btn-lg btn-md" href="#all" role="button">Learn More</a>
                         </p>
             </div>
         </div>
@@ -41,7 +41,7 @@ export default {
 }
 h4.industryCardTitles{
 font-family: 'Lato-Bold', sans-serif;
-font-size: 14px;
+font-size: 0.714rem;
 font-weight:Bold;
 color: #212121;
 letter-spacing: -0.28px;
@@ -63,7 +63,7 @@ img{
     right: 0;
     top: 0;
     bottom: 0;
-      width: 112px;
+      width: 80px;
     height: auto;
     margin: auto;
     padding-bottom: 15px;
@@ -73,8 +73,8 @@ img{
 .container-card{
 
 background: rgba(255, 255, 255, 90);
-border: 1px solid #BDBDBD;
-max-width: 960px;
+
+
 margin: 0 auto;
 margin-top: -40px;
 
@@ -96,7 +96,7 @@ margin-top: -40px;
     border: 2px solid #BDBDBD;
     position: relative;
     opacity: 1;
-    width: 150px;
+    
 }
 
 .btn-primary{
@@ -107,7 +107,7 @@ border-radius: 10px;
 }
 a.btn-primary{
 font-family: 'Lato-Light', sans-serif;
-font-size: 14px;
+font-size: 1em;
 font-weight:Light;
 color: #FFFFFF;
 margin-left: 10px;

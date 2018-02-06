@@ -6,12 +6,12 @@
             <h2 class="sectionTitle-light col-lg-8">about us</h2>
         </div>
         <div class="row justify-content-center" >   
-            <div class="col-md-12 col-lg-6" >
+            <div class="col-md-12 col-lg-10" >
             <p class="aboutText">A multi-modal industrial park and airports strategically located on the east coast of the United States, to support the manufacturing and logistic needs of the aviation, aerospace, defense, emergency response and advanced materials industries. </p>
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-2 col-lg-2">
+            <div class="col-md-2 col-lg-4">
                 <p class="lead">
                 <a class="btn btn-cta btn-lg btn-md" id="aboutBtn" href="themes.html" role="button">Learn More</a>
                 </p>
@@ -32,7 +32,7 @@ background-image: url("../assets/img/world-map.jpg");
 h2.sectionTitle-light{
 opacity: 0.7;
 font-family: 'Montserrat-Bold', sans-serif;
-font-size: 60px;
+font-size: 3.429rem;
 font-weight:bold;
 color: #FFFFFF;
 text-transform: uppercase;
@@ -43,7 +43,7 @@ text-align: center;
 }
 p.aboutText{
 font-family: 'Lato-Light', sans-serif;
-font-size: 22px;
+font-size: 1.429rem;
 font-weight:200;
 color: #ffffff;
 line-height: 125%;

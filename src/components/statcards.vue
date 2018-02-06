@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <div class="row justify-content-center" id="whyCont">
             <h2 class="display-3 sectionTitle-dark col-lg-12">why global transpark</h2>
         </div>
@@ -84,7 +84,7 @@
 h2.sectionTitle-dark{
 opacity: 0.7;
 font-family: 'Montserrat-Bold', sans-serif;
-font-size: 48px;
+font-size: 2.857rem;
 font-weight:bold;
 color: #212121;
 text-transform: uppercase;
@@ -102,7 +102,7 @@ margin-bottom: 50px;
   width: 100%;
   overflow: hidden;
 font-family: 'Montserrat-Bold',sans-serif;
-font-size: 32px;
+font-size: 1.714rem;
 font-weight: bold;
 color: #1976D2;
 text-align: center;
@@ -110,7 +110,7 @@ display:block;
 line-height: 120%;
 }
 .whyText{
-    font-size: 16px;
+    font-size: 1.143rem;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     text-align: center;

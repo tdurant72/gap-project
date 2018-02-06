@@ -16,10 +16,10 @@
                                     </h2>
                                     <h3 class="heroText3">A world-class, 2,500  acre industrial & business park.</h3>
                                     <div>
-                                        <a class="btn btn-primary btn-lg btn-hero btn-md" href="https://stage-wwwtest.ncgtp.com/grow/Pages/default.aspx" role="button">Grow With Us</a>
+                                        <a class="btn btn-secondary btn-lg btn-hero btn-md" href="../grow/Pages/default.aspx" role="button">Grow With Us</a>
                                     </div>
                                     <div>
-                                        <a class="btn btn-primary btn-lg btn-md btn-hero" href="https://stage-wwwtest.ncgtp.com/contact/Pages/default.aspx" role="button">Contact</a>
+                                        <a class="btn btn-primary btn-lg btn-md btn-hero" href="../contact/Pages/default.aspx" role="button">Contact</a>
                                     </div>
                             </div>
                         </transition>
@@ -75,18 +75,18 @@
                     <div v-if="leftActive" class="controller controllerImg" :class="[leftActive ? 'controlLeft':'controlRight']">
                         <div class="calloutContainer">
                             <div class="callouts"  id="callout1">
-                                <a class="buttonCallouts btnLeft" role="button" href="https://stage-wwwtest.ncgtp.com/grow/Pages/default.aspx"   >GROW</a>
+                                <a class="buttonCallouts btnLeft" role="button" href="../grow/Pages/default.aspx"   >GROW</a>
 
                                 <span id="callout1text" class="calloutText ctLeft">Expand Your Business</span>
                                 
                             </div>
                             <div class="callouts"  id="callout2">
                                 <span id="callout2text" class="calloutText ctLeft">Carolina Quality of Life</span>
-                                <a class="buttonCallouts btnLeft" role="button" href="https://stage-wwwtest.ncgtp.com/live/Pages/default.aspx" >LIVE</a>
+                                <a class="buttonCallouts btnLeft" role="button" href="../live/Pages/default.aspx" >LIVE</a>
                             </div>
                             <div class="callouts"  id="callout3">
                                 <span id="callout3text" class="calloutText  ctLeft">Economic Impact<br>& Opportunities</span>
-                                <a class="buttonCallouts btnLeft" role="button" href="https://stage-wwwtest.ncgtp.com/work/Pages/default.aspx" >WORK</a>
+                                <a class="buttonCallouts btnLeft" role="button" href="../work/Pages/default.aspx" >WORK</a>
                             </div>
                             <button id="sliderBckBtn"  class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-left"></i></button>
                         </div>
@@ -96,19 +96,19 @@
                         <div class="calloutContainer">
                             <div class="callouts" id="callout5">
                                 <span id="callout5text" class="calloutText rtLeft">Expand Your Business</span>
-                                <a  class="buttonCallouts btnRight" role="button" href="https://stage-wwwtest.ncgtp.com/grow/Pages/default.aspx" >GROW</a>
+                                <a  class="buttonCallouts btnRight" role="button" href="../grow/Pages/default.aspx" >GROW</a>
                             </div>
                             <div class="callouts"  id="callout6">
                                 <span id="callout6text" class="calloutText rtLeft">
                                     Our quality of life</span>
-                                <a  class="buttonCallouts btnRight" role="button" href="https://stage-wwwtest.ncgtp.com/live/Pages/default.aspx" >LIVE</a>
+                                <a  class="buttonCallouts btnRight" role="button" href="../live/Pages/default.aspx" >LIVE</a>
                                     
 
                             </div>
                             <div class="callouts" id="callout7">
                                 <span id="callout7text" class="calloutText rtLeft">
                                     Economic Impact<br>& Opportunities</span>
-                                <a class="buttonCallouts btnRight" role="button" href="https://stage-wwwtest.ncgtp.com/work/Pages/default.aspx" >WORK</a>
+                                <a class="buttonCallouts btnRight" role="button" href="../work/Pages/default.aspx" >WORK</a>
 
                             </div>
                             <button id="sliderBckBtn2" class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-right"></i></button>
@@ -139,7 +139,7 @@
                             <h3 class="heroTextMobile">Putting the World Within Your Reach</h3>
                             <p class="heroText3Mobile">A world-class, 2,500  acre industrial & business park.</p>
                             <div>
-                                <a class="btn btn-primary btn-lg btn-hero btn-md" href="#" role="button">Grow With Us</a>
+                                <a class="btn btn-secondary btn-lg btn-hero btn-md" href="#" role="button">Grow With Us</a>
                             </div>
                             <div>
                                 <a class="btn btn-primary btn-lg btn-md btn-hero" href="#" role="button">Contact</a>
@@ -174,14 +174,7 @@ var handle = $('.handle');
 var skewed = $('.skewed');
 var skew = 0;
 var delta = 0;
-var tag = document.createElement('script');
 
-tag.src = "//www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-var player1;
-var player2;
 
 export default {
     name: 'hero',
@@ -198,15 +191,11 @@ export default {
       isSafari:false,
       isOnTop: true,
       delta: delta,
-      player1:player1,
-      player2: player2,
-      firstScriptTag:firstScriptTag
       }
   },
   mounted(){
       this.checkBrowser()
-          
-      
+            
   },
   methods:{
       changeWidth(){
@@ -225,47 +214,8 @@ export default {
           }else{
               console.log('not safari');
           }
-        },
-        onYouTubeIframeAPIReady() {
-            player1 = new YT.Player('ytplayer1', {
-                events: {
-                    'onReady': onPlayerReady1,
-                    'onStateChange': onPlayerStateChange1
-                }
-            })
-            player2 = new YT.Player('ytplayer2', {
-                events: {
-                    'onReady': onPlayerReady2,
-                    'onStateChange': onPlayerStateChange2
-                }
-            })
-        },
-
-        onPlayerReady1() {
-            player1.playVideo();
-            player1.mute();
-        }, 
-        onPlayerStateChange1(el){
-            if(el.data === 1) {
-                $('#_buffering-background1').fadeOut();
-            }else{
-                $('#_buffering-background1').fadeIn();
-            }
-            console.log('vid1 playing');
-        },
-        onPlayerReady2() {
-            player2.playVideo();
-            player2.mute();
-        }, 
-        onPlayerStateChange2(el){
-            if(el.data === 1) {
-                $('#_buffering-background2').fadeOut();
-            }else{
-                $('#_buffering-background2').fadeIn();
-            }
-            console.log('vid2 playing');
-            }
         }
+  }
  
 }
 </script>
@@ -374,7 +324,7 @@ box-shadow:         -15px 5px 0px 1px rgba(255, 255, 255, 1);
    
 }
 h2.overlayTextLt{
-    font-size: 10em;
+    font-size: 10rem;
     line-height: 90%;
     font-weight: bold;
     text-align: right;
@@ -386,7 +336,7 @@ h2.overlayTextLt{
     
 }
 h2.overlayTextRt{
-    font-size: 10em;
+    font-size: 10rem;
     line-height: 90%;
     font-weight: bold;
     text-align: left;
@@ -446,14 +396,14 @@ h2.overlayTextRt{
     height: 100vh;
 }
 .heroText3Mobile {
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 100%;
     color:#337ab7;
     text-shadow:1px 0 0;
     font-weight: normal;
 }
 .heroTextMobile {
-    font-size: 22px;
+    font-size: 1.143rem;
     color:#337ab7;
     text-shadow: 1px 0 0;
     font-weight: bold;
@@ -466,7 +416,7 @@ h2.overlayTextRt{
 
 a.btn-mobile {
     margin-right: 10px;
-    font-size: 12px;
+    font-size: 0.857rem;
 }
 .carousel-indicators{
     position:absolute;
@@ -578,7 +528,7 @@ button{
     background-color: #FFC107;
     color: #fff;
     border-radius: 8px;
-    font-size: 2em;
+    font-size: 1.286rem;
     padding: 15px;
     /* transform: skewX(8deg); */
     width: 75px;
@@ -608,32 +558,32 @@ button{
     right: 40%;
 }
 #callout1:hover >span{
-        background:url(../assets/img/icon-grow-white.png) no-repeat left 10px center;
+        /* background:url(../assets/img/icon-grow-white.png) no-repeat left 10px center; */
     display: block;
     background-color: #0167B8;
 }
 #callout5:hover >span{
-        background:url(../assets/img/icon-grow-white.png) no-repeat right 10px center;
+        /* background:url(../assets/img/icon-grow-white.png) no-repeat right 10px center; */
     display: block;
     background-color: #0167B8;
 }
 #callout2:hover >span{
-        background:url(../assets/img/icon-live-white.png) no-repeat left 10px center;
+        /* background:url(../assets/img/icon-live-white.png) no-repeat left 10px center; */
     display: block;
     background-color: #0167B8;
 }
 #callout6:hover >span{
-        background:url(../assets/img/icon-live-white.png) no-repeat right 10px center;
+        /* background:url(../assets/img/icon-live-white.png) no-repeat right 10px center; */
     display: block;
     background-color: #0167B8;
 }
 #callout3:hover >span{
-        background:url(../assets/img/icon-work-white.png) no-repeat left 10px center;
+        /* background:url(../assets/img/icon-work-white.png) no-repeat left 10px center; */
     display: block;
     background-color: #0167B8;
 }
 #callout7:hover >span{
-        background:url(../assets/img/icon-work-white.png) no-repeat right 10px center;
+        /* background:url(../assets/img/icon-work-white.png) no-repeat right 10px center; */
     display: block;
     background-color: #0167B8;
 }
@@ -684,7 +634,7 @@ button{
     text-transform: uppercase;
     text-align: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 0.857rem;
     width:80%;
     white-space: nowrap;
     position: absolute;
@@ -697,7 +647,7 @@ button{
 }
 .ctLeft{
     float: left;
-    left:-50px;
+    left:-40px;
 }
 /* span {
   height: 55px;
@@ -734,7 +684,7 @@ button{
     /* float: left; */
     font-family: 'Montserrat-LightItalic', sans-serif;
     font-weight:ligher;
-    font-size: 20px;
+    font-size: 0.857rem;
     /* transform: skewX(-2deg); */
 }
 .buttonCallouts:hover {
@@ -764,7 +714,7 @@ button{
     height: 80px;
     /* float: left; */
     font-family: Montserrat-LightItalic;
-    font-size: 45px;
+    font-size: 3.214rem;
 }
 .buttonArrow:hover {
     background-color: #008EFF;
@@ -821,7 +771,7 @@ button{
 
 h2.heroText{
 font-family: 'Montserrat-Bold', sans-serif;
-font-size: 40px;
+font-size: 2.857rem;
 font-weight:bold;
 color: #FFFFFF;
 text-shadow: 0 2px 0 #1976D2;
@@ -830,11 +780,11 @@ padding-bottom: 10px;
 } 
 h3.heroText3{
 font-family: 'Montserrat-LightItalic',sans-serif;
-font-size: 30px;
+font-size: 2.143rem;
 font-weight:LightItalic;
 color: #FFFFFF;
 text-shadow:0 1px 0 #1976d2;
-margin-left: 40px;
+
 padding-bottom: 20px;
 }
 .layer .content-body{
@@ -860,8 +810,8 @@ padding-bottom: 20px;
     top:30%;
 } 
 .btn-hero{
-    width: 150px;
-    float: right;
+    
+    float: left;
     margin-right: 40px;
 }
 

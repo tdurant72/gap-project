@@ -398,7 +398,7 @@ body.sp-authenticated.ms-backgroundImage {
 }
 
 .gtpBurger {
-    transform: scale(2);
+    transform: scale(1);
     cursor: pointer;
     float:right;
     padding-right: 10px;
@@ -418,7 +418,7 @@ body.sp-authenticated.ms-backgroundImage {
 }
 
 .main-nav-header {
-    size: 2rem;
+    size: 1rem;
     color: white;
 }
 
@@ -436,7 +436,7 @@ body.sp-authenticated.ms-backgroundImage {
 
 .main-nav-header-content li:first-child a{
     color: #0081C3;
-    font-size: 2rem;
+    font-size: 0.857rem;
     border-bottom: .2rem solid;
     /* border-bottom-color: #0c6c2c; */
 }
@@ -453,7 +453,7 @@ body.sp-authenticated.ms-backgroundImage {
 
 .main-nav-footer-content li:first-child a {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 0.714rem;
 }
 
 .social-list__list {
@@ -463,11 +463,11 @@ body.sp-authenticated.ms-backgroundImage {
 
 li.social-list__item {
     transform: scale(3);
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
 .site-footer {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .site-footer, .site-footer__bottom, .social-list  {
@@ -517,7 +517,7 @@ button#toggler{
  a.primary{
      color: #757575;
     font-family: 'Lato-Bold',sans-serif;
-    font-size: 18px;
+    font-size: 0.857rem;
     font-weight:bold;
     text-decoration: underline;
  }
@@ -528,7 +528,7 @@ button#toggler{
  a.secondary{
      color:#757575;
     font-family: 'Lato-Light', sans-serif;
-    font-size: 16px;
+    font-size: 0.714rem;
     font-weight:200;
  }
   li.nav-item.dropdown.menu-large{

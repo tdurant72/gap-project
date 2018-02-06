@@ -1,8 +1,8 @@
 <template>
   <div class="jumbotron paral paral-banner paralsec7" id="move">
       <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-lg-offset-2 col-lg-6 col-md-8">
+          <div class="row justify-content-center" id="bannerCont">
+              <div class=" col-lg-8 col-md-8">
                   <h2 class="bannerText">Top 10 Reasons to Move To Eastern NC</h2>
               </div>
               <div class="ccol-lg-3 col-md-3">
@@ -22,14 +22,18 @@ export default {
 .paralsec7 {
 background-image: url("../assets/img/move-banner.jpg");
 }
+#bannerCont{ 
+    background-color:rgba(39,39,39, 0.85);
+    padding:15px;
+    }
 .bannerText{
 font-family: 'Montserrat-Bold', sans-serif;
-font-wieght:bold;
-font-size: 24px;
+font-weight:bold;
+font-size:1.286rem;
 color: #FFFFFF;
 text-shadow: 0 2px 0 #1976D2;
 }
 #moveBtn{
-    margin-top: 10px;
+    margin-top: 5px;
 }
 </style>

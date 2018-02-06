@@ -3,32 +3,33 @@
 <div class="jumbotron paral paralsec5" >
 <div class="container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
         <div class="row">
-            <h2 class="sectionTitle-light col-lg-8 col-lg-offset-1">site selection</h2>
+            <h2 class="sectionTitle-light col-lg-10 col-lg-offset-1">site selection</h2>
         </div>
         <div class="row justify-content-center">
-            <div class="card col-lg-11" id="siteCard">
-              <div class="row">
-                <div class="col-lg-6">
-                <img id="map" src="../assets/img/map.jpg" alt="map-icon">
-              </div>
-                <div class=" col-lg-5">
-                    <p class="siteText">Our sites and buildings are fully equipped and ready to go to work. From utility planning to advanced telecommunications connectivity, everything you need is in place so you’ll be up and doing business - with preapproved environmental, we are prepared to break ground on a new facility. </p>
+            <div class="card col-lg-12" id="siteCard">
+                <div class="row">
+                    <div class="col-lg-6">
+                    <img id="map" src="../assets/img/map.jpg" alt="map-icon">
                 </div>
-              </div>
+                    <div class=" col-lg-6">
+                        <p class="siteText">Our sites and buildings are fully equipped and ready to go to work. From utility planning to advanced telecommunications connectivity, everything you need is in place so you’ll be up and doing business - with preapproved environmental, we are prepared to break ground on a new facility. </p>
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="col-lg-4  col-md-4  col-sm-6 btn-push">
+                        <p class="lead">
+                        <a class="btn btn-cta btn-lg btn-md " href="https://stage-wwwtest.ncgtp.com/grow/Pages/site-selection.aspx" role="button">Parcels</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-6  btn-push">
+                        <p class="lead">
+                        <a class="btn btn-cta btn-lg btn-md " href="https://stage-wwwtest.ncgtp.com/grow/Pages/site-selection.aspx" role="button">Buildings</a>
+                        </p>
+                    </div>
+                </div>
           </div>
         </div>
-        <div class="row justify-content-end">
-            <div class="col-lg-2  col-md-2 col-md-offset-6 col-sm-6 btn-push">
-                <p class="lead">
-                <a class="btn btn-cta btn-lg btn-md " href="https://stage-wwwtest.ncgtp.com/grow/Pages/site-selection.aspx" role="button">Parcels</a>
-                </p>
-            </div>
-            <div class="col-lg-2 col-sm-6  btn-push">
-                <p class="lead">
-                <a class="btn btn-cta btn-lg btn-md " href="https://stage-wwwtest.ncgtp.com/grow/Pages/site-selection.aspx" role="button">Buildings</a>
-                </p>
-            </div>
-        </div>
+        
     </div>
 </div>
 </template>
@@ -44,8 +45,8 @@ background-image: url("../assets/img/about-bkgd.jpg");
 h2.sectionTitle-light{
 opacity: 0.7;
 font-family: 'Montserrat-Bold', sans-serif;
-font-size: 48px;
-font-wieght:bold;
+font-size: 3.429rem;
+font-weight:bold;
 color: #FFFFFF;
 text-transform: uppercase;
 }
@@ -57,7 +58,7 @@ text-transform: uppercase;
 }
 p.siteText{
 font-family: 'Lato-Light', sans-serif;
-font-size: 16px;
+font-size: 1.143rem;
 font-weight:light;
 color: #212121;
 padding-top: 30px;
@@ -76,9 +77,9 @@ margin-top: -20px;
 
 p.siteText{
 font-family: 'Lato-Light', sans-serif;
-font-size: 16px;
-font-weight:light;
-padding: 0.8em;
+font-size: 1.0rem;
+font-weight: 200;
+padding: 0.8rem;
 line-height: 125%;
 color: #212121;
 }

@@ -7,7 +7,7 @@
     <transition name="fade">
       <div class="card" id="industryCard" data-aos="fade-up" data-aos-duration="600" >
           <div class="row justify-content-center">
-            <div class="col-lg-8">
+            <div class="col-lg-12">
               <p class="lead industriesText">A multi-modal industrial park and airport strategically located on the east coast of the United States to support the manufacturing and logistics needs of the aviation, aerospace, defense, emergency response and advanced materials industries. </p>
               </div>
           </div>
@@ -50,7 +50,7 @@ h2.sectionTitle-dark{
 opacity: 0.7;
 font-family: 'Montserrat-Bold', sans-serif;
 font-weight:bold;
-font-size: 48px;
+font-size: 3.429rem;
 color: #212121;
 text-transform: uppercase;
 text-align: center;
@@ -58,13 +58,13 @@ text-align: center;
 
 p.industriesText{
 font-family: 'Lato-Light', sans-serif;
-font-size: 16px;
+font-size: 1.143rem;
 font-weight:Light;
 color: #212121;
 letter-spacing: 0;
 line-height: 125%;
-padding-top: 2em;
-padding-bottom: 2em;
+padding-top: 2rem;
+padding-bottom: 2rem;
 
 }
 .card{
@@ -72,7 +72,7 @@ padding-bottom: 2em;
 background: rgba(255, 255, 255, 90);
 
 
-max-width: 960px;
+max-width: 1080px;
 margin: 0 auto;
 
 }
