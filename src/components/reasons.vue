@@ -56,7 +56,7 @@ img{
 } 
 
 #growIconRC{
-    font-size:3.571rem;
+    font-size:50px;
 }
 .card{
     position: relative;
@@ -78,7 +78,7 @@ img{
 }
 h5.reasonText{
 font-family: 'Lato-Light', sans-serif;
-font-size: 1rem;
+font-size: 14px;
 font-weight:Light;
 color: #202020;
 padding-bottom: 20px;

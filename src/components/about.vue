@@ -32,7 +32,7 @@ background-image: url("../assets/img/world-map.jpg");
 h2.sectionTitle-light{
 opacity: 0.7;
 font-family: 'Montserrat-Bold', sans-serif;
-font-size: 3.429rem;
+font-size: 60px;
 font-weight:bold;
 color: #FFFFFF;
 text-transform: uppercase;
@@ -43,7 +43,7 @@ text-align: center;
 }
 p.aboutText{
 font-family: 'Lato-Light', sans-serif;
-font-size: 1.429rem;
+font-size: 40px;
 font-weight:200;
 color: #ffffff;
 line-height: 125%;
@@ -62,7 +62,7 @@ margin-top: -25px;
 
 a.btn-cta{
 margin-top: 20px;
-float: right;
+
 }
 .btn-push{
     padding-right: 0;

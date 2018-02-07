@@ -29,7 +29,7 @@ background-image: url("../assets/img/move-banner.jpg");
 .bannerText{
 font-family: 'Montserrat-Bold', sans-serif;
 font-weight:bold;
-font-size:1.286rem;
+font-size:28px;
 color: #FFFFFF;
 text-shadow: 0 2px 0 #1976D2;
 }

@@ -50,7 +50,7 @@ h2.sectionTitle-dark{
 opacity: 0.7;
 font-family: 'Montserrat-Bold', sans-serif;
 font-weight:bold;
-font-size: 3.429rem;
+font-size: 60px;
 color: #212121;
 text-transform: uppercase;
 text-align: center;
@@ -58,13 +58,13 @@ text-align: center;
 
 p.industriesText{
 font-family: 'Lato-Light', sans-serif;
-font-size: 1.143rem;
+font-size: 24px;
 font-weight:Light;
 color: #212121;
 letter-spacing: 0;
 line-height: 125%;
-padding-top: 2rem;
-padding-bottom: 2rem;
+padding: 2rem;
+
 
 }
 .card{

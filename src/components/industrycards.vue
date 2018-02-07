@@ -41,7 +41,7 @@ export default {
 }
 h4.industryCardTitles{
 font-family: 'Lato-Bold', sans-serif;
-font-size: 0.714rem;
+font-size: 16px;
 font-weight:Bold;
 color: #212121;
 letter-spacing: -0.28px;
@@ -107,7 +107,7 @@ border-radius: 10px;
 }
 a.btn-primary{
 font-family: 'Lato-Light', sans-serif;
-font-size: 1em;
+font-size: 14px;
 font-weight:Light;
 color: #FFFFFF;
 margin-left: 10px;

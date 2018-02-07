@@ -16,12 +16,12 @@
                     </div>
                 </div>
                 <div class="row justify-content-end">
-                    <div class="col-lg-4  col-md-4  col-sm-6 btn-push">
+                    <div class="col-lg-4  col-md-3  col-sm-6 btn-push">
                         <p class="lead">
                         <a class="btn btn-cta btn-lg btn-md " href="https://stage-wwwtest.ncgtp.com/grow/Pages/site-selection.aspx" role="button">Parcels</a>
                         </p>
                     </div>
-                    <div class="col-lg-4 col-sm-6  btn-push">
+                    <div class="col-lg-3 col-sm-6  btn-push">
                         <p class="lead">
                         <a class="btn btn-cta btn-lg btn-md " href="https://stage-wwwtest.ncgtp.com/grow/Pages/site-selection.aspx" role="button">Buildings</a>
                         </p>
@@ -45,7 +45,7 @@ background-image: url("../assets/img/about-bkgd.jpg");
 h2.sectionTitle-light{
 opacity: 0.7;
 font-family: 'Montserrat-Bold', sans-serif;
-font-size: 3.429rem;
+font-size: 60px;
 font-weight:bold;
 color: #FFFFFF;
 text-transform: uppercase;
@@ -58,14 +58,15 @@ text-transform: uppercase;
 }
 p.siteText{
 font-family: 'Lato-Light', sans-serif;
-font-size: 1.143rem;
-font-weight:light;
+font-size: 28px;
+font-weight:100;
 color: #212121;
-padding-top: 30px;
-padding-bottom: 50px;
+padding: 0.8rem;
 line-height: 24px;
 text-align: left;
+line-height: 125%;
 }
+
 .card{
     /* card: */
 
@@ -75,14 +76,7 @@ border: 1px solid #BDBDBD;
 margin-top: -20px;
 }
 
-p.siteText{
-font-family: 'Lato-Light', sans-serif;
-font-size: 1.0rem;
-font-weight: 200;
-padding: 0.8rem;
-line-height: 125%;
-color: #212121;
-}
+
 a.btn-cta{
 margin-top: 20px;
 float: right;

@@ -398,7 +398,7 @@ body.sp-authenticated.ms-backgroundImage {
 }
 
 .gtpBurger {
-    transform: scale(1);
+    transform: scale(2);
     cursor: pointer;
     float:right;
     padding-right: 10px;
@@ -436,7 +436,7 @@ body.sp-authenticated.ms-backgroundImage {
 
 .main-nav-header-content li:first-child a{
     color: #0081C3;
-    font-size: 0.857rem;
+    font-size: 16px;
     border-bottom: .2rem solid;
     /* border-bottom-color: #0c6c2c; */
 }
@@ -453,7 +453,7 @@ body.sp-authenticated.ms-backgroundImage {
 
 .main-nav-footer-content li:first-child a {
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.714rem;
+    font-size: 18px;
 }
 
 .social-list__list {
@@ -517,7 +517,7 @@ button#toggler{
  a.primary{
      color: #757575;
     font-family: 'Lato-Bold',sans-serif;
-    font-size: 0.857rem;
+    font-size: 18px;
     font-weight:bold;
     text-decoration: underline;
  }
@@ -528,7 +528,7 @@ button#toggler{
  a.secondary{
      color:#757575;
     font-family: 'Lato-Light', sans-serif;
-    font-size: 0.714rem;
+    font-size: 16px;
     font-weight:200;
  }
   li.nav-item.dropdown.menu-large{

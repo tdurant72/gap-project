@@ -343,7 +343,7 @@ li{
     height: 46px;
     /* float: left; */
     font-family: Montserrat-LightItalic;
-    font-size: 1.143em;
+    font-size: 18px;
     display: block;
     -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
@@ -356,7 +356,7 @@ li{
 }
 .footerText{
     font-family: 'Lato-Ligh',sans-serif;
-    font-size: 0.714rem;
+    font-size: 16px;
     color: #FFFFFF;
     line-height: 110%;
     text-align: left;
@@ -373,7 +373,7 @@ li{
  a.primary{
      color: #ffffff;
     font-family: 'Lato-Bold', sans-serif;
-    font-size: 0.857rem;
+    font-size: 18px;
     font-weight:bold;
  }
  a.active{
@@ -383,7 +383,7 @@ li{
  a.secondary{
      color:#ffffff;
     font-family: 'Lato-Light', sans-serif;
-    font-size: 0.714rem;
+    font-size: 16px;
     font-weight:bold;
     margin-left: 20px;
  }
@@ -400,7 +400,7 @@ li{
 .footer-inner {
     color: #fff;
     font-family: 'Lato-Light', sans-serif;
-    font-size: 0.714rem;
+    font-size: 16px;
     font-weight:Light;
     padding: 1rem;    
     margin: 0 auto;
@@ -429,6 +429,6 @@ li{
 .main-nav-footer-content li:first-child a {
     font-family: 'Lato-Bold', sans-serif;
     font-weight:bold;
-    font-size: 0.857rem;
+    font-size: 16px;
 }
 </style>

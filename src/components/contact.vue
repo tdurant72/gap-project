@@ -136,11 +136,11 @@ background-color: #f6f6f6;
 }
 p.contactText{
 font-family: 'Lato-Light', sans-serif;
-font-size: 0.857rem;
+font-size: 28px;
 color: #212121;
 letter-spacing: 0;
 line-height: 125%;
-margin-top: 20px;
+margin-top: 30px;
 padding-right: 2.5rem;
 
 text-align: left;
@@ -165,7 +165,7 @@ a > img{
 }
  label{
 font-family: 'Lato-Regular', sans-serif;
-font-size: 0.857rem;
+font-size: 16px;
 color: #757575;
 font-weight:normal;
 }
@@ -192,6 +192,7 @@ font-weight:normal;
   color: #eeeeee;
 }
 #directionsBtn{
-    font-size:0.857rem;
+    font-size:18px;
+    margin-top:30px;
 }
 </style>

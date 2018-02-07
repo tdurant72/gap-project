@@ -396,14 +396,14 @@ h2.overlayTextRt{
     height: 100vh;
 }
 .heroText3Mobile {
-    font-size: 1rem;
+    font-size: 30px;
     line-height: 100%;
     color:#337ab7;
     text-shadow:1px 0 0;
     font-weight: normal;
 }
 .heroTextMobile {
-    font-size: 1.143rem;
+    font-size: 40px;
     color:#337ab7;
     text-shadow: 1px 0 0;
     font-weight: bold;
@@ -416,7 +416,7 @@ h2.overlayTextRt{
 
 a.btn-mobile {
     margin-right: 10px;
-    font-size: 0.857rem;
+    font-size: 14px;
 }
 .carousel-indicators{
     position:absolute;
@@ -528,7 +528,7 @@ button{
     background-color: #FFC107;
     color: #fff;
     border-radius: 8px;
-    font-size: 1.286rem;
+    font-size: 28px;
     padding: 15px;
     /* transform: skewX(8deg); */
     width: 75px;
@@ -634,7 +634,7 @@ button{
     text-transform: uppercase;
     text-align: center;
     align-items: center;
-    font-size: 0.857rem;
+    font-size: 18px;
     width:80%;
     white-space: nowrap;
     position: absolute;
@@ -684,7 +684,7 @@ button{
     /* float: left; */
     font-family: 'Montserrat-LightItalic', sans-serif;
     font-weight:ligher;
-    font-size: 0.857rem;
+    font-size: 20px;
     /* transform: skewX(-2deg); */
 }
 .buttonCallouts:hover {
@@ -714,7 +714,7 @@ button{
     height: 80px;
     /* float: left; */
     font-family: Montserrat-LightItalic;
-    font-size: 3.214rem;
+    font-size: 45px;
 }
 .buttonArrow:hover {
     background-color: #008EFF;
@@ -771,7 +771,7 @@ button{
 
 h2.heroText{
 font-family: 'Montserrat-Bold', sans-serif;
-font-size: 2.857rem;
+font-size: 60px;
 font-weight:bold;
 color: #FFFFFF;
 text-shadow: 0 2px 0 #1976D2;
@@ -780,8 +780,8 @@ padding-bottom: 10px;
 } 
 h3.heroText3{
 font-family: 'Montserrat-LightItalic',sans-serif;
-font-size: 2.143rem;
-font-weight:LightItalic;
+font-size: 40px;
+font-weight:200;
 color: #FFFFFF;
 text-shadow:0 1px 0 #1976d2;
 
