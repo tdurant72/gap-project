@@ -51,9 +51,9 @@ export default {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
+
 }
-/* Header Parallax Element Style*/ 
+/* Header Parallax Element Style*/
 .paral {
 min-height: 700px;
 background-attachment: fixed;
@@ -75,7 +75,7 @@ background-attachment: fixed;
 background-size: cover;
 background-position: 50% 50%;
 }
-/* Paragraph for Parallax Section */ 
+/* Paragraph for Parallax Section */
 .paral p {
 font-size: 14px;
 color:#f5f5f5;
@@ -83,7 +83,7 @@ text-align: center;
 line-height: 60px;
 }
 
-/* Heading for Parallax Section */ 
+/* Heading for Parallax Section */
 .paral h1 {
 color: rgba(255, 255, 255, 0.8);
 font-size: 48px;
@@ -129,12 +129,18 @@ background: rgb(85, 198, 255);
 box-shadow: 0 2px 0 0 #004E76, inset 0 2px 0 0 #01A9FF; */
 border-radius: 10px;
 }
+.btn-secondary:hover{
+background: rgb(1, 170, 255);
+/* border: 1px solid #006396;
+box-shadow: 0 2px 0 0 #004E76, inset 0 2px 0 0 #01A9FF; */
+border-radius: 10px;
+}
 
 a.btn-secondary{
 font-family: 'Lato-Light',sans-serif;
 font-size: 16px;
 color: #FFFFFF;
-text-shadow: 0 1px 0 #BDBDBD;
+text-shadow: 1px 1px 0 rgb(0, 27, 148);
 text-transform: uppercase;
 }
 
@@ -154,21 +160,18 @@ text-transform: uppercase;
 .main-nav-header-content li a { text-align: left;}
 .main-nav-footer-content a {font-family: 'Lato', sans-serif;text-decoration: none; margin-left:0px;}
 .main-nav-footer-content li:first-child a {font-family: 'Montserrat', sans-serif;font-size: 18px; font-weight:bold; margin-left:-10px}
-.social-list__list {text-align: center;}
-li.social-list__item { transform: scale(3);padding: 0 2rem;}
+
 .site-footer {margin-top: 2rem;}
 .site-footer, .site-footer__bottom  { background: #0c98e2;}
 .main-nav-footer-location-info a {text-decoration: none; cursor: text;}
 ul.main-nav-footer-content.main-nav-footer-location-info > p {font-size: 16px;font-family: 'Lato',sans-serif;}
 .site-footer__main.row { padding-bottom: 20px;}
-i.icon-instagram{background:url(./assets/img/instagram.png) left bottom;background-size:50%;background-repeat:no-repeat;}
+/* i.icon-instagram{background:url(./assets/img/instagram.png) left bottom;background-size:50%;background-repeat:no-repeat;}
 i.icon-facebook{background:url(./assets/img/facebook.png) left bottom; background-size:50%;background-repeat:no-repeat;}
 i.icon-linkedin{background:url(./assets/img/linkedIn.png) left bottom; background-size:50%;background-repeat:no-repeat;}
 .icon{  float:left;width:25px; height:25px; position:relative; display:block; }
-.icon:before, .icon:after{ position:absolute; content:""; display:block; }
-ul.social-list__list { margin: 20px;}
+.icon:before, .icon:after{ position:absolute; content:""; display:block; } */
 
-ul.social-list__list>li { display: inline-block;}
 
 ul{
   list-style: none;

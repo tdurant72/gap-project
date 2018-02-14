@@ -2,18 +2,18 @@
   <div class="container-card industrycards">
     <div class="row justify-content-center">
         <div v-for="item in items" class="col-lg" :key="item.name" > <!--fixed width cards means no cols-->
-            
+
                 <div class="">
                         <h4 class="top industryCardTitles">{{ item.name }}</h4>
                     </div>
                 <img :src="item.img" class="card-img-top">
                 </div>
-           
+
         </div>
         <div class="row xtra">
             <div class="col-lg-12">
                 <p class="lead">
-                        <a class="btn btn-primary btn-lg btn-md" href="#all" role="button">Learn More</a>
+                        <a class="btn btn-primary btn-lg btn-md" href="../grow/Pages/default.aspx" role="button">Learn More</a>
                         </p>
             </div>
         </div>
@@ -67,7 +67,7 @@ img{
     height: auto;
     margin: auto;
     padding-bottom: 15px;
-} 
+}
 
 
 .container-card{
@@ -87,7 +87,7 @@ margin-top: -40px;
     margin: 0 auto;
     width: 100%;
     max-height: 100%;
-    overflow: hidden; 
+    overflow: hidden;
     text-align: center;
 }
 
@@ -96,7 +96,7 @@ margin-top: -40px;
     border: 2px solid #BDBDBD;
     position: relative;
     opacity: 1;
-    
+
 }
 
 .btn-primary{

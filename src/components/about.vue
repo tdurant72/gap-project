@@ -5,7 +5,7 @@
         <div class="row justify-content-center" >
             <h2 class="sectionTitle-light col-lg-8">about us</h2>
         </div>
-        <div class="row justify-content-center" >   
+        <div class="row justify-content-center" >
             <div class="col-md-12 col-lg-10" >
             <p class="aboutText">A multi-modal industrial park and airports strategically located on the east coast of the United States, to support the manufacturing and logistic needs of the aviation, aerospace, defense, emergency response and advanced materials industries. </p>
             </div>
@@ -13,7 +13,7 @@
         <div class="row justify-content-center">
             <div class="col-md-2 col-lg-4">
                 <p class="lead">
-                <a class="btn btn-cta btn-lg btn-md" id="aboutBtn" href="themes.html" role="button">Learn More</a>
+                <a class="btn btn-cta btn-lg btn-md" id="aboutBtn" href="../contact/Pages/default.aspx" role="button">Learn More</a>
                 </p>
             </div>
         </div>
@@ -22,7 +22,7 @@
 </template>
 <script>
 export default {
-  
+
 }
 </script>
 <style scoped>

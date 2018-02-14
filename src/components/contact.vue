@@ -1,8 +1,9 @@
 <template>
   <!-- Third Parallax Section -->
 <div class="jumbotron paral paralsec6" id="contact">
+<div id="tpbkgd"></div>
 <div class="none" >
-        
+
         <div class="row justify-content-center">
             <div class="col-lg-12" id="contactCard">
               <div class="row justify-content-center">
@@ -11,17 +12,17 @@
                         <a class="contactLink" href="#">
                             <img src="../assets/img/logo.jpg" height="41" alt="">
                         </a>
-                    </p>  
+                    </p>
                 <p class="contactText">To learn more about the services and facilities available at the N.C. Global TransPark, please fill out the form, or contact us directly. Your information will be kept confidential and will not be shared with any outside parties.</p>
                 <p class="contactText">
                   3800 Hwy. 58 North<br>
                   Kinston, N.C. 28501<br>
                 </p>
                 <p class="contactText">
-                  Phone: (252)523-1351<br>
-                  Fax: (252)522-1765
+                  Phone: (252) 523-1351<br>
+                  Fax: (252) 522-1765
                 </p>
-               
+
                  <a id="directionsBtn" class="btn btn-secondary btn-lg btn-md btn-hero" href="http://www.ncgtp.com/contact/directions.html" role="button">Get Directions</a>
               </div>
                 <div class="card col-lg-5 col-md-5" id="formCard" >
@@ -50,7 +51,7 @@
                               </div>
                               <div class="col-lg-12">
                                   <input type="text" name="email" id="email" class="validateBlank formFields" required/>
-                                  <em class="ms-metadata required-warning">Required</em> 
+                                  <em class="ms-metadata required-warning">Required</em>
                               </div>
                           </div>
                           <div class="primary media-wrap">
@@ -62,28 +63,32 @@
                                   <!--<em class="ms-metadata required-warning">Required</em>-->
                               </div>
                           </div>
-                            
+
                               <div class="col-lg-12 chbxTop ">
                                   <label>I am interested in learning more about:</label>
                               </div>
                               <div class="col-lg-6">
-                                  <input type="checkbox" name="industrial" class="contact-learn-checkbox"/>
-                                  <label for="industrial" class="contact-learn-label">Building/Sites</label>
+                                  <input type="checkbox" name="chkBuildings" class="contact-learn-checkbox"/>
+                                  <label for="chkBuildings" class="contact-learn-label">Building/Sites</label>
                                 </div>
-                                <div class="col-lg-6">           
-                                  <input type="checkbox" name="composite" class="contact-learn-checkbox"/>
-                                  <label for="composite" class="contact-learn-label">Composite Center</label>
+                              <div class="col-lg-6">
+                                  <input type="checkbox" name="ckTraining" class="contact-learn-checkbox"/>
+                                  <label for="chkTraining" class="contact-learn-label">Training/Education</label>
+                                </div>
+                                <div class="col-lg-6">
+                                  <input type="checkbox" name="chkComposite" class="contact-learn-checkbox"/>
+                                  <label for="chkComposite" class="contact-learn-label">Composite Center</label>
                                   <br>
                               </div>
                               <div class="col-lg-6">
-                                  <input type="checkbox" name="airport" class="contact-learn-checkbox"/>
-                                  <label for="airport" class="contact-learn-label">Airport</label>
+                                  <input type="checkbox" name="chkAirport" class="contact-learn-checkbox"/>
+                                  <label for="chkAirport" class="contact-learn-label">Airport</label>
                                 </div>
                                 <div class="col-lg-6 chbxBottom">
-                                  <input type="checkbox" name="general" class="contact-learn-checkbox"/>
-                                  <label for="general" class="contact-learn-label">General Information</label>
+                                  <input type="checkbox" name="chkGeneral" class="contact-learn-checkbox"/>
+                                  <label for="chkGeneral" class="contact-learn-label">General Information</label>
                               </div>
-                          
+
                           <div class="primary media-wrap">
                               <div class="col-lg-12">
                                   <label for="comments">Comments/Questions</label>
@@ -100,15 +105,15 @@
                                   <img id='fieldsInvalid' src='../assets/img/WPPINVAL.gif' class="invalidIcon"/>
                               </div>
                               <span id="validFieldsText" class="validation">Validating Fields</span>
-                          </div>  
+                          </div>
                           <div id="submitForm">
                               <div class="panel validationIcons">
                                   <img id='submittingSpinner' src='../assets/img/gears_anv4.gif' class="loadingIcon"/>
                                   <img id='submitSuccess' src='../assets/img/check.gif' class="checkMarkIcon"/>
                                   <img id='submitFail' src='../assets/img/WPPINVAL.gif' class="invalidIcon"/>
-                              </div> 
-                              <span id="submitFormText" class="validation">Submitting Form</span>    
-                          </div> 
+                              </div>
+                              <span id="submitFormText" class="validation">Submitting Form</span>
+                          </div>
                       </div>
                       <div class="col-lg-12">
                       <input type="button" id="submitFormButton" value="Submit" class="important btn btn-cta btn-lg btn-md ">
@@ -123,14 +128,23 @@
 </template>
 <script>
 export default {
-  
+
 }
 </script>
 <style scoped>
 .paralsec6 {
-/* background-image: url("../assets/img/contact-bkgd.jpg"); */
-background-color: #f6f6f6;
+  background:
+  linear-gradient(
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0.75)
+    ),
+  url("../assets/img/contact-bkgd.jpg") no-repeat center center fixed;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
 }
+
 #contactCard{
   margin-top: 50px;
 }
@@ -175,7 +189,7 @@ font-weight:normal;
 #formCard{
   padding-top: 40px;
   padding-bottom: 40px;
-  
+
 }
 #submitFormButton{
   float: right;

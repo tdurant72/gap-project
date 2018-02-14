@@ -1,17 +1,17 @@
 <template>
     <div class="jumbotron paral paralsec" id="hero">
         <div class="wrapper hidden-sm-down">
-            
+
             <div class="left" :class="[leftActive ? 'leftNotshowing':'leftShowing']">
                 <div class="inner">
-                    <div class="content-wrap"> 
+                    <div class="content-wrap">
                         <div v-if="rightActive" class="overlay">
                             <!-- <h2 class="overlayTextLt">Why NC</h2> -->
                             </div>
                         <!-- <h1 class="knockout-text-one">WHY GTP</h1> -->
                         <transition name="fade-left-content">
                             <div v-if="leftActive"  class="leftCont content-body">
-                                
+
                                 <h2 class="heroText">Putting the World Within Your Reach
                                     </h2>
                                     <h3 class="heroText3">A world-class, 2,500  acre industrial & business park.</h3>
@@ -27,7 +27,7 @@
                     <transition >
                         <div v-if="isSafari">
                             <!-- <div id="video-overlay1" class="split" style="background-image:url(https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/video-overlay1.png);">></div>-->
-                            
+
                             <!-- <div id="video" class="split"></div>  -->
                             <div id="_buffering-background1" class="ytOverlay"></div>
                             <!-- <video  id="leftVid" class="split" loop="loop" autoplay="autoplay" muted="muted" preload="preload" src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/left.1e0211a.mp4"   /> -->
@@ -36,13 +36,13 @@
                             </div>
                         </div>
                         <div v-else class="embed-responsive embed-responsive-16by9">
-                            <video  id="leftVid" class="responsive-item float-left" loop="loop" autoplay="autoplay" muted="muted" preload="preload" src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/left.1e0211a.mp4"   /> 
+                            <video  id="leftVid" class="responsive-item float-left" loop="loop" autoplay="autoplay" muted="muted" preload="preload" src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/left.1e0211a.mp4"   />
                         </div>
                     </transition>
                 </div><!--end of left inner-->
             </div>
             <div class="right " :class="[rightActive ? 'rightNotshowing':'rightShowing']">
-                
+
                     <div class="inner ">
                         <div  class="content-wrap">
                             <transition name="fade-right-content" >
@@ -54,7 +54,7 @@
                             </transition>
                         </div>
                         <!-- <div v-if="leftActive" class="overlay"></div> -->
-                        
+
                             <!-- <video  id="rightVid" class="video rounded" autoplay="autoplay" loop="loop" muted="muted" preload="preload" playsinline src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/right.60bfb96.mp4"   >
                             </video> -->
                             <div v-if="isSafari" id="rtVidCont" class="swoosh ">
@@ -67,10 +67,10 @@
                                 <video  id="rightVid" class="video responsive-item float-right" autoplay="autoplay" loop="loop" muted="muted" preload="preload" playsinline src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/right.60bfb96.mp4"   ></video>
                             <!-- <div id="video-overlay2" class="split" style="background-image:url(https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/NC-img.a241866.jpg);">></div>
                             <div id="player2" class="split video"></div> -->
-                            </div> 
+                            </div>
                     </div><!--end of righ inner-->
             </div>
-                
+
             <div id="controllers"  >
                     <div v-if="leftActive" class="controller controllerImg" :class="[leftActive ? 'controlLeft':'controlRight']">
                         <div class="calloutContainer">
@@ -78,7 +78,7 @@
                                 <a class="buttonCallouts btnLeft" role="button" href="../grow/Pages/default.aspx"   >GROW</a>
 
                                 <span id="callout1text" class="calloutText ctLeft">Expand Your Business</span>
-                                
+
                             </div>
                             <div class="callouts"  id="callout2">
                                 <span id="callout2text" class="calloutText ctLeft">Carolina Quality of Life</span>
@@ -91,7 +91,7 @@
                             <button id="sliderBckBtn"  class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-left"></i></button>
                         </div>
                     </div>
-                
+
                     <div v-if="rightActive" class="controller controllerImg" :class="[rightActive ? 'controlRight':'controlLeft']">
                         <div class="calloutContainer">
                             <div class="callouts" id="callout5">
@@ -102,7 +102,7 @@
                                 <span id="callout6text" class="calloutText rtLeft">
                                     Our quality of life</span>
                                 <a  class="buttonCallouts btnRight" role="button" href="../live/Pages/default.aspx" >LIVE</a>
-                                    
+
 
                             </div>
                             <div class="callouts" id="callout7">
@@ -116,38 +116,38 @@
                     </div>
             </div>
 
-            
-            
-            
 
-                
-            
-        
-        
+
+
+
+
+
+
+
         </div><!--/end vid wrapper -->
         <div class="hidden-md-up">
             <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    
+
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active itm1">
-                        
+
                         <div class="carousel-caption d-md-block">
                             <h3 class="heroTextMobile">Putting the World Within Your Reach</h3>
                             <p class="heroText3Mobile">A world-class, 2,500  acre industrial & business park.</p>
                             <div>
-                                <a class="btn btn-secondary btn-lg btn-hero btn-md" href="#" role="button">Grow With Us</a>
+                                <a class="btn btn-secondary btn-lg btn-hero btn-md" href="../grow/Pages/default.aspx" role="button">Grow With Us</a>
                             </div>
                             <div>
-                                <a class="btn btn-primary btn-lg btn-md btn-hero" href="#" role="button">Contact</a>
+                                <a class="btn btn-primary btn-lg btn-md btn-hero" href="../contact/Pages/default.aspx" role="button">Contact</a>
                              </div>
                         </div>
                     </div>
                     <div class="carousel-item itm2">
-                        
+
                         <div class="carousel-caption d-md-block">
                             <h3 class="heroTextMobile">North Carolina</h3>
                             <p class="heroText3Mobile">where the living is easy.</p>
@@ -164,7 +164,7 @@
                 </a>
             </div>
         </div><!--/end pic wrapper-->
-    </div> 
+    </div>
 </template>
 
 <script>
@@ -195,7 +195,7 @@ export default {
   },
   mounted(){
       this.checkBrowser()
-            
+
   },
   methods:{
       changeWidth(){
@@ -216,7 +216,7 @@ export default {
           }
         }
   }
- 
+
 }
 </script>
 <style scoped>
@@ -232,7 +232,7 @@ vidAlt{
 .swoosh{
 border-top-left-radius:93% 220%;
 border-bottom-left-radius:30% 70%;
-border:1px solid #fff; 
+border:1px solid #fff;
 height:100%;
 -webkit-box-shadow: -40px 15px 0px 1px rgba(255, 255, 255, 1);
 -moz-box-shadow:    -40px 15px 0px 1px rgba(255, 255, 255, 1);
@@ -264,7 +264,7 @@ overflow: hidden;
         padding: 0;
         background-size:cover;
         z-index: 1;
-        
+
 	}
 #_buffering-background2 {
         margin-left:-105px;
@@ -290,7 +290,7 @@ overflow: hidden;
 }
 .ytOverlay {
 /* opacity:1; */
-transition: opacity 1s; 
+transition: opacity 1s;
 }
 
 .ytOverlay.fade {
@@ -300,7 +300,7 @@ opacity:0;
 #player2{
 border-top-left-radius:120% 220%;
 border-bottom-left-radius:30% 70%;
-border:1px solid #fff; 
+border:1px solid #fff;
 height:100%;
 -webkit-box-shadow: -15px 5px 0px 1px rgba(255, 255, 255, 1);
 -moz-box-shadow:    -15px 5px 0px 1px rgba(255, 255, 255, 1);
@@ -309,7 +309,7 @@ box-shadow:         -15px 5px 0px 1px rgba(255, 255, 255, 1);
     min-height: auto;
     min-width: auto;
     width: auto;
-    
+
 }
  .overlay {
     /* height: 100%;
@@ -321,7 +321,7 @@ box-shadow:         -15px 5px 0px 1px rgba(255, 255, 255, 1);
     /* background:#337ab7; */
     /* background:rgb(196, 196, 196);
     opacity: 0.6;    */
-   
+
 }
 h2.overlayTextLt{
     font-size: 10rem;
@@ -333,7 +333,7 @@ h2.overlayTextLt{
     top: 10%;
     right:-5%;
     margin: 0 auto;
-    
+
 }
 h2.overlayTextRt{
     font-size: 10rem;
@@ -345,7 +345,7 @@ h2.overlayTextRt{
     top: 50%;
     left:-10%;
     margin: 0 auto;
-    
+
 }
 /* .knockout-text-one{
     color:white;
@@ -443,14 +443,12 @@ a.btn-mobile {
   margin-left: 10px;
 }
 .left .inner  img{
-  
+
   width: 100%;
 }
-.right .inner {
-  /* margin-left: -9%; */
-}
+
 .right .inner img {
-  
+
   width: 100%;
   /* margin-left: -9%; */
 }
@@ -493,17 +491,9 @@ a.btn-mobile {
     /* background-color: #ffffff; */
     width:10px;
     /* transform: skewX(3deg); */
-    
-}
-.controllerImg {
 
-    /* height: 100vh;
-    display: block;
-    top: 0;
-    z-index: 20;
-    width:100px;*/
-    /* background-image: url("../assets/img/white-border.svg") ;  */
 }
+
 .calloutContainer{
     position: absolute;
     top:50%;
@@ -649,12 +639,7 @@ button{
     float: left;
     left:-40px;
 }
-/* span {
-  height: 55px;
 
-  display: table-cell;
-  vertical-align: middle;
-} */
 
 #callout6{
     position: relative;
@@ -766,7 +751,7 @@ button{
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  
+
 }
 
 h2.heroText{
@@ -777,7 +762,7 @@ color: #FFFFFF;
 text-shadow: 0 2px 0 #1976D2;
 padding-bottom: 10px;
 -webkit-text-stroke:1px #1976d2;
-} 
+}
 h3.heroText3{
 font-family: 'Montserrat-LightItalic',sans-serif;
 font-size: 40px;
@@ -791,7 +776,7 @@ padding-bottom: 20px;
     width: 25%;
     position: relative;
     top: 50%;
-  
+
     /* transform: skewX(8deg); */
 }
 .content-body{
@@ -808,9 +793,9 @@ padding-bottom: 20px;
     position: absolute;
     width: 40%;
     top:30%;
-} 
+}
 .btn-hero{
-    
+
     float: left;
     margin-right: 40px;
 }
@@ -888,7 +873,7 @@ video#leftVid {
    position: absolute;
    top:0;
    left:0;
-  
+
    min-height: 100%;
    min-width: 100%;
 }
