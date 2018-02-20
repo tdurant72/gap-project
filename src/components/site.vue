@@ -11,19 +11,19 @@
                     <div class="col-lg-6">
                     <img id="map" src="../assets/img/map.jpg" alt="map-icon">
                 </div>
-                    <div class=" col-lg-6">
+                    <div class=" col-lg">
                         <p class="siteText">Our sites and buildings are fully equipped and ready to go to work. From utility planning to advanced telecommunications connectivity, everything you need is in place so you’ll be up and doing business - with preapproved environmental, we are prepared to break ground on a new facility. </p>
                     </div>
                 </div>
                 <div class="row justify-content-end">
                     <!-- <div class="col-lg-4  col-md-3  col-sm-6 btn-push">
                         <p class="lead">
-                        <a class="btn btn-cta btn-lg btn-md " href="https://stage-wwwtest.ncgtp.com/grow/Pages/site-selection.aspx#DataTables_Table_0" role="button">Parcels</a>
+                        <a class="btn btn-cta btn-lg btn-md " href="../grow/Pages/site-selection.aspx#DataTables_Table_0" role="button">Parcels</a>
                         </p>
                     </div> -->
                     <div class="col-lg-3 col-sm-6  btn-push">
                         <p class="lead">
-                        <a class="btn btn-cta btn-lg btn-md " href="https://stage-wwwtest.ncgtp.com/grow/Pages/site-selection.aspx" role="button">View Available Sites</a>
+                        <a class="btn btn-cta btn-lg btn-md " href="../grow/Pages/site-selection.aspx" role="button">View Available Sites</a>
                         </p>
                     </div>
                 </div>

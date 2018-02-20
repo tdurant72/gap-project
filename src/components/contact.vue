@@ -25,7 +25,7 @@
 
                  <a id="directionsBtn" class="btn btn-secondary btn-lg btn-md btn-hero" href="http://www.ncgtp.com/contact/directions.html" role="button">Get Directions</a>
               </div>
-                <div class="card col-lg-5 col-md-5" id="formCard" >
+                <div class="card col-lg-4 col-md-5" id="formCard" >
                       <div id="formContainer" >
                           <div class="primary media-wrap">
                               <div class="col-lg-12">
