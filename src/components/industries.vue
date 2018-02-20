@@ -3,18 +3,18 @@
 <!-- Third Parallax Section -->
 <div class="jumbotron paral paralsec4" id="industries">
 <h2 class="display-3 sectionTitle-dark">INDUSTRIES</h2>
-  
+
     <transition name="fade">
       <div class="card" id="industryCard" data-aos="fade-up" data-aos-duration="600" >
           <div class="row justify-content-center">
             <div class="col-lg-12">
-              <p class="lead industriesText">A multi-modal industrial park and airport strategically located on the east coast of the United States to support the manufacturing and logistics needs of the aviation, aerospace, defense, emergency response and advanced materials industries. </p>
+              <p class="lead industriesText">A multimodal industrial park and airport strategically located on the east coast of the United States to support the manufacturing and logistics needs of the aviation, aerospace, defense, emergency response and advanced materials industries. </p>
               </div>
           </div>
       <app-industrycards></app-industrycards>
       </div>
     </transition>
-  
+
 <!-- <app-statcards></app-statcards> -->
 
 
@@ -30,8 +30,8 @@ export default {
    components:{
     'app-industrycards':industrycards
             // 'app-statcards':statcards
- 
-}, 
+
+},
   data(){
       return{
         demo: 'Transition Me',

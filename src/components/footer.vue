@@ -146,12 +146,24 @@ li{
   line-height: 3rem;
   position: relative;
 }
-@font-face {
+/* @font-face {
   font-family: "custom-icomoon";
   font-style: normal;
   font-weight: normal;
   src: url("../assets/fonts/custom-icomoon.eot");
   src: url("../assets/fonts/custom-icomoon.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/custom-icomoon.ttf") format("truetype"), url("../assets/fonts/custom-icomoon.woff") format("woff");
+
+  -webkit-font-smoothing: antialiased;
+
+  -moz-osx-font-smoothing: grayscale;
+
+} */
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/icomoon.eot");
+  src: url("../assets/fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/icomoon.ttf") format("truetype"), url("../assets/fonts/icomoon.woff") format("woff");
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
   /* Support for Safari and Chrome. */
@@ -198,7 +210,7 @@ a.social-item__link:hover{
 }
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'custom-icomoon' !important;
+  font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -211,15 +223,15 @@ a.social-item__link:hover{
 }
 
 .icon-facebook:before {
-  content: "\e601";
+  content: "\e90b";
 }
 
 .icon-twitter:before {
-  content: "\e603";
+  content: "\e926";
 }
 
 .icon-linkedin:before {
-  content: "\e943";
+  content: "\e911";
 }
 .footerText{
     font-family: 'Lato-Ligh',sans-serif;

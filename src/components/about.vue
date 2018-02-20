@@ -7,7 +7,7 @@
         </div>
         <div class="row justify-content-center" >
             <div class="col-md-12 col-lg-10" >
-            <p class="aboutText">A multi-modal industrial park and airports strategically located on the east coast of the United States, to support the manufacturing and logistic needs of the aviation, aerospace, defense, emergency response and advanced materials industries. </p>
+            <p class="aboutText">Our mission is to enhance the economic well-being of North Carolinians by providing multimodal capabilities for global commerce.</p>
             </div>
         </div>
         <div class="row justify-content-center">

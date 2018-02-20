@@ -16,20 +16,20 @@
                     </div>
                 </div>
                 <div class="row justify-content-end">
-                    <div class="col-lg-4  col-md-3  col-sm-6 btn-push">
+                    <!-- <div class="col-lg-4  col-md-3  col-sm-6 btn-push">
                         <p class="lead">
-                        <a class="btn btn-cta btn-lg btn-md " href="https://stage-wwwtest.ncgtp.com/grow/Pages/site-selection.aspx" role="button">Parcels</a>
+                        <a class="btn btn-cta btn-lg btn-md " href="https://stage-wwwtest.ncgtp.com/grow/Pages/site-selection.aspx#DataTables_Table_0" role="button">Parcels</a>
                         </p>
-                    </div>
+                    </div> -->
                     <div class="col-lg-3 col-sm-6  btn-push">
                         <p class="lead">
-                        <a class="btn btn-cta btn-lg btn-md " href="https://stage-wwwtest.ncgtp.com/grow/Pages/site-selection.aspx" role="button">Buildings</a>
+                        <a class="btn btn-cta btn-lg btn-md " href="https://stage-wwwtest.ncgtp.com/grow/Pages/site-selection.aspx" role="button">View Available Sites</a>
                         </p>
                     </div>
                 </div>
           </div>
         </div>
-        
+
     </div>
 </div>
 </template>

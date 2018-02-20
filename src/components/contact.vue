@@ -138,7 +138,7 @@ export default {
     rgba(255, 255, 255, 0.75),
     rgba(255, 255, 255, 0.75)
     ),
-  url("../assets/img/contact-bkgd.jpg") no-repeat center center fixed;
+  url("../assets/img/contact-bkgd.jpg") no-repeat top left fixed;
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;

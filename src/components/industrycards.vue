@@ -13,7 +13,7 @@
         <div class="row xtra">
             <div class="col-lg-12">
                 <p class="lead">
-                        <a class="btn btn-primary btn-lg btn-md" href="../grow/Pages/default.aspx" role="button">Learn More</a>
+                        <a class="btn btn-primary btn-lg btn-md" href="../grow/Pages/default.aspx" role="button">Grow with NCGTP</a>
                         </p>
             </div>
         </div>
