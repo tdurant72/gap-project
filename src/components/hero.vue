@@ -388,7 +388,12 @@ h2.overlayTextRt{
     padding-bottom: 56.25%;
     height: 0;
 }
-
+ .itm1 {
+    background: url(../assets/img/hero-bkgd-mobile.jpg) no-repeat center center fixed;
+}
+ .itm2 {
+    background: url(../assets/img/NC-img-mobile.jpg) no-repeat center center fixed;
+}
 .carousel-item {
     width: 100%;
     -webkit-background-size: cover;
