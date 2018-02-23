@@ -69,7 +69,6 @@ margin-top: 20px;
 }
 #aboutBtn{
     background-color: #17b1ff;
-    border-radius: 0px;
     margin-top: 0;
 }
 </style>

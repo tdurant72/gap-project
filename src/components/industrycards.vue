@@ -1,5 +1,5 @@
 <template>
-  <div class="container-card industrycards">
+  <div class="industrycards">
     <div class="row justify-content-center">
         <div v-for="item in items" class="col-lg" :key="item.name" > <!--fixed width cards means no cols-->
 

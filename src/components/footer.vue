@@ -175,7 +175,7 @@ li{
   color: white;
 }
 .social-list__list {text-align: center;}
-li.social-list__item {  margin: 20px 50px;}
+li.social-list__item {  margin: 20px 40px;}
 a.social-list__link{font-size:40px;}
 .social-list__item { display:inline-block; }
 /* ul.social-list__list { margin: 20px;} */

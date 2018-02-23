@@ -2,11 +2,11 @@
     <header class="site-header ncgtp-navbar">
         
         <div class="site-header__inner-wrapper row">
-            <div class="col-lg-10">
+            <div class="col-lg-10 col-xs-10">
                 <a href="/" class="logo logo--header " title="">
                 </a>
             </div>
-            <div class="col-lg-1">
+            <div class="col-lg-2 col-xs-2">
                 <i class="glyphicon glyphicon-menu-hamburger gtpBurger menu-btn" id="menu-btn"></i>    
             </div>
                 
@@ -15,221 +15,35 @@
         
         <div class="navContainer ">
             <div class="main-nav-column col-lg-offset-1 col-lg-2">
+                
                 <ul class="main-nav-header-content main-nav-grow">
                     
                 </ul>
             </div>
             <div class="main-nav-column col-lg-2">
+                
                 <ul class="main-nav-header-content main-nav-live">
                 </ul>
             </div>
             <div class="main-nav-column col-lg-2">
+                
                 <ul class="main-nav-header-content main-nav-work">
                 </ul>
             </div>
             <div class="main-nav-column col-lg-2">
+                
                 <ul class="main-nav-header-content main-nav-resources">
                 </ul>
             </div>
             <div class="main-nav-column col-lg-2">
+                
                 <ul class="main-nav-header-content main-nav-contact">
                 </ul>
             </div>
         </div>
         
 
-        <!-- manual links -->
-        <!--
-        <nav class="navbar  fixed-top bg-faded" role="navigation" style="padding: 0px;">
-  <button id="toggler" class="navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsing-navbar">
-    &#9776;
- </button>
-        <a class="navbar-brand" href="#">
-            <img src="../assets/img/logo.jpg" height="41" alt="">
-        </a>
-        <div class="row justify-content-center">
-    <div class="collapse navbar-toggleable col-lg-12 " id="collapsing-navbar">
-    <ul class="row justify-content-center">
-        <ul class="megamenu col-lg-1">
-            <li class="nav-item home">
-                <a href="#" class="nav-link primary active" id="home">Home</a>
-            </li>
-        </ul>
-    <ul class="megamenu col-lg-2  ">
-        <li class="nav-item dropdown menu-large ">
-            <a class="nav-link primary" data-toggle="dropdown" href="#" id="grow">Grow</a>
-        </li>
-                <li>
-                    <a href="#" class="secondary">
-                        <i class="secondary" aria-hidden="false">
-                        </i> Site Selection
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="secondary">
-                        <i class="" aria-hidden="false">
-                        </i>Accessibility
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="secondary">
-                        <i class="" aria-hidden="false">
-                        </i>Foreign Trade Zone
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="secondary">
-                        <i class="" aria-hidden="false">
-                        </i>Workforce
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="secondary">
-                        <i class="" aria-hidden="false">
-                        </i>Development & Training
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="secondary">
-                        <i class="" aria-hidden="false">
-                        </i>Incentives & Resources
-                    </a>
-                </li>
-    </ul>
-    
-   <ul class="megamenu col-lg-2 ">
-      <li class="nav-item dropdown menu-large">
-        <a class="nav-link primary" data-toggle="dropdown" href="#" id="work">Work</a>
-      </li>
-                <li>
-                    <a href="#" class="secondary">
-                        <i class="secondary" aria-hidden="false">
-                        </i>Major Employers
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="secondary">
-                        <i class="" aria-hidden="false">
-                        </i>GTP Jobs
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="secondary">
-                        <i class="" aria-hidden="false">
-                        </i>Workforce
-                    </a>
-                </li>
-              <li>
-                  <a href="#" class="secondary">
-                        <i class="" aria-hidden="false">
-                        </i>Development & Training
-                    </a>
-                </li>
-    </ul>
 
-    <ul class="megamenu col-lg-2">
-      <li class="nav-item dropdown menu-large">
-        <a class="nav-link primary" data-toggle="dropdown" href="#" id="live">Live</a>
-      </li>
-            <li>
-                  <a href="#" class="secondary">
-                    <i class="secondary" aria-hidden="false">
-                    </i>Why Eastern NC
-                  </a>
-            </li>
-            <li>
-                <a href="#" class="secondary">
-                    <i class="" aria-hidden="false">
-                    </i>NC Events
-                </a>
-            </li>
-            <li>
-                  <a href="#" class="secondary">
-                      <i class="" aria-hidden="false">
-                          </i>Attractions & Culture
-                    </a>
-            </li>
-            <li>
-                  <a href="#" class="secondary">
-                        <i class="" aria-hidden="false">
-                        </i>Econonmy
-                    </a>
-            </li>
-            <li>
-                  <a href="#" class="secondary">
-                        <i class="" aria-hidden="false">
-                        </i>History
-                    </a>
-            </li>
-    </ul>
-
-    <ul class="megamenu col-lg-2">
-      <li class="nav-item dropdown menu-large ">
-        <a class="nav-link primary" data-toggle="dropdown" href="#" id="resources">Resources</a>
-      </li>
-            <li>
-                  <a href="#" class="secondary">
-                    <i class="secondary" aria-hidden="false">
-                    </i>Industry News
-                  </a>
-            </li>
-            <li>
-                    <a href="#" class="secondary">
-                        <i class="" aria-hidden="false">
-                        </i>Environment
-                    </a>
-            </li>
-            <li>
-                <a href="#" class="secondary">
-                    <i class="" aria-hidden="false">
-                    </i>RFP's & RFQ's
-                </a>
-            </li>
-            <li>
-                  <a href="#" class="secondary">
-                        <i class="" aria-hidden="false">
-                        </i>Maps
-                    </a>
-            </li>
-            <li>
-                  <a href="#" class="secondary">
-                        <i class="" aria-hidden="false">
-                        </i>Downloads
-                    </a>
-            </li>
-        </ul>
- 
-        <ul class="megamenu col-lg-2">
-            <li class="nav-item dropdown menu-large">
-                <a class="nav-link primary" data-toggle="dropdown" href="#">Contact</a>
-            </li>
-            <li>
-                  <a href="#" class="secondary">
-                    <i class="fa fa-check" aria-hidden="false">
-                    </i>Contact Us
-                  </a>
-            </li>
-            <li>
-                  <a href="#" class="secondary"><i class="" aria-hidden="false"></i>Meet the Director</a>
-            </li>
-            <li>
-                <a href="#" class="secondary">
-                    <i class="" aria-hidden="false">
-                    </i>Our Team
-                </a>
-            </li>
-            <li>
-                  <a href="#" class="secondary">
-                    <i class="" aria-hidden="false">
-                    </i>Board of Directors
-                    </a>
-            </li>
-        </ul>
-    </ul>
-  </div>
-        </div>
-    </nav>
-    -->
     </header>
 
 </template>
@@ -250,120 +64,62 @@ export default {
 }
 </script>
 <style scoped>
-/* manual styling */
-/* 
-a.navbar-brand{
-padding-top: 15px;
-}
- nav > a > img{
-    mix-blend-mode: darken;
-}
-
-button#toggler{
-    width:30px;
-    height: 30px;
-    margin-top: 15px;
-    margin-right: 10px;
-}
-
-.fa-check {
-	color: #fff;
-	margin-left: .8em;
-}
-.fa-circle {
-	color: #fff;
-	font-size: .5em;
-	padding-right: 1em;
+/* icons */
+@font-face {
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/icomoon.eot");
+  src: url("../assets/fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/icomoon.ttf") format("truetype"), url("../assets/fonts/icomoon.woff") format("woff");
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
 }
 
- a.primary{
-     color: #757575;
-    font-family: Lato-Bold;
-    font-size: 18px;
-    text-decoration: underline;
- }
- a.active{
-     text-decoration: none;
-     color:#212121;
- }
- a.secondary{
-     color:#757575;
-    font-family: Lato-Light;
-    font-size: 16px;
- }
-  li.nav-item.dropdown.menu-large{
-      padding-right: 20px;
-  }
-  li.home{
-      padding-right: 20px;
-  }
- li.nav-item.dropdown.menu-large.show.open > ul > li > ul > li{
-     list-style: none;
- }
-
- li.nav-item.dropdown.menu-large.show.open > ul > li > ul{
-     margin-left: 5px;
-     padding-left: 5px;
- }
- .navbar{
-     background-color: #fff;
-     margin-bottom:0px;
-     min-height:70px;
- }
-
- li.nav-item >a{
-     margin-right: 0;
- }
-
-	.navbar-inner {
-		padding: 0;
-    }
-	.nav {
-		margin: 0;
-		display: table;
-        width: 100%;
-    }
-		.nav >li {
-			display: table-cell;
-			width: 1%;
-			float: none;
-            text-align: center;
-        }
-			a {
-				line-height: 2.5;
-			}
-
-	.nav-link {
-		color: #fff;
-	}
-
-.menu-large {
-	position: static !important;
-}
-.megamenu {
-	padding: 20px 0px;
-    width: 100%;
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-ul {
-    padding: 0;
-    margin: 0;
+.main-nav-header-content li:first-child a:before {
+    font-size: 20px;
+    font-family: icomoon;
+    padding-right: 10px;
 }
-    li {
-        list-style: none;
-    }
-   .megamenu > li > a {
-        display: block;
-   
-        clear: both;
-        font-weight: normal;
-        line-height: 110%;
-        color: #1976D2;
-        white-space: normal;
-    }
-.dropdown-menu {
-	background: #f6f6f6;
-} */
+
+.main-nav-header-content li:first-child a:before:hover {
+    border-bottom: none;
+}
+
+.main-nav-grow li:first-child a:before {
+    content: "\e90e";
+}
+
+.main-nav-live li:first-child a:before {
+    content: "\e92a";
+}
+.main-nav-work li:first-child a:before {
+    content: "\e917";
+}
+.main-nav-resources li:first-child a:before {
+    content: "\e920";
+}
+.main-nav-contact li:first-child a:before {
+    content: "\e904";
+}
+
 
 /* dynamic styling */
 
@@ -393,7 +149,7 @@ body.sp-authenticated.ms-backgroundImage {
 }
 
 .ncgtp-navbar .logo {
-    background-image: url(../assets/img/logo.jpg);
+    background-image: url(../assets/img/Global_Transpark_Logo_Color.png);
     width:300px;
 }
 
