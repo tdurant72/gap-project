@@ -6,7 +6,7 @@
                 <a href="/" class="logo logo--header " title="">
                 </a>
             </div>
-            <div class="col-lg-1">
+            <div class="col-lg-2">
                 <i class="glyphicon glyphicon-menu-hamburger gtpBurger menu-btn" id="menu-btn"></i>    
             </div>
 
