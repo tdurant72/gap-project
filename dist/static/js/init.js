@@ -7,8 +7,8 @@ AOS.init({
 
   jQuery(document).ready(function($) {
         $('.counter').counterUp({
-                delay: 10,
-                time: 1000
+                delay: 0,
+                time: 1500
             });
          
 

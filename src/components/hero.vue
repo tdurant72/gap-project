@@ -30,13 +30,13 @@
 
                             <!-- <div id="video" class="split"></div>  -->
                             <div id="_buffering-background1" class="ytOverlay"></div>
-                            <!-- <video  id="leftVid" class="split" loop="loop" autoplay="autoplay" muted="muted" preload="preload" src="../static/media/left.1e0211a.mp4"   /> -->
+                            <!-- <video  id="leftVid" class="split" loop="loop" autoplay="autoplay" muted="muted" preload="preload" src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/left.1e0211a.mp4"   /> -->
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe id="ytplayer1" class="embed-responsive-item float-left" src="https://www.youtube.com/embed/xfc7z3Ud_As?rel=0&loop=1&playlist=xfc7z3Ud_As&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="../static/img/video-overlay1.7f242e8.png"  ></iframe>
+                                <iframe id="ytplayer1" class="embed-responsive-item float-left" src="https://www.youtube.com/embed/ZCg6TIt1wj4?rel=0&loop=1&playlist=ZCg6TIt1wj4&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="../assets/img/video-overlay1.7f242e8.png"  ></iframe>
                             </div>
                         </div>
                         <div v-else class="embed-responsive embed-responsive-16by9">
-                            <video  id="leftVid" class="responsive-item float-left" loop="loop" autoplay="autoplay" muted="muted" preload="preload" src="../static/media/left.1e0211a.mp4"   />
+                            <video  id="leftVid" class="responsive-item float-left" loop="loop" autoplay="autoplay" muted="muted" preload="preload" src="../assets/vids/left.mp4"   />
                         </div>
                     </transition>
                 </div><!--end of left inner-->
@@ -55,16 +55,16 @@
                         </div>
                         <!-- <div v-if="leftActive" class="overlay"></div> -->
 
-                            <!-- <video  id="rightVid" class="video rounded" autoplay="autoplay" loop="loop" muted="muted" preload="preload" playsinline src="../static/media/right.60bfb96.mp4"   >
+                            <!-- <video  id="rightVid" class="video rounded" autoplay="autoplay" loop="loop" muted="muted" preload="preload" playsinline src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/right.60bfb96.mp4"   >
                             </video> -->
                             <div v-if="isSafari" id="rtVidCont" class="swoosh ">
                                 <div id="_buffering-background2" class="ytOverlay "></div>
                                 <div class="embed-responsive embed-responsive-16by9 rtAdjust">
-                                    <iframe id="ytplayer2" class="embed-responsive-item float-right" src="https://www.youtube.com/embed/oBeVUEY2AYw?rel=0&loop=1&playlist=oBeVUEY2AYw&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="../static/img/video-overlay2.ed7812a.png"  ></iframe>
+                                    <iframe id="ytplayer2" class="embed-responsive-item float-right" src="https://www.youtube.com/embed/V93YRVOK8P0?rel=0&loop=1&playlist=V93YRVOK8P0&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="../assets/img/video-overlay2.ed7812a.png"  ></iframe>
                                 </div>
                             </div>
                             <div v-else class="swoosh embed-responsive embed-responsive-16by9 " id="rtVidContEb">
-                                <video  id="rightVid" class="video responsive-item float-right" autoplay="autoplay" loop="loop" muted="muted" preload="preload" playsinline src="../static/media/right.60bfb96.mp4"   ></video>
+                                <video  id="rightVid" class="video responsive-item float-right" autoplay="autoplay" loop="loop" muted="muted" preload="preload" playsinline src="../assets/vids/right.mp4"   ></video>
                             <!-- <div id="video-overlay2" class="split" style="background-image:url(https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/NC-img.a241866.jpg);">></div>
                             <div id="player2" class="split video"></div> -->
                             </div>
@@ -311,8 +311,8 @@ box-shadow:         -15px 5px 0px 1px rgba(255, 255, 255, 1);
     width: auto;
 
 }
- .overlay {
-    /* height: 100%;
+  /* .overlay {
+   height: 100%;
     width: 100%;
     position: absolute;
     top: 0px;
@@ -320,9 +320,9 @@ box-shadow:         -15px 5px 0px 1px rgba(255, 255, 255, 1);
     z-index: 2; */
     /* background:#337ab7; */
     /* background:rgb(196, 196, 196);
-    opacity: 0.6;    */
+    opacity: 0.6;
 
-}
+}*/
 h2.overlayTextLt{
     font-size: 10rem;
     line-height: 90%;
@@ -388,12 +388,7 @@ h2.overlayTextRt{
     padding-bottom: 56.25%;
     height: 0;
 }
- .itm1 {
-    background: url(../assets/img/hero-bkgd-mobile.jpg) no-repeat center center fixed;
-}
- .itm2 {
-    background: url(../assets/img/NC-img-mobile.jpg) no-repeat center center fixed;
-}
+
 .carousel-item {
     width: 100%;
     -webkit-background-size: cover;
