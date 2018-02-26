@@ -10,7 +10,7 @@
                 <div class="col-lg-6">
                     <p class="contactText">
                         <a class="contactLink" href="#">
-                            <img src="../assets/img/Global_Transpark_Logo_Color.png" height="41" alt="">
+                            <img src="../assets/img/logo.jpg" height="41" alt="">
                         </a>
                     </p>
                 <p class="contactText">To learn more about the services and facilities available at the N.C. Global TransPark, please fill out the form, or contact us directly. Your information will be kept confidential and will not be shared with any outside parties.</p>
@@ -69,11 +69,11 @@
                               </div>
                               <div class="col-lg-6">
                                   <input type="checkbox" name="chkBuildings" class="contact-learn-checkbox"/>
-                                  <label for="chkBuildings" class="contact-learn-label">Building/ Sites</label>
+                                  <label for="chkBuildings" class="contact-learn-label">Building/Sites</label>
                                 </div>
                               <div class="col-lg-6">
                                   <input type="checkbox" name="ckTraining" class="contact-learn-checkbox"/>
-                                  <label for="chkTraining" class="contact-learn-label">Training/ Education</label>
+                                  <label for="chkTraining" class="contact-learn-label">Training/Education</label>
                                 </div>
                                 <div class="col-lg-6">
                                   <input type="checkbox" name="chkComposite" class="contact-learn-checkbox"/>

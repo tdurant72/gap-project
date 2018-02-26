@@ -2,46 +2,40 @@
     <header class="site-header ncgtp-navbar">
 
         <div class="site-header__inner-wrapper row">
-            <div class="col-lg-10 col-xs-10">
+            <div class="col-lg-10">
                 <a href="/" class="logo logo--header " title="">
                 </a>
             </div>
-            <div class="col-lg-2 col-xs-2">
-                <i class="glyphicon glyphicon-menu-hamburger gtpBurger menu-btn" id="menu-btn"></i>
+            <div class="col-lg-1">
+                <i class="glyphicon glyphicon-menu-hamburger gtpBurger menu-btn" id="menu-btn"></i>    
             </div>
 
         </div>
 
-
-        <div class="navContainer row">
-            <div class="main-nav-header-content main-nav-grow col-lg-offset-1 col-md-2 col-sm-12">
-
-                <ul>
-
+        
+        <div class="navContainer ">
+            <div class="main-nav-column col-lg-offset-1 col-lg-2">
+                <ul class="main-nav-header-content main-nav-grow">
+                    
                 </ul>
             </div>
-            <div class="main-nav-header-content main-nav-live  col-md-2 col-sm-12">
-
-                <ul>
+            <div class="main-nav-column col-lg-2">
+                <ul class="main-nav-header-content main-nav-live">
                 </ul>
             </div>
-            <div  class="main-nav-header-content main-nav-work  col-md-2 col-sm-12">
-
-                <ul>
+            <div class="main-nav-column col-lg-2">
+                <ul class="main-nav-header-content main-nav-work">
                 </ul>
             </div>
-            <div  class="main-nav-header-content main-nav-resources  col-md-2 col-sm-12">
-
-                <ul>
+            <div class="main-nav-column col-lg-2">
+                <ul class="main-nav-header-content main-nav-resources">
                 </ul>
             </div>
-            <div  class="main-nav-header-content main-nav-contact  col-md-2 col-sm-12">
-
-                <ul>
+            <div class="main-nav-column col-lg-2">
+                <ul class="main-nav-header-content main-nav-contact">
                 </ul>
             </div>
         </div>
-
 
 
     </header>
@@ -64,61 +58,6 @@ export default {
 }
 </script>
 <style scoped>
-/* icons */
-@font-face {
-  font-family: "icomoon";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../assets/fonts/icomoon.eot");
-  src: url("../assets/fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/icomoon.ttf") format("truetype"), url("../assets/fonts/icomoon.woff") format("woff");
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-}
-
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.main-nav-header-content li:first-child a:before {
-    font-size: 20px;
-    font-family: icomoon;
-    padding-right: 10px;
-}
-
-.main-nav-header-content li:first-child a:before:hover {
-    border-bottom: none;
-}
-
-.main-nav-grow li:first-child a:before {
-    content: "\e90e";
-}
-
-.main-nav-live li:first-child a:before {
-    content: "\e92a";
-}
-.main-nav-work li:first-child a:before {
-    content: "\e917";
-}
-.main-nav-resources li:first-child a:before {
-    content: "\e920";
-}
-.main-nav-contact li:first-child a:before {
-    content: "\e904";
-}
 
 
 /* dynamic styling */
@@ -150,7 +89,7 @@ body.sp-authenticated.ms-backgroundImage {
 }
 
 .ncgtp-navbar .logo {
-    background-image: url(../assets/img/Global_Transpark_Logo_Color.png);
+    background-image: url(../assets/img/logo.jpg);
     width:300px;
 }
 

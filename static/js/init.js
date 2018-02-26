@@ -7,8 +7,8 @@
 
   jQuery(document).ready(function($) {
         $('.counter').counterUp({
-                delay: 0,
-                time: 1500
+                delay: 10,
+                time: 1000
             });
 
 
