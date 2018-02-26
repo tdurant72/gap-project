@@ -13,31 +13,31 @@
         </div>
 
         
-        <div class="navContainer ">
-            <div class="main-nav-column col-lg-offset-1 col-lg-2">
+        <div class="navContainer row">
+            <div>
                 
-                <ul class="main-nav-header-content main-nav-grow">
+                <ul class="main-nav-header-content main-nav-grow col-lg-offset-1 col-md-2 col-sm-12">
                     
                 </ul>
             </div>
-            <div class="main-nav-column col-lg-2">
+            <div>
                 
-                <ul class="main-nav-header-content main-nav-live">
+                <ul class="main-nav-header-content main-nav-live  col-md-2 col-sm-12">
                 </ul>
             </div>
-            <div class="main-nav-column col-lg-2">
+            <div >
                 
-                <ul class="main-nav-header-content main-nav-work">
+                <ul class="main-nav-header-content main-nav-work  col-md-2 col-sm-12">
                 </ul>
             </div>
-            <div class="main-nav-column col-lg-2">
+            <div >
                 
-                <ul class="main-nav-header-content main-nav-resources">
+                <ul class="main-nav-header-content main-nav-resources  col-md-2 col-sm-12">
                 </ul>
             </div>
-            <div class="main-nav-column col-lg-2">
+            <div >
                 
-                <ul class="main-nav-header-content main-nav-contact">
+                <ul class="main-nav-header-content main-nav-contact  col-md-2 col-sm-12">
                 </ul>
             </div>
         </div>
@@ -141,6 +141,7 @@ body {
     display: block;
     padding: 14px 16px;
     text-decoration: none;
+    float: left;
 }
 
 body.sp-authenticated.ms-backgroundImage {
