@@ -32,11 +32,11 @@
                             <div id="_buffering-background1" class="ytOverlay"></div>
                             <!-- <video  id="leftVid" class="split" loop="loop" autoplay="autoplay" muted="muted" preload="preload" src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/left.1e0211a.mp4"   /> -->
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe id="ytplayer1" class="embed-responsive-item float-left" src="https://www.youtube.com/embed/ZCg6TIt1wj4?rel=0&loop=1&playlist=iiV5udOKPc4&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/video-overlay1.7f242e8.png"  ></iframe>
+                                <iframe id="ytplayer1" class="embed-responsive-item float-left" src="https://www.youtube.com/embed/ZCg6TIt1wj4?rel=0&loop=1&playlist=iiV5udOKPc4&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="../assets/img/video-overlay1.png"  ></iframe>
                             </div>
                         </div>
                         <div v-else class="embed-responsive embed-responsive-16by9">
-                            <video  id="leftVid" class="responsive-item float-left" loop="loop" autoplay="autoplay" muted="muted" preload="preload" src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/left.1e0211a.mp4"   />
+                            <video  id="leftVid" class="responsive-item float-left" loop="loop" autoplay="autoplay" muted="muted" preload="preload" src="../assets/vids/left.mp4"   />
                         </div>
                     </transition>
                 </div><!--end of left inner-->
@@ -60,11 +60,11 @@
                             <div v-if="isSafari" id="rtVidCont" class="swoosh ">
                                 <div id="_buffering-background2" class="ytOverlay "></div>
                                 <div class="embed-responsive embed-responsive-16by9 rtAdjust">
-                                    <iframe id="ytplayer2" class="embed-responsive-item float-right" src="https://www.youtube.com/embed/V93YRVOK8PO?rel=0&loop=1&playlist=m60jj_-8Z6o&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/video-overlay2.ed7812a.png"  ></iframe>
+                                    <iframe id="ytplayer2" class="embed-responsive-item float-right" src="https://www.youtube.com/embed/V93YRVOK8PO?rel=0&loop=1&playlist=m60jj_-8Z6o&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="../assets/img/video-overlay2.png"  ></iframe>
                                 </div>
                             </div>
                             <div v-else class="swoosh embed-responsive embed-responsive-16by9 " id="rtVidContEb">
-                                <video  id="rightVid" class="video responsive-item float-right" autoplay="autoplay" loop="loop" muted="muted" preload="preload" playsinline src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/right.60bfb96.mp4"   ></video>
+                                <video  id="rightVid" class="video responsive-item float-right" autoplay="autoplay" loop="loop" muted="muted" preload="preload" playsinline src="../assets/vids/right.mp4"   ></video>
                             <!-- <div id="video-overlay2" class="split" style="background-image:url(https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/img/NC-img.a241866.jpg);">></div>
                             <div id="player2" class="split video"></div> -->
                             </div>
