@@ -1,43 +1,43 @@
-AOS.init({
-    offset: 200,
-      duration: 700,
-      easing: 'ease-in',
-      delay: 300,
-  }, {offset:'50%'});
+// AOS.init({
+//     offset: 200,
+//       duration: 700,
+//       easing: 'ease-in',
+//       delay: 300,
+//   }, {offset:'50%'});
 
   jQuery(document).ready(function($) {
         $('.counter').counterUp({
                 delay: 0,
                 time: 1500
             });
-         
+
 
           initNav();
-          
-              getMainNavItems("Grow"); 
+
+              getMainNavItems("Grow");
               getMainNavItems("Live");
-              getMainNavItems("Work"); 
-              getMainNavItems("Resources");  
-              getMainNavItems("Contact"); 
-                  
-          
+              getMainNavItems("Work");
+              getMainNavItems("Resources");
+              getMainNavItems("Contact");
+
+
               //video stuff below here
-          
+
               scaleVideoContainer();
-          
+
               initBannerVideoSize('.video-container .poster img');
               initBannerVideoSize('.video-container .filter');
               initBannerVideoSize('.video-container video');
-          
+
               $(window).on('resize', function () {
                   scaleVideoContainer();
                   scaleBannerVideoSize('.video-container .poster img');
                   scaleBannerVideoSize('.video-container .filter');
                   scaleBannerVideoSize('.video-container video');
               });
-          
+
               initAnalytics();
-          
+
         });
 
 
@@ -46,10 +46,10 @@ AOS.init({
               $('.navContainer').toggleClass('expand')
           })
       }
-      
+
       function getMainNavItems(uniqueId) {
           var dfd = $.Deferred();
-      
+
           var camlQueryUniqueID  = "<Query><Where><And><Eq><FieldRef Name='RR_IsVisible' /><Value Type='Text'>Yes</Value></Eq><Eq><FieldRef Name='RR_UniqueID' /><Value Type='Text'>"+uniqueId+"</Value></Eq></And></Where><OrderBy><FieldRef Name='RR_SortOrder' Ascending='True' /></OrderBy></Query>";
           var camlViewFields = "<ViewFields><FieldRef Name='Title' /><FieldRef Name='RR_LinkUrl' /><FieldRef Name='RR_UniqueID' /></ViewFields>";
           var getNavItems = $().SPServices.SPGetListItemsJson({
@@ -103,64 +103,64 @@ AOS.init({
               }
           });
       }
-      
-      
+
+
       function scaleVideoContainer() {
-      
+
           var height = $(window).height() + 5;
           var unitHeight = parseInt(height) + 'px';
           $('.homepage-hero-module').css('height', unitHeight);
-      
+
       }
-      
+
       function initBannerVideoSize(element) {
-      
+
           $(element).each(function () {
               $(this).data('height', $(this).height());
               $(this).data('width', $(this).width());
           });
-      
+
           scaleBannerVideoSize(element);
-      
+
       }
-      
+
       function scaleBannerVideoSize(element) {
-      
+
           var windowWidth = $(window).width(),
           windowHeight = $(window).height() + 5,
           videoWidth,
           videoHeight;
-      
+
           // console.log(windowHeight);
-      
+
           $(element).each(function () {
               var videoAspectRatio = $(this).data('height') / $(this).data('width');
-      
+
               $(this).width(windowWidth);
-      
+
               if (windowWidth < 1000) {
                   videoHeight = windowHeight;
                   videoWidth = videoHeight / videoAspectRatio;
                   $(this).css({ 'margin-top': 0, 'margin-left': -(videoWidth - windowWidth) / 2 + 'px' });
-      
+
                   $(this).width(videoWidth).height(videoHeight);
               }
-      
+
               $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
-      
+
           });
       }
-      
+
       function initAnalytics() {
-      
+
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-      
+
         gtag('config', 'UA-54711710-1');
-      
-      
-      
+
+
+
         // WebTrends SmartSource Data Collector Tag v10.4.1
         // Copyright (c) 2014 Webtrends Inc.  All rights reserved.
         // Tag Builder Version: 4.1.3.2
@@ -176,8 +176,8 @@ AOS.init({
                 }
             }).track();
         };
-      
-      
+
+
       }
 
     //   var player;
@@ -208,4 +208,3 @@ AOS.init({
     //       }
     //   }
 
-    
