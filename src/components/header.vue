@@ -1,47 +1,47 @@
 <template>
     <header class="site-header ncgtp-navbar">
-        
+
         <div class="site-header__inner-wrapper row">
             <div class="col-lg-10 col-xs-10">
                 <a href="/" class="logo logo--header " title="">
                 </a>
             </div>
             <div class="col-lg-2 col-xs-2">
-                <i class="glyphicon glyphicon-menu-hamburger gtpBurger menu-btn" id="menu-btn"></i>    
+                <i class="glyphicon glyphicon-menu-hamburger gtpBurger menu-btn" id="menu-btn"></i>
             </div>
-                
+
         </div>
 
-        
+
         <div class="navContainer row">
-            <div>
-                
-                <ul class="main-nav-header-content main-nav-grow col-lg-offset-1 col-md-2 col-sm-12">
-                    
+            <div class="main-nav-header-content main-nav-grow col-lg-offset-1 col-md-2 col-sm-12">
+
+                <ul>
+
                 </ul>
             </div>
-            <div>
-                
-                <ul class="main-nav-header-content main-nav-live  col-md-2 col-sm-12">
+            <div class="main-nav-header-content main-nav-live  col-md-2 col-sm-12">
+
+                <ul>
                 </ul>
             </div>
-            <div >
-                
-                <ul class="main-nav-header-content main-nav-work  col-md-2 col-sm-12">
+            <div  class="main-nav-header-content main-nav-work  col-md-2 col-sm-12">
+
+                <ul>
                 </ul>
             </div>
-            <div >
-                
-                <ul class="main-nav-header-content main-nav-resources  col-md-2 col-sm-12">
+            <div  class="main-nav-header-content main-nav-resources  col-md-2 col-sm-12">
+
+                <ul>
                 </ul>
             </div>
-            <div >
-                
-                <ul class="main-nav-header-content main-nav-contact  col-md-2 col-sm-12">
+            <div  class="main-nav-header-content main-nav-contact  col-md-2 col-sm-12">
+
+                <ul>
                 </ul>
             </div>
         </div>
-        
+
 
 
     </header>
