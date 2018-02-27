@@ -32,7 +32,7 @@
                             <div id="_buffering-background1" class="ytOverlay"></div>
                             <!-- <video  id="leftVid" class="split" loop="loop" autoplay="autoplay" muted="muted" preload="preload" src="https://connect.ncdot.gov/data/forms/ncgtp/SitePages/static/media/left.1e0211a.mp4"   /> -->
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe id="ytplayer1" class="embed-responsive-item float-left" src="https://www.youtube.com/embed/ZCg6TIt1wj4?rel=0&loop=1&playlist=iiV5udOKPc4&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="../assets/img/video-overlay1.png"  ></iframe>
+                                <iframe id="ytplayer1" class="embed-responsive-item float-left" src="https://www.youtube.com/embed/xfc7z3Ud_As?rel=0&loop=1&playlist=xfc7z3Ud_As&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="../assets/img/video-overlay1.png"  ></iframe>
                             </div>
                         </div>
                         <div v-else class="embed-responsive embed-responsive-16by9">
@@ -60,7 +60,7 @@
                             <div v-if="isSafari" id="rtVidCont" class="swoosh ">
                                 <div id="_buffering-background2" class="ytOverlay "></div>
                                 <div class="embed-responsive embed-responsive-16by9 rtAdjust">
-                                    <iframe id="ytplayer2" class="embed-responsive-item float-right" src="https://www.youtube.com/embed/V93YRVOK8PO?rel=0&loop=1&playlist=m60jj_-8Z6o&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="../assets/img/video-overlay2.png"  ></iframe>
+                                    <iframe id="ytplayer2" class="embed-responsive-item float-right" src="https://www.youtube.com/embed/oBeVUEY2AYw?rel=0&loop=1&playlist=oBeVUEY2AYw&controls=0&showinfo=0&mute=1&enablejsapi=1" frameborder="0" allow="encrypted-media" allowfullscreen poster="../assets/img/video-overlay2.png"  ></iframe>
                                 </div>
                             </div>
                             <div v-else class="swoosh embed-responsive embed-responsive-16by9 " id="rtVidContEb">

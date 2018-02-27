@@ -6,10 +6,10 @@
 //   }, {offset:'50%'});
 
   jQuery(document).ready(function($) {
-        $('.counter').counterUp({
-                delay: 10,
-                time: 1000
-            });
+        // $('.counter').counterUp({
+        //         delay: 10,
+        //         time: 1000
+        //     });
 
 
           initNav();

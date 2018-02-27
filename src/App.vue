@@ -1,14 +1,14 @@
 <template>
   <div>
-    <app-header></app-header>
+    <!-- <app-header></app-header> -->
     <app-hero></app-hero>
-      <app-why></app-why>
+      <!-- <app-why></app-why>
       <app-about></app-about>
       <app-industries></app-industries>
       <app-site></app-site>
       <app-contact></app-contact>
       <app-move></app-move>
-      <app-footer></app-footer>
+      <app-footer></app-footer> -->
     <!-- <router-view></router-view> -->
   </div>
 </template>
