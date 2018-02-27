@@ -87,6 +87,7 @@
                                 <div class="col-lg-6 chbxBottom">
                                   <input type="checkbox" name="chkGeneral" class="contact-learn-checkbox"/>
                                   <label for="chkGeneral" class="contact-learn-label">General Information</label>
+                                  <input type="text" name="area-of-interest" id="area-of-interest" style="display:none" class="formFields">
                               </div>
 
                           <div class="primary media-wrap">
