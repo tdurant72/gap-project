@@ -56,34 +56,42 @@
             </div>
     </div>
      <div class="grid__cell nav justify-content-center">
-                  <div class="grid__cell-inner">
-                    <div class="social-list ">
-                      <ul class="social-list__list ">
-                        <li class="social-list__item nav-item">
-                        <a class="social-list__link" target="_blank" href="https://www.facebook.com/GlobalTransPark">
-                            <span class="social-list__link-text">
-                            </span>
-                            <i class="icon-facebook icon"></i>
-                        </a>
-                        </li>
-                        <li class="social-list__item nav-item">
-                        <a class="social-list__link" target="_blank" href="https://twitter.com/GlobalTransPark">
-                            <span class="social-list__link-text">
-                            </span>
-                            <i class="icon-twitter icon"></i>
-                        </a>
-                        </li>
-                        <li class="social-list__item nav-item">
-                        <a class="social-list__link" target="_blank" href="https://www.linkedin.com/company/287838">
-                            <span class="social-list__link-text">
-                            </span>
-                            <i class="icon-linkedin icon"></i>
-                        </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+      <div class="grid__cell-inner">
+        <div class="social-list ">
+          <ul class="social-list__list ">
+            <li class="social-list__item nav-item">
+            <a class="social-list__link" target="_blank" href="https://www.facebook.com/GlobalTransPark">
+                <span class="social-list__link-text">
+                </span>
+                <i class="icon-facebook icon"></i>
+            </a>
+            </li>
+            <li class="social-list__item nav-item">
+            <a class="social-list__link" target="_blank" href="https://twitter.com/GlobalTransPark">
+                <span class="social-list__link-text">
+                </span>
+                <i class="icon-twitter icon"></i>
+            </a>
+            </li>
+            <li class="social-list__item nav-item">
+            <a class="social-list__link" target="_blank" href="https://www.linkedin.com/company/287838">
+                <span class="social-list__link-text">
+                </span>
+                <i class="icon-linkedin icon"></i>
+            </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row privacy-copyright">
+      <div class="col-md col-md-offset-4">
+        <a href="../../pages/privacy-statement.aspx">Privacy Statement</a>
+      </div>
+      <div class="col-md-6">
+        <p>© Copyright North Carolina Global TransPark </p>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -224,14 +232,18 @@ a.social-item__link:hover{
 
 .icon-facebook:before {
   content: "\e90b";
+  -webkit-text-fill-color: #fff;
+
 }
 
 .icon-twitter:before {
   content: "\e926";
+  -webkit-text-fill-color: #fff;
 }
 
 .icon-linkedin:before {
   content: "\e911";
+  -webkit-text-fill-color: #fff;
 }
 .footerText{
     font-family: 'Lato-Ligh',sans-serif;
@@ -248,6 +260,10 @@ a.social-item__link:hover{
 .footerText > a:hover {
     color:#eeeeee;
     font-weight: bold;
+}
+.row.privacy-copyright {
+    margin-top: 30px;
+    font-size: 1rem;
 }
  a.primary{
      color: #ffffff;

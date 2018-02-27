@@ -16,7 +16,7 @@
                                     </h2>
                                     <h3 class="heroText3">A world-class, 2,500-acre multimodal, industrial & business park.</h3>
                                     <div>
-                                        <a class="btn btn-secondary btn-lg btn-hero btn-md" href="../grow/Pages/default.aspx" role="button">Grow With Us</a>
+                                        <a class="btn btn-secondary btn-lg btn-hero btn-md" href="../grow/Pages/site-selection.aspx" role="button">Site Selection</a>
                                     </div>
                                     <div>
                                         <a class="btn btn-primary btn-lg btn-md btn-hero" href="../contact/Pages/default.aspx" role="button">Contact</a>

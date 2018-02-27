@@ -109,6 +109,11 @@ export default {
 .main-nav-header-content li:first-child a:before:hover {
     border-bottom: none;
 }
+.main-nav-header-content li:first-child a:hover {
+    text-decoration: none;
+    font-size: 25px;
+    transition: font-size .5s;
+}
 
 .main-nav-grow li:first-child a:before {
     content: "\e90e";
@@ -157,9 +162,19 @@ body.sp-authenticated.ms-backgroundImage {
     background-color: #fff;
 }
 
-.ncgtp-navbar .logo {
+/* .ncgtp-navbar .logo {
     background-image: url(../assets/img/logo.jpg);
     width:300px;
+} */
+.ncgtp-navbar .logo {
+    background-image: url(../assets/img/Global_Transpark_Logo_Color.png);
+    width: 300px;
+    height: 50px;
+    margin: 10px 10px 5px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 20px;
+    mix-blend-mode: darken;
 }
 
 .gtpBurger {
