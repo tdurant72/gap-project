@@ -13,8 +13,8 @@
         </div>
 
 
-        <div class="navContainer ">
-            <div >
+        <div class="navContainer row">
+            <div class="col-lg-offset-1">
                 <ul class="main-nav-header-content main-nav-grow col-lg-offset-1 col-lg-2 col-sm-12">
 
                 </ul>
@@ -181,7 +181,6 @@ body.sp-authenticated.ms-backgroundImage {
 .gtpBurger {
     transform: scale(2);
     cursor: pointer;
-    margin-top: 28px;
     margin-right: 20px;
 
 }
@@ -402,7 +401,12 @@ ul.megamenu.col-lg-1 {
 ul.megamenu.col-lg-2 {
     list-style: none;
 }
-
+.site-header__inner-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
 </style>
 
 
