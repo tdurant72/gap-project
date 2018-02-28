@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?oau9h6');
-  src:  url('fonts/icomoon.eot?oau9h6#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?oau9h6') format('truetype'),
-    url('fonts/icomoon.woff?oau9h6') format('woff'),
-    url('fonts/icomoon.svg?oau9h6#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?r45sbd');
+  src:  url('fonts/icomoon.eot?r45sbd#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?r45sbd') format('truetype'),
+    url('fonts/icomoon.woff?r45sbd') format('woff'),
+    url('fonts/icomoon.svg?r45sbd#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -57,9 +57,6 @@
 .icon-icon_events:before {
   content: "\e90a";
 }
-.icon-icon_fb:before {
-  content: "\e90b";
-}
 .icon-icon_ftz:before {
   content: "\e90c";
 }
@@ -74,9 +71,6 @@
 }
 .icon-icon_hist:before {
   content: "\e910";
-}
-.icon-icon_in:before {
-  content: "\e911";
 }
 .icon-icon_incent:before {
   content: "\e912";
@@ -138,9 +132,6 @@
 .icon-icon_training:before {
   content: "\e925";
 }
-.icon-icon_twit:before {
-  content: "\e926";
-}
 .icon-icon_univ:before {
   content: "\e927";
 }
@@ -155,4 +146,13 @@
 }
 .icon-icon_workforce:before {
   content: "\e92b";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
 }

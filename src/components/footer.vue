@@ -231,18 +231,18 @@ a.social-item__link:hover{
 }
 
 .icon-facebook:before {
-  content: "\e90b";
+  content: "\ea90";
   -webkit-text-fill-color: #fff;
 
 }
 
 .icon-twitter:before {
-  content: "\e926";
+  content: "\ea96";
   -webkit-text-fill-color: #fff;
 }
 
 .icon-linkedin:before {
-  content: "\e911";
+  content: "\eaca";
   -webkit-text-fill-color: #fff;
 }
 .footerText{
