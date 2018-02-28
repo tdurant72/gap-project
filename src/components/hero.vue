@@ -139,7 +139,7 @@
                             <h3 class="heroTextMobile">Putting the World Within Your Reach</h3>
                             <p class="heroText3Mobile">A world-class, 2,500  acre industrial & business park.</p>
                             <div>
-                                <a class="btn btn-secondary btn-lg btn-hero btn-md" href="../grow/Pages/default.aspx" role="button">Grow With Us</a>
+                                <a class="btn btn-secondary btn-lg btn-hero btn-md" href="../grow/Pages/site-selection.aspx" role="button">Site Selection</a>
                             </div>
                             <div>
                                 <a class="btn btn-primary btn-lg btn-md btn-hero" href="../contact/Pages/default.aspx" role="button">Contact</a>
@@ -395,17 +395,23 @@ h2.overlayTextRt{
     background-size: cover;
     height: 100vh;
 }
+ .itm1 {
+    background: url(../assets/img/hero-bkgd-mobile.jpg) no-repeat center center fixed;
+}
+ .itm2 {
+    background: url(../assets/img/NC-img-mobile.jpg) no-repeat center left fixed;
+}
 .heroText3Mobile {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 100%;
     color:#337ab7;
-    text-shadow:1px 0 0;
+    text-shadow:1px 0 0 #fff;
     font-weight: normal;
 }
 .heroTextMobile {
-    font-size: 40px;
+    font-size: 30px;
     color:#337ab7;
-    text-shadow: 1px 0 0;
+    text-shadow: 1px 0 0 #fff;
     font-weight: bold;
 }
 .cap-mobile {
@@ -798,6 +804,7 @@ padding-bottom: 20px;
 
     float: left;
     margin-right: 40px;
+    margin-top:5px;
 }
 
 .fade-right-content-enter,

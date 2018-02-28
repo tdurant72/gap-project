@@ -6,7 +6,7 @@
                 <a href="/" class="logo logo--header " title="">
                 </a>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg">
                 <i class="glyphicon glyphicon-menu-hamburger gtpBurger menu-btn" id="menu-btn"></i>
             </div>
 
@@ -64,7 +64,8 @@ export default {
 .main-nav-header-content li:first-child a{
     color: #0c98e2;
     font-size: 2rem;
-    border-bottom: .2rem solid;
+    border-bottom: 2px solid;
+    float: left;
     /* border-bottom-color: #0c6c2c; */
 }
 .main-nav-header-content li a {
@@ -167,7 +168,7 @@ body.sp-authenticated.ms-backgroundImage {
     width:300px;
 } */
 .ncgtp-navbar .logo {
-    background-image: url(../assets/img/Global_Transpark_Logo_Color.png);
+    background-image: url(../assets/img/logo.jpg);
     width: 300px;
     height: 50px;
     margin: 10px 10px 5px;

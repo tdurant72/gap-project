@@ -157,7 +157,7 @@ text-transform: uppercase;
 .main-nav-header { size: 0.857rem;color: white;}
 .main-nav-header-content, .main-nav-footer-content {list-style: none;color: white;display: inline-block;}
 .main-nav-header-content li{display: inline-block;width: 100%;}
-.main-nav-header-content li:first-child a{color: #0081C3;font-size: 18px;border-bottom: .2rem solid;}
+.main-nav-header-content li:first-child a{color: #0081C3;font-size: 18px;border-bottom: 2px solid;float:left;}
 .main-nav-header-content li a { text-align: left;}
 .main-nav-footer-content a {font-family: 'Lato', sans-serif;text-decoration: none; margin-left:0px;}
 .main-nav-footer-content li:first-child a {font-family: 'Montserrat', sans-serif;font-size: 18px; font-weight:bold; margin-left:-10px}

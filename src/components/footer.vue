@@ -86,10 +86,10 @@
     </div>
     <div class="row privacy-copyright">
       <div class="col-md col-md-offset-4">
-        <a href="../../pages/privacy-statement.aspx">Privacy Statement</a>
+        <a class="privacy" href="../../pages/privacy-statement.aspx">Privacy Statement</a>
       </div>
       <div class="col-md-6">
-        <p>© Copyright North Carolina Global TransPark </p>
+        <p class="privacy">© Copyright North Carolina Global TransPark </p>
       </div>
     </div>
   </div>
@@ -264,6 +264,15 @@ a.social-item__link:hover{
 .row.privacy-copyright {
     margin-top: 30px;
     font-size: 1rem;
+}
+.privacy{
+  color:white;
+  font-size:10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+a.privacy{
+  font-size:10px
 }
  a.primary{
      color: #ffffff;
