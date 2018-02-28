@@ -146,11 +146,11 @@ text-transform: uppercase;
 
 
 .ncgtp-navbar {background-color: #eee; position:fixed; z-index:1000; width: 100%;border-bottom: #757575 2px solid; padding-bottom: 10px;}
-.ncgtp-navbar a {display: block;padding: 5px 10px;text-decoration: none;}
-.ncgtp-navbar .logo {background-image: url(./assets/img/logo.jpg); width:400px; height:50px; margin:10px 10px	5px 10px; background-repeat:no-repeat; position:relative; left:20px;}
+.ncgtp-navbar a {display: block;padding: 5px 30px;text-decoration: none;}
+/* .ncgtp-navbar .logo {background-image: url(./assets/img/logo.jpg); width:400px; height:50px; margin:10px 10px	5px 10px; background-repeat:no-repeat; position:relative; left:20px;} */
 .ncgtp-navbar .logo {mix-blend-mode: darken;}
 
-.gtpBurger {transform: scale(2.0);cursor: pointer;margin:20px; float:right;}
+/* .gtpBurger {transform: scale(2.0);cursor: pointer;margin:20px; float:right;} */
 .navContainer {display: none;}
 .expand { display: block;padding-top:20px;}
 .main-nav-column {float: left;width: 20%;}

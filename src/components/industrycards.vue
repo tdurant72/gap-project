@@ -76,7 +76,7 @@ background: rgba(255, 255, 255, 90);
 
 
 margin: 0 auto;
-margin-top: -40px;
+margin-top: 20px;
 
 }
 .top {

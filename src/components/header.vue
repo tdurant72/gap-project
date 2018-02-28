@@ -2,7 +2,7 @@
     <header class="site-header ncgtp-navbar">
 
         <div class="site-header__inner-wrapper row">
-            <div class="col-lg-10">
+            <div>
                 <a href="/" class="logo logo--header " title="">
                 </a>
             </div>
@@ -14,25 +14,25 @@
 
 
         <div class="navContainer ">
-            <div class="main-nav-column col-lg-offset-1 col-lg-2">
-                <ul class="main-nav-header-content main-nav-grow">
+            <div >
+                <ul class="main-nav-header-content main-nav-grow col-lg-offset-1 col-lg-2 col-sm-12">
 
                 </ul>
             </div>
-            <div class="main-nav-column col-lg-2">
-                <ul class="main-nav-header-content main-nav-live">
+            <div>
+                <ul class="main-nav-header-content main-nav-live col-lg-2 col-sm-12">
                 </ul>
             </div>
-            <div class="main-nav-column col-lg-2">
-                <ul class="main-nav-header-content main-nav-work">
+            <div>
+                <ul class="main-nav-header-content main-nav-work  col-lg-2 col-sm-12">
                 </ul>
             </div>
-            <div class="main-nav-column col-lg-2">
-                <ul class="main-nav-header-content main-nav-resources">
+            <div class="main-nav-column">
+                <ul class="main-nav-header-content main-nav-resources col-lg-2 col-sm-12">
                 </ul>
             </div>
-            <div class="main-nav-column col-lg-2">
-                <ul class="main-nav-header-content main-nav-contact">
+            <div>
+                <ul class="main-nav-header-content main-nav-contact col-lg-2 col-sm-12">
                 </ul>
             </div>
         </div>
@@ -153,7 +153,7 @@ body {
 /* Links inside the navbar */
 .ncgtp-navbar a {
     display: block;
-    padding: 14px 16px;
+    padding: 5px 30px;
     text-decoration: none;
     float: left;
 }
@@ -174,15 +174,16 @@ body.sp-authenticated.ms-backgroundImage {
     margin: 10px 10px 5px;
     background-repeat: no-repeat;
     position: relative;
-    left: 20px;
+    left: 10px;
     mix-blend-mode: darken;
 }
 
 .gtpBurger {
     transform: scale(2);
     cursor: pointer;
-    float:right;
-    padding-right: 10px;
+    margin-top: 28px;
+    margin-right: 20px;
+
 }
 
 .navContainer {

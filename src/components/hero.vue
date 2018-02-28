@@ -402,14 +402,14 @@ h2.overlayTextRt{
     background: url(../assets/img/NC-img-mobile.jpg) no-repeat center left fixed;
 }
 .heroText3Mobile {
-    font-size: 25px;
+    font-size: 18px;
     line-height: 100%;
     color:#337ab7;
     text-shadow:1px 0 0 #fff;
     font-weight: normal;
 }
 .heroTextMobile {
-    font-size: 30px;
+    font-size: 24px;
     color:#337ab7;
     text-shadow: 1px 0 0 #fff;
     font-weight: bold;
@@ -426,7 +426,13 @@ a.btn-mobile {
 }
 .carousel-indicators{
     position:absolute;
-    bottom: 20%;
+    bottom: 10%;
+}
+.carousel-indicators:active{
+    background-color: #f0ad4e;
+}
+.carousel-indicators li{
+    border: 1px solid #32424c;
 }
 .carousel-caption{
     position:absolute;

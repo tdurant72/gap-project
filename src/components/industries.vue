@@ -50,7 +50,7 @@ h2.sectionTitle-dark{
 opacity: 0.7;
 font-family: 'Montserrat-Bold', sans-serif;
 font-weight:bold;
-font-size: 60px;
+font-size: 50px;
 color: #212121;
 text-transform: uppercase;
 text-align: center;

@@ -32,7 +32,7 @@ background-image: url("../assets/img/world-map.jpg");
 h2.sectionTitle-light{
 opacity: 0.7;
 font-family: 'Montserrat-Bold', sans-serif;
-font-size: 60px;
+font-size: 50px;
 font-weight:bold;
 color: #FFFFFF;
 text-transform: uppercase;

@@ -218,5 +218,6 @@ font-weight:normal;
 #directionsBtn{
     font-size:18px;
     margin-top:30px;
+    margin-bottom:30px;
 }
 </style>
