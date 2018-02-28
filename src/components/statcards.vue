@@ -12,7 +12,7 @@
             </div>
             <div class="col-md-6 col-lg col-sm-12">
                         <div>
-                            <p class="calc"><span class="counter" data-count="450000">O</span>+</p>
+                            <p class="calc"><span class="counter" data-count="450000">0</span>+</p>
                             <p class="whyText">Regional Workforce</p>
                         </div>
             </div>

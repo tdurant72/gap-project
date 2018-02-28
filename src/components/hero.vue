@@ -10,7 +10,7 @@
                             </div>
                         <!-- <h1 class="knockout-text-one">WHY GTP</h1> -->
                         <transition name="fade-left-content">
-                            <div v-if="leftActive"  class="leftCont content-body">
+                            <div v-if="leftActive"  class="leftCont content-body" title="NCGTP">
 
                                 <h2 class="heroText">Putting the World Within Your Reach
                                     </h2>
@@ -46,7 +46,7 @@
                     <div class="inner ">
                         <div  class="content-wrap">
                             <transition name="fade-right-content" >
-                            <div v-if="rightActive" class="rightCont content-body">
+                            <div v-if="rightActive" class="rightCont content-body" title="Living in North Carolina">
                                 <h2 class="heroText">North Carolina
                                     </h2>
                                     <h3 class="heroText3">where the living is easy.</h3>
@@ -88,7 +88,7 @@
                                 <span id="callout3text" class="calloutText  ctLeft">Economic Impact<br>& Opportunities</span>
                                 <a class="buttonCallouts btnLeft" role="button" href="../work/Pages/default.aspx" >WORK</a>
                             </div>
-                            <button id="sliderBckBtn"  class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-left"></i></button>
+                            <button id="sliderBckBtn"  class="switch" @click="changeWidth" role="button" ><i class="glyphicon glyphicon-chevron-left"></i></button>
                         </div>
                     </div>
 
@@ -111,7 +111,7 @@
                                 <a class="buttonCallouts btnRight" role="button" href="../work/Pages/default.aspx" >WORK</a>
 
                             </div>
-                            <button id="sliderBckBtn2" class="switch" @click="changeWidth" ><i class="glyphicon glyphicon-chevron-right"></i></button>
+                            <button id="sliderBckBtn2" class="switch" @click="changeWidth" role="button"><i class="glyphicon glyphicon-chevron-right"></i></button>
                         </div>
                     </div>
             </div>
@@ -133,7 +133,7 @@
 
                 </ol>
                 <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active itm1">
+                    <div class="carousel-item active itm1" title="NCGTP">
 
                         <div class="carousel-caption d-md-block">
                             <h3 class="heroTextMobile">Putting the World Within Your Reach</h3>
@@ -146,7 +146,7 @@
                              </div>
                         </div>
                     </div>
-                    <div class="carousel-item itm2">
+                    <div class="carousel-item itm2" title="Living in NC">
 
                         <div class="carousel-caption d-md-block">
                             <h3 class="heroTextMobile">North Carolina</h3>

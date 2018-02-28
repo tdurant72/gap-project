@@ -4,7 +4,7 @@
         <!-- <div class="col col-md-2 col-lg-1 col-sm-0"></div> -->
         <div v-for="item in items" class="col-md-4 col-lg-4 col-sm-12 " :key="item.name">
             <div class="text-center res-card">
-                <img :src="item.img" class="card-img-top primary-blue">
+                <img :src="item.img" class="card-img-top primary-blue" :alt="item.name">
                     <div>
                         <h5 class="reasonText">{{ item.desc}}</h5>
                     </div>
@@ -13,7 +13,7 @@
                     </div>
                 </div>
             </div>
-        
+
         </div>
     </div>
 
@@ -53,7 +53,7 @@ img{
     height: auto;
     margin: auto;
     padding-bottom: 20px;
-} 
+}
 
 #growIconRC{
     font-size:50px;

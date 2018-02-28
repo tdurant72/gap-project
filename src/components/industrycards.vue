@@ -6,7 +6,7 @@
                 <div class="">
                         <h4 class="top industryCardTitles">{{ item.name }}</h4>
                     </div>
-                <img :src="item.img" class="card-img-top">
+                <img :src="item.img" class="card-img-top" :alt="item.name">
                 </div>
 
         </div>
