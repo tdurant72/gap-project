@@ -43,7 +43,7 @@ export default {
 
 <style scoped>
 .paralsec4{
-/* background-image: url("../assets/img/industries-bkgd.jpg"); */
+
 background-color: #f6f6f6;
 }
 h2.sectionTitle-dark{
