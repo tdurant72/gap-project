@@ -9,7 +9,7 @@
             <div class="card col-lg-12" id="siteCard">
                 <div class="row">
                     <div class="col-lg-6">
-                    <img id="map" src="../assets/img/map.jpg" alt="map-icon">
+                    <img id="map" src="../assets/img/map-2.jpg" alt="map-icon">
                 </div>
                     <div class=" col-lg">
                         <p class="siteText">Our sites and buildings are fully equipped and ready to go to work. From utility planning to advanced telecommunications connectivity, everything you need is in place so you’ll be up and doing business - with preapproved environmental, we are prepared to break ground on a new facility. </p>
@@ -49,6 +49,7 @@ font-size: 50px;
 font-weight:bold;
 color: #FFFFFF;
 text-transform: uppercase;
+text-shadow: 1px 0 #000;
 }
 
 #siteCard{

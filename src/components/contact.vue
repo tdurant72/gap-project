@@ -29,16 +29,16 @@
                       <div id="formContainer" >
                           <div class="primary media-wrap">
                               <div class="col-lg-12">
-                                  <label for="name">First Name *</label>
+                                  <label for="first-name">First Name *</label>
                               </div>
                               <div class="col-lg-12 last">
-                                  <input type="text" name="first-name" id="first-name" class="validateBlank formFields">
+                                  <input type="text" name="first-name" id="first-name" class="validateBlank formFields" >
                                   <em class="ms-metadata required-warning">Required</em>
                               </div>
                           </div>
                           <div class="primary media-wrap">
                               <div class="col-lg-12">
-                                  <label for="name">Last Name *</label>
+                                  <label for="last-name">Last Name *</label>
                               </div>
                               <div class="col-lg-12 last">
                                   <input type="text" name="last-name" id="last-name" class="validateBlank formFields">
@@ -68,7 +68,7 @@
                                   <label for="phone">Phone</label>
                               </div>
                               <div class="col-lg-12">
-                                  <input type="text" name="phone" id="phone" class="formFields"/>
+                                  <input type="text" name="phone" id="phone" class="formFields" />
                                   <!--<em class="ms-metadata required-warning">Required</em>-->
                               </div>
                           </div>
@@ -77,31 +77,31 @@
                                   <label>I am interested in learning more about:</label>
                               </div>
                               <div class="col-lg-6">
-                                  <input type="checkbox" name="chkBuildings" class="contact-learn-checkbox"/>
+                                  <input type="checkbox" name="chkBuildings" class="contact-learn-checkbox" value="chkBuildings"/>
                                   <label for="chkBuildings" class="contact-learn-label">Building/Sites</label>
                                 </div>
                               <div class="col-lg-6">
-                                  <input type="checkbox" name="ckTraining" class="contact-learn-checkbox"/>
+                                  <input type="checkbox" name="chkTraining" class="contact-learn-checkbox" value="chkTraining"/>
                                   <label for="chkTraining" class="contact-learn-label">Training/Education</label>
                                 </div>
                                 <div class="col-lg-6">
-                                  <input type="checkbox" name="chkComposite" class="contact-learn-checkbox"/>
+                                  <input type="checkbox" name="chkComposite" class="contact-learn-checkbox" value="chkComposite"/>
                                   <label for="chkComposite" class="contact-learn-label">Composite Center</label>
                                   <br>
                               </div>
                               <div class="col-lg-6">
                                   <input type="checkbox" name="chkAirport" class="contact-learn-checkbox"/>
-                                  <label for="chkAirport" class="contact-learn-label">Airport</label>
+                                  <label for="chkAirport" class="contact-learn-label" value="chkAirport">Airport</label>
                                 </div>
                                 <div class="col-lg-6 chbxBottom">
                                   <input type="checkbox" name="chkGeneral" class="contact-learn-checkbox"/>
-                                  <label for="chkGeneral" class="contact-learn-label">General Information</label>
+                                  <label for="chkGeneral" class="contact-learn-label" value="chkGeneral">General Information</label>
                                   <input type="text" name="area-of-interest" id="area-of-interest" style="display:none" class="formFields">
                               </div>
 
                           <div class="primary media-wrap">
                               <div class="col-lg-12">
-                                  <label for="comments">Comments/Questions</label>
+                                  <label for="Comments">Comments/Questions</label>
                               </div>
                               <div class="col-lg-12 ">
                                   <textarea name="comments" id="Comments" class="formFields" ></textarea>
@@ -110,17 +110,17 @@
                           <div id="validationLoading">
                           <div id="validateFields">
                               <div class="panel validationIcons">
-                                  <img id='fieldsValidating' src='../assets/img/gears_anv4.gif' class="loadingIcon"/>
-                                  <img id='fieldsValid' src='../assets/img/check.gif' class="checkMarkIcon"/>
-                                  <img id='fieldsInvalid' src='../assets/img/WPPINVAL.gif' class="invalidIcon"/>
+                                  <img id='fieldsValidating' src='../assets/img/gears_anv4.gif' class="loadingIcon"  alt="loading"/>
+                                  <img id='fieldsValid' src='../assets/img/check.gif' class="checkMarkIcon" alt="valid"/>
+                                  <img id='fieldsInvalid' src='../assets/img/WPPINVAL.gif' class="invalidIcon" alt="invalid"/>
                               </div>
                               <span id="validFieldsText" class="validation">Validating Fields</span>
                           </div>
                           <div id="submitForm">
                               <div class="panel validationIcons">
-                                  <img id='submittingSpinner' src='../assets/img/gears_anv4.gif' class="loadingIcon"/>
-                                  <img id='submitSuccess' src='../assets/img/check.gif' class="checkMarkIcon"/>
-                                  <img id='submitFail' src='../assets/img/WPPINVAL.gif' class="invalidIcon"/>
+                                  <img id='submittingSpinner' src='../assets/img/gears_anv4.gif' class="loadingIcon" alt="loading"/>
+                                  <img id='submitSuccess' src='../assets/img/check.gif' class="checkMarkIcon" alt="successfull"/>
+                                  <img id='submitFail' src='../assets/img/WPPINVAL.gif' class="invalidIcon" alt="error"/>
                               </div>
                               <span id="submitFormText" class="validation">Submitting Form</span>
                           </div>

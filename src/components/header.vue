@@ -1,9 +1,9 @@
 <template>
     <header class="site-header ncgtp-navbar">
 
-        <div class="site-header__inner-wrapper row">
+        <div class="site-header__inner-wrapper">
             <div>
-                <a href="/" class="logo logo--header " title="">
+                <a href="/" class="logo logo--header " title="NCGTP Logo" alt="NCGTP logo link to homepage">
                 </a>
             </div>
             <div>
@@ -27,7 +27,7 @@
                 <ul class="main-nav-header-content main-nav-work  col-lg-2 col-sm-12">
                 </ul>
             </div>
-            <div class="main-nav-column">
+            <div>
                 <ul class="main-nav-header-content main-nav-resources col-lg-2 col-sm-12">
                 </ul>
             </div>

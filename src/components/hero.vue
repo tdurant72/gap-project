@@ -88,7 +88,7 @@
                                 <span id="callout3text" class="calloutText  ctLeft">Economic Impact<br>& Opportunities</span>
                                 <a class="buttonCallouts btnLeft" role="button" href="../work/Pages/default.aspx" >WORK</a>
                             </div>
-                            <button id="sliderBckBtn"  class="switch" @click="changeWidth" role="button" ><i class="glyphicon glyphicon-chevron-left"></i></button>
+                            <button id="sliderBckBtn"  class="switch" @click="changeWidth" role="button" value="left video"><i class="glyphicon glyphicon-chevron-left"></i></button>
                         </div>
                     </div>
 
@@ -111,7 +111,7 @@
                                 <a class="buttonCallouts btnRight" role="button" href="../work/Pages/default.aspx" >WORK</a>
 
                             </div>
-                            <button id="sliderBckBtn2" class="switch" @click="changeWidth" role="button"><i class="glyphicon glyphicon-chevron-right"></i></button>
+                            <button id="sliderBckBtn2" class="switch" @click="changeWidth" role="button"  value="right video"><i class="glyphicon glyphicon-chevron-right"></i></button>
                         </div>
                     </div>
             </div>

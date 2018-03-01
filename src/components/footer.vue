@@ -60,21 +60,21 @@
         <div class="social-list ">
           <ul class="social-list__list ">
             <li class="social-list__item nav-item">
-            <a class="social-list__link" target="_blank" href="https://www.facebook.com/GlobalTransPark">
+            <a class="social-list__link" target="_blank" href="https://www.facebook.com/GlobalTransPark" aria-label="NCGTP facebook link">
                 <span class="social-list__link-text">
                 </span>
                 <i class="icon-facebook icon"></i>
             </a>
             </li>
             <li class="social-list__item nav-item">
-            <a class="social-list__link" target="_blank" href="https://twitter.com/GlobalTransPark">
+            <a class="social-list__link" target="_blank" href="https://twitter.com/GlobalTransPark" aria-label="NCGTP twitter link">
                 <span class="social-list__link-text">
                 </span>
                 <i class="icon-twitter icon"></i>
             </a>
             </li>
             <li class="social-list__item nav-item">
-            <a class="social-list__link" target="_blank" href="https://www.linkedin.com/company/287838">
+            <a class="social-list__link" target="_blank" href="https://www.linkedin.com/company/287838" aria-label="NCGTP linkedIn link">
                 <span class="social-list__link-text">
                 </span>
                 <i class="icon-linkedin icon"></i>
@@ -235,18 +235,18 @@ a.social-item__link:hover{
 
 .icon-facebook:before {
   content: "\ea90";
-  -webkit-text-fill-color: #fff;
+  /* -webkit-text-fill-color: #fff; */
 
 }
 
 .icon-twitter:before {
   content: "\ea96";
-  -webkit-text-fill-color: #fff;
+  /* -webkit-text-fill-color: #fff; */
 }
 
 .icon-linkedin:before {
   content: "\eaca";
-  -webkit-text-fill-color: #fff;
+  /* -webkit-text-fill-color: #fff; */
 }
 .footerText{
     font-family: 'Lato-Ligh',sans-serif;
