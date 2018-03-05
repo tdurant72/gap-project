@@ -191,6 +191,9 @@ body.sp-authenticated.ms-backgroundImage {
 
 .expand {
     display: block;
+    max-height:600px;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 .main-nav-column {

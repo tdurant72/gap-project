@@ -396,10 +396,10 @@ h2.overlayTextRt{
     height: 100vh;
 }
  .itm1 {
-    background: url(../assets/img/hero-bkgd-mobile.jpg) no-repeat center center fixed;
+    background: url(../assets/img/hero-bkgd-mobile.jpg) no-repeat center left;
 }
  .itm2 {
-    background: url(../assets/img/NC-img-mobile.jpg) no-repeat center left fixed;
+    background: url(../assets/img/NC-img-mobile.jpg) no-repeat center left;
 }
 .heroText3Mobile {
     font-size: 18px;

@@ -25,7 +25,7 @@
             <div class="col-md-6 col-lg col-sm-12">
                         <div>
                             <p class="calc"><span class="counter" data-count="11500">0</span></p>
-                            <p class="whyText">Square-Foot Runway</p>
+                            <p class="whyText">Foot Runway</p>
                         </div>
             </div>
 
