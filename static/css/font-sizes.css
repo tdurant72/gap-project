@@ -1,0 +1,83 @@
+
+@media (min-width: 480px) {
+    :root{
+        /* 14px @ 480px increasing to 16px @ 1920px */
+        font-size: calc(0.875rem + ((1vw - 4.8px) * 0.1389));
+    }
+    p{
+        font-size: calc(0.875rem + ((1vw - 4.8px) * 0.1389));
+        /*font-size:16px;
+        font-size:1em;*/
+    }
+    h6{
+        /* 16px @ 480px increasing to 22.652px @ 1920px */
+        font-size: calc(1rem + ((1vw - 4.8px) * 0.4619));
+    }
+    h5{
+        /* 22.652px @ 480px increasing to 25.888px @ 1920px */
+        font-size: calc(1.41575rem + ((1vw - 4.8px) * 0.2247));    
+    }
+    h4{
+        /* 25.888px @ 480px increasing to 36.651px @ 1920px */
+        font-size: calc(1.618rem + ((1vw - 4.8px) * 0.7474));
+    }
+    h3{
+        /* 36.651px @ 480px increasing to 41.887px @ 1920px */
+        font-size: calc(2.2906875rem + ((1vw - 4.8px) * 0.3636));
+    }
+    h2{
+        /* 41.887px @ 480px increasing to 59.301px @ 1920px */
+        font-size: calc(2.6179375rem + ((1vw - 4.8px) * 1.2093));
+    }
+    h1{
+        /* 59.301px @ 480px increasing to 67.773px @ 1920px */
+        font-size: calc(3.7063125rem + ((1vw - 4.8px) * 0.5883));
+
+    }
+    .hero{
+        /* 67.773px @ 480px increasing to 95.949px @ 1920px */
+        font-size: calc(4.2358125rem + ((1vw - 4.8px) * 1.9567));
+    }
+    .caption{
+        /* 9.889px @ 480px increasing to 11.089px @ 1920px */
+        font-size: calc(0.6180625rem + ((1vw - 4.8px) * 0.0833));
+        /*font-size:11.089px; 
+        font-size:0.693em;*/
+    }
+}
+@media (min-width: 1920px) {
+    :root {
+      font-size: 16px;
+      /*font-size:1em;*/
+    }
+    p {
+      font-size: 16px;
+      /*font-size:1em;*/
+    }
+    h6{
+        font-size: 22.652px;
+    }
+    h5{
+        font-size:25.888px; 
+    }
+    h4{
+        font-size:36.651px;
+    }
+    h3{
+        font-size:41.887px;
+    }
+    h2{
+        font-size:59.301px;
+    }
+    h1{
+        font-size:67.773px;
+    }
+    .hero{
+        font-size:95.949px;
+    }
+    .caption{
+        /* 9.889px @ 480px increasing to 11.089px @ 1920px */
+        font-size:11.089px; 
+        /*font-size:0.693em;*/
+    }
+  }
