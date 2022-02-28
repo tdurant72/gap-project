@@ -73,9 +73,6 @@ img{
 .container-card{
 
 background: rgba(255, 255, 255, 90);
-
-
-margin: 0 auto;
 margin-top: 20px;
 
 }
